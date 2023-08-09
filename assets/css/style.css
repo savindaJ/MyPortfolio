@@ -36,3 +36,30 @@ main section aside strong{
     text-align: left;
     color: orange;
 }
+
+body footer div:nth-child(1) h4{
+    color: coral;
+    text-align: left;
+}
+
+body footer div:nth-child(2) h4{
+    color: olivedrab;
+    text-align: right;
+}
+
+body footer div:nth-child(2)>img{
+    float: right;
+    width: 5.33%;
+    padding: 10px;
+}
+
+body footer>small{
+    display: block;
+    text-align: center;
+    color: red
+}
+
+body main section:nth-child(3)>h1>span{
+    font-size: 70px;
+    color: red;
+}
