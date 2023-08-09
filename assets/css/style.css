@@ -63,3 +63,10 @@ body main section:nth-child(3)>h1>span{
     font-size: 70px;
     color: red;
 }
+
+body main section:nth-child(3) div p:nth-child(1) span{
+    font-size: 20px;
+    color: blue;
+}
+
+
