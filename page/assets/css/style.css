@@ -88,7 +88,7 @@ main section div:nth-child(2) a{
     line-height: normal;
 }
 
-main section div:nth-child(1)>h3{
+main section aside:nth-child(1)>h3{
     margin-left: 100px;
     color: #073e7f;
     font-family: Inter;
