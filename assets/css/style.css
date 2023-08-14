@@ -1,3 +1,24 @@
+header{
+    display: inline-flex;
+}
+
+header nav>div>menu>li{
+    display: inline-flex;
+}
+
+header nav>div>menu>li>a{
+    color: #162A5F;
+    font-family: Libre Baskerville;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header nav>div>menu>li>a:hover{
+    color: #FD6E0A;
+}
+
 h1{
     color: #0d0d72;
     text-space: 20px;
@@ -26,12 +47,6 @@ main section aside div>p{
     color: blue;
 }
 
-main section aside div>p:hover{
-    text-align: left;
-    color: black;
-    font-size: 17px;
-}
-
 main section aside strong{
     text-align: left;
     color: orange;
@@ -47,16 +62,16 @@ body footer div:nth-child(2) h4{
     text-align: right;
 }
 
-body footer div:nth-child(2)>img{
+/*body footer div:nth-child(2)>img{
     float: right;
     width: 5.33%;
     padding: 10px;
-}
+}*/
 
 body footer>small{
     display: block;
     text-align: center;
-    color: red
+    color: #ffffff
 }
 
 body main section:nth-child(3)>h1>span{
@@ -96,7 +111,7 @@ main section:nth-child(2) div:hover{
     box-shadow: 0px 5px 30px 5px rgb(246, 180, 88);
 }
 
-main section:nth-child(2) hr{
+main hr{
     width: 232.078px;
     height: 5px;
     background: #FD6E0A;
@@ -112,3 +127,17 @@ main section:nth-child(2) hr{
 main section:nth-child(2) div:nth-child(6){
     margin-left: 200px;
 }*/
+
+footer{
+    background: #FF770A;
+    height: 320px;
+    margin-bottom: 0px;
+}
+
+footer div{
+    display: inline-flex;
+}
+
+footer>nav{
+    align-items: center;
+}
