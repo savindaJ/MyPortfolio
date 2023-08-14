@@ -45,6 +45,12 @@ main section{
     margin-bottom: 50px;
 }
 
+main section:hover{
+    width: 1110px;
+    height: 360px;
+    box-shadow: 0px 4px 30px 2px #68645f;
+}
+
 main section div:nth-child(2){
     box-sizing: border-box;
     margin-left: 562px;
