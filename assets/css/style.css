@@ -1,9 +1,21 @@
 header{
     display: inline-flex;
+    border-bottom: 2px solid #000;
+    background: #FFF;
+    width: 98.7vw;
+    height: 49px;
+    flex-shrink: 0;
+    position: fixed;
 }
+
+header nav>div>menu{
+    margin-left: 600px;
+}
+
 
 header nav>div>menu>li{
     display: inline-flex;
+    margin-left: 50px;
 }
 
 header nav>div>menu>li>a{
