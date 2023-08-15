@@ -25,7 +25,7 @@ h1 span{
 }
 
 body header div img{
-    margin-left: 1100px;
+    position: relative;
 }
 
 body header{
@@ -34,33 +34,33 @@ body header{
 }
 
 main section{
-    width: 1104px;
-    height: 350px;
+    width: 80%;
+    height: 50vh;
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 4px 30px 2px #B8B8B8;
     margin-left: 120px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
 }
 
 main section:hover{
-    width: 1110px;
-    height: 360px;
+    width: 82%;
+    height: 52vh;
     box-shadow: 0px 4px 30px 2px #68645f;
 }
 
 main section div:nth-child(2){
     box-sizing: border-box;
-    margin-left: 562px;
+    margin-left: 40vw;
     padding-top: 0px;
 }
 
 main section div:nth-child(2) h4{
     color: #FD6E0A;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1.7vw;
     font-style: normal;
     font-weight: 1000;
     line-height: normal;
@@ -74,6 +74,7 @@ main section div:nth-child(2) p:nth-child(2){
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    width: 85%;
 }
 
 main section div:nth-child(2) p:nth-child(5){
