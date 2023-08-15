@@ -6,7 +6,20 @@
   <link rel="stylesheet" href="assets/normalize.css">
   <style>
 
-    body main section{
+    ::-webkit-scrollbar {
+      width: 8px;
+      background: rgba(63, 56, 56, 0.56);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #8cec77;
+    }
+
+     main{
+      position: relative;
+    }
+
+     main section{
       box-sizing: border-box;
       position: relative;
       width: 50vw;
@@ -14,23 +27,30 @@
       background-color: #FD6E0A;
     }
 
-    body main section:nth-child(1){
+     main section:nth-child(1){
       background-color: red;
     }
 
-    body main section:nth-child(2){
+     main section:nth-child(2){
       position: absolute;
       right: 0px;
       top: 0px;
       background-color: green;
     }
-    body main section:nth-child(3){
+
+     main section:nth-child(2){
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background-color: green;
+    }
+     main section:nth-child(3){
       position: absolute;
       right: 0px;
       background-color: deeppink;
     }
 
-    body main>section>div:nth-child(2) div{
+     main>section>div:nth-child(2) div{
       background-color: white;
       width: 15vw;
       height: 15vw;
@@ -43,23 +63,23 @@
       margin: auto;
     }
 
-    body main>section>div:nth-child(1){
+     main>section>div:nth-child(1){
       width: 10vw;
       height: 10vw;
       background-color: white;
     }
 
-    body main section:nth-child(1)>div:nth-child(1){
+     main section:nth-child(1)>div:nth-child(1){
       border-bottom-right-radius: 120px;
     }
 
-    body main section:nth-child(2)>div:nth-child(1){
+     main section:nth-child(2)>div:nth-child(1){
       border-bottom-left-radius: 120px;
       position: absolute;
       right: 0px;
     }
 
-    body main section:nth-child(3)>div:nth-child(1){
+     main section:nth-child(3)>div:nth-child(1){
       border-bottom-right-radius: 120px;
       position: absolute;
       right: 0px;
@@ -67,7 +87,7 @@
       bottom: 0px;
     }
 
-    body main section:nth-child(4)>div:nth-child(1){
+     main section:nth-child(4)>div:nth-child(1){
       border-bottom-right-radius: 120px;
       position: absolute;
       left: 0px;
@@ -75,20 +95,14 @@
       bottom: 0px;
     }
 
-   /* main section>div:nth-child(2) div{
-      width: 10px;
-      height: 10px;
-      background-color: black;
-    }*/
-
-    body main>section>div:nth-child(2) div div{
+     main>section>div:nth-child(2) div div{
       width: 8vw;
       height: 8vw;
       background-color: #ff0000;
       border-radius: 0px;
     }
 
-    body main>div:last-child{
+     main>div:last-child{
       position: relative;
       width: 15vw;
       height: 15vw;
@@ -101,7 +115,7 @@
       right: 0px;
     }
 
-    body main>div:last-child div{
+     main>div:last-child div{
       width: 10vw;
       height: 10vw;
       background-color: #ff0000;
@@ -114,7 +128,7 @@
       right: 0px;
     }
 
-    body main div:nth-child(5),main div:nth-child(6){
+     main div:nth-child(5),main div:nth-child(6){
       width: 15vw;
       height: 7.5vw;
       background-color: white;
@@ -123,7 +137,7 @@
       transform: rotate(180deg);
     }
 
-    body main div:nth-child(5){
+     main div:nth-child(5){
       position: absolute;
       margin: auto;
       bottom: 0px;
@@ -131,7 +145,7 @@
       left: 0px;
     }
 
-    body main div:nth-child(6){
+     main div:nth-child(6){
       position: absolute;
       margin: auto;
       top: 0px;
@@ -143,6 +157,7 @@
   </style>
 </head>
   <body>
+
       <main>
         <section>
           <div></div>
@@ -186,8 +201,12 @@
         <div>
           <div></div>
         </div>
-
       </main>
+
+
+
+
+
 
       <main>
         <section>
