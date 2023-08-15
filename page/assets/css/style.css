@@ -104,3 +104,16 @@ main section aside:nth-child(1)>h3{
     line-height: normal;
     padding-top: 20px;
 }
+
+main section>aside{
+    position: relative;
+}
+
+main section>aside>img{
+    position: absolute;
+    width: 30vw;
+    top: 13vh;
+    left: 4vw;
+    box-shadow: 0px 5px 30px 5px rgb(113, 103, 103);
+    border-radius: 10px;
+}
