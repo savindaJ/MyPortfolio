@@ -30,6 +30,14 @@ body header>nav{
 body header>nav>ul>li{
     display: inline-flex;
     padding: 10px;
+    position: relative;
+    top: -10px;
+}
+
+body header>nav>ul>li>a:hover{
+    color: #043abc;
+    position: relative;
+    top: -5px;
 }
 
 body header>nav>ul>li>.material-symbols-outlined{
@@ -57,6 +65,11 @@ body main>nav>ul>li>a{
     color: white;
     padding-top: 40px;
     font-size: 20px;
+}
+
+body main>nav>ul>li>a:hover{
+    color: #e80a0a;
+    font-size: 25px;
 }
 
 body main>nav>ul>li::marker{
