@@ -1,3 +1,8 @@
+::selection {
+    color: white;
+    background: red;
+}
+
 ::-webkit-scrollbar{
     width: 7px;
 }
