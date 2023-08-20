@@ -6,9 +6,13 @@
     background-color: #6363ce;
 }
 body header{
+    position: absolute;
     height: 60px;
+    width: 100%;
     border-bottom: 1px solid black;
     box-shadow: 0px -1px 8px 2px rgba(112, 160, 230, 0.91);
+    top: 0;
+    background-color: white;
 }
 
 body header>aside>img{
@@ -30,6 +34,7 @@ body header>nav>ul>li{
 
 body main{
     position: relative;
+    margin-top: 60px;
 }
 body main>nav{
     position: absolute;
@@ -58,9 +63,23 @@ main section{
     position: relative;
 }
 
-main section>section:first-child>img{
+main section>section:first-child{
+    position: relative;
+    padding-left: 100px;
+}
+
+main section>section:first-child>img:first-child{
     width: 20vw;
-    left: 5vw;
+    right: 0;
+}
+
+main section>section:first-child>img:nth-child(2){
+    width: calc(100%/3);
+}
+
+main section>section:first-child>img:nth-child(3){
+    width: 20vw;
+    left: 0;
 }
 
 footer{
