@@ -1,3 +1,10 @@
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6363ce;
+}
 body header{
     height: 60px;
     border-bottom: 1px solid black;
@@ -33,8 +40,13 @@ body main>nav{
 }
 
 body main>nav>ul>li{
+    padding: 20px;
+}
+
+body main>nav>ul>li>a{
     color: white;
     padding-top: 40px;
+    font-size: 20px;
 }
 
 body main>nav>ul>li::marker{
@@ -60,5 +72,5 @@ footer{
 
 footer>h4{
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
