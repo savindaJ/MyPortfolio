@@ -32,6 +32,11 @@ body header>nav>ul>li{
     padding: 10px;
 }
 
+body header>nav>ul>li>.material-symbols-outlined{
+    position: absolute;
+    padding: 10px;
+}
+
 body main{
     position: relative;
     margin-top: 60px;
@@ -45,7 +50,7 @@ body main>nav{
 }
 
 body main>nav>ul>li{
-    padding: 20px;
+    padding: 30px;
 }
 
 body main>nav>ul>li>a{
