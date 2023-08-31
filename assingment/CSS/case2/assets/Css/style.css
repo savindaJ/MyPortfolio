@@ -52,6 +52,7 @@ body header>nav>ul>li>.material-symbols-outlined{
 
 body main{
     position: relative;
+    top: 0;
     margin-top: 60px;
 }
 body main>nav{
@@ -86,11 +87,6 @@ main section{
     position: relative;
 }
 
-main section>section:first-child{
-    position: relative;
-    padding-left: 50px;
-}
-
 main section>section:first-child>img:first-child{
     width: 20vw;
     right: 0;
@@ -115,4 +111,27 @@ footer{
 footer>h4{
     text-align: center;
     color: #ffffff;
+}
+
+main section section:first-child>div{
+    position: relative;
+    display: inline-block;
+    width: 25vw;
+    height: 25vw;
+    top: 10px;
+}
+
+main section section:first-child>div:first-child{
+    border: 1px solid #000000;
+    background: url("../img/clip-brainstorm.gif");
+}
+
+main section section:first-child>div:nth-child(2){
+    border: 1px solid #000000;
+    background: url("../img/clip-distance-education.gif");
+}
+
+main section section:first-child>div:last-child{
+    border: 1px solid black;
+    background: url("../img/clip-applying-to-university-online.gif");
 }
