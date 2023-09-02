@@ -1,0 +1,50 @@
+section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+section img{
+    width: 24vw;
+    height: 32.5vh;
+}
+
+section img:first-child{
+    width: 50vw;
+    height: 32.5vh;
+}
+
+section img:nth-child(3){
+    width: 25vw;
+    height: 100vh;
+}
+section img:nth-child(4){
+    position: absolute;
+    top: 32.5vh;
+}
+
+section img:nth-child(5){
+    position: absolute;
+    left: 24vw;
+    top: 32.5vh;
+}
+
+section img:nth-child(6){
+    position: absolute;
+    left: 48vw;
+    top: 32.5vh;
+    width: 26vw;
+}
+
+section img:nth-child(7){
+    position: absolute;
+    bottom: 0;
+    height: 35vh;
+}
+
+section img:last-child{
+    position: absolute;
+    bottom: 0;
+    left: 24vw;
+    height: 35vh;
+    width: 50vw;
+}
