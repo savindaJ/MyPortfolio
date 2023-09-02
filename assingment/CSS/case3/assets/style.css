@@ -1,0 +1,63 @@
+
+main>div:last-child{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 100%;
+    border: 20px solid gray;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+main section>section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main>div:nth-child(2){
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    border: 15px solid red;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+main section>section div{
+    width: 20.5vw;
+    height: 20.5vw;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+main section>section div>h1{
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    top: 15vh;
+}
+
+main section>section:first-child>div{
+    background: #cf65dd;
+}
+
+main section>section:nth-child(2)>div{
+    background: #6969cf;
+}
+
+main section>section:last-child>div{
+    background: #e98f8f;
+}
