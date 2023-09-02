@@ -13,3 +13,48 @@ main section div:first-child{
 h3{
     margin-top: 0;
 }
+
+main section:nth-child(2){
+    background-color: #47c1d7;
+}
+
+
+main section:nth-child(3){
+    background-color: #677385;
+}
+
+main section:last-child{
+    background-color: #e2c572;
+}
+
+main section:first-child div:first-child{
+    background-color: red;
+}
+
+main section:nth-child(2) div:first-child{
+    background-color: blue;
+}
+
+main section:nth-child(3) div:first-child{
+    background-color: gray;
+}
+
+main section:last-child div:first-child{
+    background-color: #b5a071;
+}
+
+/*main section>div:last-child{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40vh;
+    margin: auto;
+}*/
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    top: 30vh;
+    font-family: 'Borel', cursive;
+}
