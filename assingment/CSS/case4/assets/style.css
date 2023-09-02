@@ -1,0 +1,15 @@
+main section{
+    width: 100%;
+    height: 100vh;
+}
+
+main section div:first-child{
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+h3{
+    margin-top: 0;
+}
