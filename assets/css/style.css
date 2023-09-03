@@ -53,7 +53,7 @@ h4{
     font-size: 20px;
 }*/
 
-/*header section */
+/*header section ------------------------------------------------------------------------------------------- */
 
 body main{
     margin-top: 49px;
@@ -71,7 +71,7 @@ body main section:first-child>div{
     z-index: 10;
 }
 
- body main section:first-child>div:nth-child(2){
+ body main section:first-child>div:nth-child(4){
      width: 325px;
      height: 326px;
      flex-shrink: 0;
@@ -82,7 +82,7 @@ body main section:first-child>div{
      right: 40px;
  }
 
-body main section:first-child>div:nth-child(3){
+body main section:first-child>div:nth-child(5){
     width: 323px;
     height: 326px;
     flex-shrink: 0;
@@ -93,7 +93,7 @@ body main section:first-child>div:nth-child(3){
     right: 70px;
 }
 
-body main section:first-child>div:nth-child(4){
+body main section:first-child>div:nth-child(6){
     width: 330px;
     height: 330px;
     flex-shrink: 0;
@@ -104,7 +104,7 @@ body main section:first-child>div:nth-child(4){
     right: 100px;
 }
 
-body main section:first-child>div:nth-child(5){
+body main section:first-child>div:nth-child(7){
     position: relative;
     left: 65vw;
     top: 40px;
@@ -128,7 +128,7 @@ body main section:first-child #mainHeader{
 body main section:first-child>aside{
     position: absolute;
     top: 40px;
-    left: 10vw;
+    left: 8vw;
 }
 
 body main section:first-child h1{
@@ -275,4 +275,83 @@ body main section:first-child>section:last-child>div>p:nth-child(3){
 }
 
 /*
-end headder style*/
+end headder style -----------------------------------------------------------------------------------------------*/
+
+/*service section -----------------------------------------------------------------------------------------------*/
+body main section:nth-child(2)>h4{
+    text-align: center;
+    color: #162A5F;
+    font-family: Libre Baskerville, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+}
+
+
+body main section:nth-child(2) h1{
+    text-align: center;
+    color: #000;
+    font-family: Libre Baskerville, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main section:nth-child(2){
+    width: 100%;
+    height: 120vh;
+    background-color: #8cec77;
+    position: relative;
+}
+
+main section:nth-child(2)>aside:nth-child(4){
+    padding-left: 100px;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div{
+    width: 384px;
+    height: 258px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div:first-child{
+    position: absolute;
+    left: 50px;
+
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div:last-child{
+    position: absolute;
+    right: 50px;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div:nth-child(2){
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+main section:nth-child(2)>aside:last-child{
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+}
+
+main section:nth-child(2)>aside:last-child>div{
+    width: 384px;
+    height: 258px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+
+}
