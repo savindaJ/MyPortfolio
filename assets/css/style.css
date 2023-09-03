@@ -1,15 +1,19 @@
 header{
     display: inline-flex;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #faa151;
     background: #FFF;
     width: 98.7vw;
     height: 49px;
     flex-shrink: 0;
     position: fixed;
+    border-radius: 10px;
+    top: 0;
+    z-index: 10;
 }
 
 header nav>div>menu{
-    margin-left: 600px;
+    position: relative;
+    left: 40vw;
 }
 
 header nav>div>menu>li{
@@ -30,6 +34,11 @@ header nav>div>menu>li>a:hover{
     color: #FD6E0A;
 }
 
+header>div{
+    position: relative;
+    left: 2vw;
+}
+
 h1{
     color: #0d0d72;
     text-space: 20px;
@@ -42,4 +51,10 @@ h4{
     text-space: 5px;
     text-align: center;
     font-size: 20px;
+}
+
+body main{
+    margin-top: 49px;
+    position: relative;
+    z-index: 5;
 }
