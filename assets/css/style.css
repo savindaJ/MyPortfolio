@@ -53,6 +53,8 @@ h4{
     font-size: 20px;
 }*/
 
+/*header section */
+
 body main{
     margin-top: 49px;
     position: relative;
@@ -61,7 +63,7 @@ body main{
 
 body main section:first-child{
     position: relative;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
 }
 
@@ -106,6 +108,9 @@ body main section:first-child>div:nth-child(5){
     position: relative;
     left: 65vw;
     top: 40px;
+    width: 367px;
+    height: 409px;
+    flex-shrink: 0;
 }
 
 body main section:first-child #mainHeader{
@@ -118,11 +123,6 @@ body main section:first-child #mainHeader{
     left: 0;
     margin: auto;
     opacity: 8%;
-}
-
-body main section:first-child>hr{
-    position: absolute;
-    bottom: 0;
 }
 
 body main section:first-child>aside{
@@ -182,7 +182,30 @@ body main section:first-child>aside>div>p:nth-child(4){
 
 body main section:first-child>aside>div:last-child{
     position: relative;
-    left: -50px;
+    left: -80px;
+    top: 80px;
+}
+
+body main section:first-child>aside>strong{
+    color: #15295F;
+    font-family: Libre Bodoni, cursive;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    top: 50px;
+
+}
+
+body main section:first-child>aside>div:last-child>a>button{
+    border-radius: 50px;
+    background: #FD6E0A;
+    width: 127px;
+    height: 50px;
+    flex-shrink: 0;
+    color: white;
+    border: 2px solid #2f2f70;
 }
 
 body main section:first-child>section:last-child>div{
@@ -250,3 +273,6 @@ body main section:first-child>section:last-child>div>p:nth-child(3){
     left: 100px;
     bottom: 0;
 }
+
+/*
+end headder style*/
