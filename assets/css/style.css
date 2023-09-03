@@ -302,13 +302,8 @@ body main section:nth-child(2) h1{
 
 main section:nth-child(2){
     width: 100%;
-    height: 120vh;
-    background-color: #8cec77;
+    height: 110vh;
     position: relative;
-}
-
-main section:nth-child(2)>aside:nth-child(4){
-    padding-left: 100px;
 }
 
 main section:nth-child(2)>aside:nth-child(4)>div{
@@ -322,9 +317,34 @@ main section:nth-child(2)>aside:nth-child(4)>div{
 }
 
 main section:nth-child(2)>aside:nth-child(4)>div:first-child{
-    position: absolute;
+    position: relative;
     left: 50px;
+}
 
+main section:nth-child(2)>aside:nth-child(4)>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div>h4{
+    text-align: center;
+    color: #15295F;
+    font-family: Libre Baskerville;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div>p{
+    color: #838383;
+    text-align: center;
+    font-family: Hind, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 main section:nth-child(2)>aside:nth-child(4)>div:last-child{
@@ -340,9 +360,19 @@ main section:nth-child(2)>aside:nth-child(4)>div:nth-child(2){
 }
 
 main section:nth-child(2)>aside:last-child{
-    position: absolute;
-    margin: auto;
-    bottom: 0;
+    position: relative;
+    top: 10vh;
+}
+
+main section:nth-child(2)>aside:last-child>div:first-child{
+    position: relative;
+    left: 18vw;
+}
+
+main section:nth-child(2)>aside:last-child>div:last-child{
+    position: relative;
+    left: 23vw;
+    top: 15px;
 }
 
 main section:nth-child(2)>aside:last-child>div{
@@ -353,5 +383,32 @@ main section:nth-child(2)>aside:last-child>div{
     background: #FFF;
     box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
     display: inline-block;
-
 }
+
+main section:nth-child(2)>aside:last-child>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(2)>aside:last-child>div>h4{
+    text-align: center;
+    color: #15295F;
+    font-family: Libre Baskerville;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main section:nth-child(2)>aside:last-child>div>p{
+    color: #838383;
+    text-align: center;
+    font-family: Hind;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*end service section style ---------------------------------------------------------------------------------*/
