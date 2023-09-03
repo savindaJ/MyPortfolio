@@ -39,7 +39,7 @@ header>div{
     left: 2vw;
 }
 
-h1{
+/*h1{
     color: #0d0d72;
     text-space: 20px;
     text-align: center;
@@ -51,10 +51,202 @@ h4{
     text-space: 5px;
     text-align: center;
     font-size: 20px;
-}
+}*/
 
 body main{
     margin-top: 49px;
     position: relative;
     z-index: 5;
+}
+
+body main section:first-child{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+body main section:first-child>div{
+    z-index: 10;
+}
+
+ body main section:first-child>div:nth-child(2){
+     width: 325px;
+     height: 326px;
+     flex-shrink: 0;
+     border-radius: 326px;
+     background: #FCE8E7;
+     position: absolute;
+     top: 50px;
+     right: 40px;
+ }
+
+body main section:first-child>div:nth-child(3){
+    width: 323px;
+    height: 326px;
+    flex-shrink: 0;
+    border-radius: 326px;
+    background: #FFDEDB;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+
+body main section:first-child>div:nth-child(4){
+    width: 330px;
+    height: 330px;
+    flex-shrink: 0;
+    border-radius: 387px;
+    background: rgba(252, 196, 25, 0.76);
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+body main section:first-child>div:nth-child(5){
+    position: relative;
+    left: 65vw;
+    top: 40px;
+}
+
+body main section:first-child #mainHeader{
+    text-align: center;
+    font-size: 100px;
+    z-index: 0;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 8%;
+}
+
+body main section:first-child>hr{
+    position: absolute;
+    bottom: 0;
+}
+
+body main section:first-child>aside{
+    position: absolute;
+    top: 40px;
+    left: 10vw;
+}
+
+body main section:first-child h1{
+    position: relative;
+    right: 0;
+}
+
+body main section:first-child>aside>div:first-child p:first-child{
+    color: #FD6E0A;
+    font-family: JejuGothic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body main section:first-child>aside>div>h1{
+    color: #162A5F;
+    font-family: Libre Baskerville;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+body main section:first-child>aside>div>h4{
+    color: #15295F;
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+body main section:first-child>aside>div>h4>span{
+    color: #FC801D;
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+body main section:first-child>aside>div>p:nth-child(4){
+    color: #171212;
+    font-family: Libre Baskerville;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body main section:first-child>aside>div:last-child{
+    position: relative;
+    left: -50px;
+}
+
+body main section:first-child>section:last-child>div{
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin: auto;
+}
+
+body main section:first-child>section:last-child{
+    width: 725px;
+    height: 103px;
+    flex-shrink: 0;
+    position: absolute;
+    border-radius: 50px;
+    border: 1px solid #8AEDF3;
+    background: #FFF;
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(100px);
+    margin: auto;
+    top: 30vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+}
+
+body main section:first-child>section:last-child>div:first-child{
+    position: relative;
+    left: 1.5vw;
+}
+
+body main section:first-child>section:last-child>div:last-child{
+    position: relative;
+    left: 25vw;
+}
+
+body main section:first-child>section:last-child>div:nth-child(2){
+    position: relative;
+    left: 13vw;
+}
+
+body main section:first-child>section:last-child>div>p:nth-child(2){
+    color: #162A5F;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: 100px;
+}
+
+body main section:first-child>section:last-child>div>p:nth-child(3){
+    display: inline-block;
+    position: absolute;
+    color: #FA5700;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 100px;
+    bottom: 0;
 }
