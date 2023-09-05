@@ -679,7 +679,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 }
 
 .language-tools > hr{
-    width: 20vw;
+    width: max-content;
     height: 3px;
     background: #FD6E0A;
 }
@@ -687,7 +687,12 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 .language-tools>div{
     position: relative;
     width: 85vw;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
     top: 10vh;
+}
+
+.language-tools>div>img{
+    width: 80vw;
+    height: 50vh;
 }
