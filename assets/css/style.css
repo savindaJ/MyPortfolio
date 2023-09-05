@@ -565,13 +565,13 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     line-height: normal;
 }
 /*education section------------------------------------------------------------------------------------*/
-.educationSection{
+.education-section{
     position: relative;
     width: 100%;
     height: 110vh;
 }
 
-.educationSection h1{
+.education-section h1{
     color: #000;
     font-family: Libre Baskerville, serif;
     font-size: 40px;
@@ -582,7 +582,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     margin-bottom: 0;
 }
 
-.educationSection>h4:first-child{
+.education-section>h4:first-child{
     color: #162A5F;
     font-family: Libre Baskerville, serif;
     font-size: 24px;
@@ -592,7 +592,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     text-align: center;
 }
 
-.educationSection hr{
+.education-section hr{
     width: 20vw;
     height: 3px;
     background-color: #FA5700;
@@ -607,7 +607,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     margin: auto;
 }
 
-.educationSection #line{
+.education-section #line{
     width: 3px;
     height: 65vh;
     border-left: 3px solid #0a2a5a;
@@ -617,12 +617,12 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     left: 0;
 }
 
-.educationSection section:last-child{
+.education-section section:last-child{
     position: relative;
     top: 10vh;
 }
 
-.educationSection section>.detail>h4{
+.education-section section>.detail>h4{
     color: #162A5F;
     font-family: Libre Baskerville, serif;
     font-size: 20px;
@@ -632,26 +632,26 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     margin: 0;
 }
 
-.educationSection section>.detail{
+.education-section section>.detail{
     width: 30vw;
 }
 
-.educationSection section>.detail#detail1{
+.education-section section>.detail#detail1{
     position: relative;
     left: 20vw;
 }
 
-.educationSection section>.detail#detail2{
+.education-section section>.detail#detail2{
     position: relative;
     left: 60vw;
 }
 
-.educationSection section>.detail#detail3{
+.education-section section>.detail#detail3{
     position: relative;
     left: 20vw;
 }
 
-.educationSection section>.detail#detail4{
+.education-section section>.detail#detail4{
     position: absolute;
     right: 10vw;
 }
