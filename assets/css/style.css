@@ -683,3 +683,11 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     height: 3px;
     background: #FD6E0A;
 }
+
+.language-tools>div{
+    position: relative;
+    width: 85vw;
+    height: 50vh;
+    margin: auto;
+    top: 10vh;
+}
