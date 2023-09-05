@@ -720,7 +720,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 .recent-works>h4{
     color: #162A5F;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, Serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -740,7 +740,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 }
 
 .recent-works>hr{
-    width: 22vw;
+    width: 20vw;
     height: 3px;
     margin: auto;
     background: #FD6E0A;
