@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+    width: 0.7vw;
+    background-color: #143d75;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #eea337;
+}
+
 header{
     display: inline-flex;
     border-bottom: 2px solid #faa151;
@@ -98,7 +107,7 @@ body main section:first-child>div:nth-child(6){
     height: 330px;
     flex-shrink: 0;
     border-radius: 387px;
-    background: rgba(252, 196, 25, 0.76);
+    background: rgb(253, 208, 79);
     position: absolute;
     top: 50px;
     right: 100px;
@@ -463,10 +472,45 @@ main section:nth-child(3){
     position: relative;
 }
 
+main section:nth-child(3)>div:nth-child(2){
+    position: relative;
+    margin: auto;
+    width: 20vw;
+    top: 5vh;
+}
+
+main section:nth-child(3)>div:nth-child(2)>h1{
+    display: inline-block;
+    color: #FA5700;
+    font-family: Inter, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main section:nth-child(3)>div:nth-child(2)>h1>span{
+    color: #162A5F;
+    font-family: Inter, serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main section:nth-child(3)>div:nth-child(2)>img{
+    width: 57px;
+    height: 62px;
+    flex-shrink: 0;
+    position: relative;
+    left: 2vw;
+    bottom: -10px;
+}
+
 main section:nth-child(3) aside:nth-child(3){
     position: relative;
-    left: 10vw;
-    width: 20vw;
+    left: 8vw;
+    width: 25vw;
 }
 
 main section:nth-child(3) aside:nth-child(3)>img{
@@ -485,7 +529,7 @@ main section:nth-child(3) aside:last-child{
 
 main section:nth-child(3) aside:last-child>p:first-child{
     color: #000;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 400;
@@ -494,12 +538,11 @@ main section:nth-child(3) aside:last-child>p:first-child{
 
 main section:nth-child(3) aside:last-child>p:first-child span{
     color: #162A5F;
-    font-family: Libre Baskerville;
-    font-size: 20px;
+    font-family: Libre Baskerville, serif;
+    font-size: 23px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 5vh;
-    padding: 20px;
 }
 
 main section:nth-child(3) aside:last-child>p:last-child{
@@ -510,7 +553,7 @@ main section:nth-child(3) aside:last-child>p:last-child{
     font-weight: 400;
     line-height: 5vh;
     position: relative;
-    top: 10vh;
+    top: 5vh;
 }
 
 main section:nth-child(3) aside:last-child>p:last-child>span{
