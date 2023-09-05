@@ -73,11 +73,7 @@ body main{
 body main section:first-child{
     position: relative;
     height: 95vh;
-    width: 100%;
-}
-
-body main section:first-child>div{
-    z-index: 10;
+    width: 99.85%;
 }
 
  body main section:first-child>div:nth-child(4){
@@ -113,13 +109,9 @@ body main section:first-child>div:nth-child(6){
     right: 100px;
 }
 
-body main section:first-child>div:nth-child(7){
-    position: relative;
-    left: 65vw;
-    top: 40px;
-    width: 367px;
-    height: 409px;
-    flex-shrink: 0;
+body main section:first-child>div:nth-child(6)>img{
+    border-bottom-right-radius:20%;
+    width: 25vw;
 }
 
 body main section:first-child #mainHeader{
@@ -224,7 +216,7 @@ body main section:first-child>section:last-child>div{
     margin: auto;
 }
 
-body main section:first-child>section:last-child{
+body main section:first-child>section.status-section{
     width: 725px;
     height: 103px;
     flex-shrink: 0;
@@ -242,22 +234,22 @@ body main section:first-child>section:last-child{
     z-index: 30;
 }
 
-body main section:first-child>section:last-child>div:first-child{
+body main section:first-child>section.status-section>div:first-child{
     position: relative;
     left: 1.5vw;
 }
 
-body main section:first-child>section:last-child>div:last-child{
+body main section:first-child>section.status-section>div:last-child{
     position: relative;
     left: 25vw;
 }
 
-body main section:first-child>section:last-child>div:nth-child(2){
+body main section:first-child>section.status-section>div:nth-child(2){
     position: relative;
     left: 13vw;
 }
 
-body main section:first-child>section:last-child>div>p:nth-child(2){
+body main section:first-child>section.status-section>div>p:nth-child(2){
     color: #162A5F;
     font-family: Inter;
     font-size: 24px;
@@ -270,7 +262,7 @@ body main section:first-child>section:last-child>div>p:nth-child(2){
     left: 100px;
 }
 
-body main section:first-child>section:last-child>div>p:nth-child(3){
+body main section:first-child>section.status-section>div>p:nth-child(3){
     display: inline-block;
     position: absolute;
     color: #FA5700;
@@ -281,6 +273,27 @@ body main section:first-child>section:last-child>div>p:nth-child(3){
     line-height: normal;
     left: 100px;
     bottom: 0;
+}
+
+.custom-shape-divider-bottom-1693915055 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1693915055 svg {
+    position: relative;
+    display: block;
+    width: calc(186% + 1.3px);
+    height: 269px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1693915055 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /*
