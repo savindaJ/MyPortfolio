@@ -511,6 +511,7 @@ main section:nth-child(3) aside:nth-child(3){
     position: relative;
     left: 8vw;
     width: 25vw;
+    top: 8vh;
 }
 
 main section:nth-child(3) aside:nth-child(3)>img{
