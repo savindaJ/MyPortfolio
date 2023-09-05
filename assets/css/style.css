@@ -302,7 +302,7 @@ body main section:nth-child(2) h1{
 
 main section:nth-child(2){
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     position: relative;
 }
 
@@ -314,6 +314,27 @@ main section:nth-child(2)>aside:nth-child(4)>div{
     background: #FFF;
     box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
     display: inline-block;
+    transition: 0.5s;
+    -webkit-transform-origin: 0 100%;
+    -webkit-transition:0.5s;
+    position: relative;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div:hover{
+    border: 10px solid rgba(0,160,80,0);
+    color: #ff8e41;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div:before{
+    border-bottom: 3px solid #e96a39;
+    border-left: 3px solid #d9ae30;
+    -webkit-transform-origin: 0 100%;
+}
+
+main section:nth-child(2)>aside:nth-child(4)>div:after{
+    border-top: 3px solid #e96a39;
+    border-right: 3px solid #ffb134;
+    -webkit-transform-origin: 100% 0%;
 }
 
 main section:nth-child(2)>aside:nth-child(4)>div:first-child{
@@ -372,7 +393,7 @@ main section:nth-child(2)>aside:last-child>div:first-child{
 main section:nth-child(2)>aside:last-child>div:last-child{
     position: relative;
     left: 23vw;
-    top: 15px;
+    top: 20px;
 }
 
 main section:nth-child(2)>aside:last-child>div{
@@ -383,6 +404,27 @@ main section:nth-child(2)>aside:last-child>div{
     background: #FFF;
     box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
     display: inline-block;
+    transition: 0.5s;
+    -webkit-transform-origin: 0 100%;
+    -webkit-transition:0.5s;
+    position: relative;
+}
+
+main section:nth-child(2)>aside:last-child>div:hover{
+    border: 10px solid rgba(0,160,80,0);
+    color: #ff8e41;
+}
+
+main section:nth-child(2)>aside:last-child>div:before{
+    border-bottom: 3px solid #e96a39;
+    border-left: 3px solid #d9ae30;
+    -webkit-transform-origin: 0 100%;
+}
+
+main section:nth-child(2)>aside:last-child>div:after{
+    border-top: 3px solid #e96a39;
+    border-right: 3px solid #ffb134;
+    -webkit-transform-origin: 100% 0%;
 }
 
 main section:nth-child(2)>aside:last-child>div>div{
@@ -412,3 +454,70 @@ main section:nth-child(2)>aside:last-child>div>p{
 }
 
 /*end service section style ---------------------------------------------------------------------------------*/
+
+/*about me section ------------------------------------------------------------------------------------------*/
+
+main section:nth-child(3){
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main section:nth-child(3) aside:nth-child(3){
+    position: relative;
+    left: 10vw;
+    width: 20vw;
+}
+
+main section:nth-child(3) aside:nth-child(3)>img{
+    width: 30vw;
+}
+
+main section:nth-child(3) aside:last-child{
+    width: 50vw;
+    height: 40vh;
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+main section:nth-child(3) aside:last-child>p:first-child{
+    color: #000;
+    font-family: Libre Baskerville;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main section:nth-child(3) aside:last-child>p:first-child span{
+    color: #162A5F;
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5vh;
+    padding: 20px;
+}
+
+main section:nth-child(3) aside:last-child>p:last-child{
+    color: #171212;
+    font-family: Libre Baskerville, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5vh;
+    position: relative;
+    top: 10vh;
+}
+
+main section:nth-child(3) aside:last-child>p:last-child>span{
+    color: #FD6E0A;
+    font-family: Libre Baskerville, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
