@@ -675,4 +675,11 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     font-weight: 700;
     line-height: normal;
     text-align: center;
+    margin-bottom: 0;
+}
+
+.language-tools > hr{
+    width: 20vw;
+    height: 3px;
+    background: #FD6E0A;
 }
