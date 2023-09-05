@@ -656,3 +656,23 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     right: 10vw;
 }
 
+/*skill section ---------------------------------------------------------------------------------------------------*/
+.language-tools>h4{
+    text-align: center;
+    color: #162A5F;
+    font-family: Libre Baskerville, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.language-tools > h1{
+    color: #000;
+    font-family: Libre Baskerville, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
