@@ -11,7 +11,7 @@ header{
     display: inline-flex;
     border-bottom: 2px solid #faa151;
     background: #FFF;
-    width: 98.7vw;
+    width: 99vw;
     height: 49px;
     flex-shrink: 0;
     position: fixed;
@@ -734,10 +734,20 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 .recent-works>section{
     position: relative;
-    top: 15vh;
+    width: 80%;
+    height: 50vh;
+    top: 8vh;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #dd0c1c;
 }
 
 .recent-works>section>div{
     display: inline-block;
-    margin-left: 15vw;
+    position: relative;
+    width: 16vw;
+    height: 40vh;
+    border: 1px solid red;
 }
