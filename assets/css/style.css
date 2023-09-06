@@ -713,7 +713,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 /*recent works section-------------------------------------------------------------------------------------------------*/
 .recent-works{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     top: 10vh;
 }
@@ -748,21 +748,62 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 .recent-works>section{
     position: relative;
-    width: 80%;
-    height: 40vh;
+    width: 90%;
+    height: 60vh;
     top: 10vh;
     margin: auto;
+    border: 1px solid gray;
 }
 
 .recent-works>section>div{
     display: inline-block;
     width: 25vw;
-    height: 40vh;
+    height: 50vh;
+    border: 1px solid red;
+    position: relative;
+
+}
+
+.recent-works>section>div>svg{
+    position: relative;
+    left: -1.2vw;
+}
+
+.recent-works>section>div:last-child{
+    position: absolute;
+    right: 0;
+}
+
+.recent-works>section>div:nth-child(2){
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .recent-works>section>div>div:last-child{
+    width: 20vw;
     position: absolute;
     margin: auto;
-    top:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid deeppink;
 }
 
+.recent-works>section>div>div:last-child>h4{
+    text-align: center;
+    color: #15295F;
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.recent-works>section>div>div:last-child>img{
+    width: 7vw;
+    position: relative;
+    margin: auto;
+}
