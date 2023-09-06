@@ -752,14 +752,12 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     height: 60vh;
     top: 10vh;
     margin: auto;
-    border: 1px solid gray;
 }
 
 .recent-works>section>div{
     display: inline-block;
     width: 25vw;
     height: 50vh;
-    border: 1px solid red;
     position: relative;
 
 }
@@ -789,13 +787,12 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     bottom: 0;
     left: 0;
     right: 0;
-    border: 1px solid deeppink;
 }
 
 .recent-works>section>div>div:last-child>h4{
     text-align: center;
     color: #15295F;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -806,4 +803,29 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     width: 7vw;
     position: relative;
     margin: auto;
+    top: 20px;
+    right: 0;
+    left: 6vw;
+}
+
+.recent-works>section>div>div:last-child>p{
+    color: #838383;
+    text-align: center;
+    font-family: Hind, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.recent-works>section>div>div:last-child>a{
+    color: #15295F;
+    font-family: Libre Baskerville, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    bottom: -20px;
+    left: -20px;
 }
