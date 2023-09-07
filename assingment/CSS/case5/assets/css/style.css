@@ -4,65 +4,54 @@ main section{
     display: grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(4,1fr);
+    gap: 2px;
 }
 
 main section div:nth-child(1){
-    background: url("../image/1.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/1.jpg") center;
 }
 main section div:nth-child(2){
-    background: url("../image/2.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/2.jpg") center;
 }
 main section div:nth-child(3){
-    background: url("../image/3.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/3.jpg") center;
 }
 main section div:nth-child(4){
-    background: url("../image/4.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/4.jpg") center;
 }
 main section div:nth-child(5){
-    background: url("../image/5.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/5.jpg") center;
 }
 main section div:nth-child(6){
-    background: url("../image/6.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/6.jpg") center;
 }
 main section div:nth-child(7){
-    background: url("../image/7.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/7.jpg") center;
 }
 main section div:nth-child(8){
-    background: url("../image/8.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/8.jpg") center;
 }
 main section div:nth-child(9){
-    background: url("../image/9.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/9.jpg") center;
 }
 main section div:nth-child(10){
-    background: url("../image/10.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/10.jpg") center;
 }
 main section div:nth-child(11){
-    background: url("../image/11.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/11.jpg") center;
 }
 main section div:nth-child(12){
-    background: url("../image/12.jpg");
     background-size: cover;
-    background-position: center;
+    background: url("../image/12.jpg") center;
 }
