@@ -123,9 +123,15 @@ body main section:first-child>div:nth-child(6){
     right: 100px;
 }
 
-body main section:first-child>div:nth-child(6)>img{
-    border-bottom-right-radius:20%;
+body main section:first-child>div:nth-child(7){
     width: 25vw;
+    height: 60vh;
+    position: absolute;
+    top: 5vh;
+    right: 8vw;
+    background: url("../images/my-img.png");
+    background-size: cover;
+    border-radius: 20%;
 }
 
 body main section:first-child #mainHeader{
@@ -231,8 +237,8 @@ body main section:first-child>section:last-child>div{
 }
 
 body main section:first-child>section.status-section{
-    width: 725px;
-    height: 103px;
+    width: 55vw;
+    height: 15vh;
     flex-shrink: 0;
     position: absolute;
     border-radius: 50px;
@@ -248,39 +254,54 @@ body main section:first-child>section.status-section{
     z-index: 30;
 }
 
+body main section:first-child>section.status-section>div{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 100%;
+    position: relative;
+    top: 1px;
+    border: 2px solid #faa039;
+}
+
 body main section:first-child>section.status-section>div:first-child{
+    background: url("../images/service-header.png");
+    background-size: cover;
     position: relative;
     left: 1.5vw;
 }
 
 body main section:first-child>section.status-section>div:last-child{
+    background: url("../images/project-header.png");
+    background-size: cover;
     position: relative;
     left: 25vw;
 }
 
 body main section:first-child>section.status-section>div:nth-child(2){
+    background: url("../images/skill-header.png");
+    background-size: cover;
     position: relative;
     left: 13vw;
 }
 
-body main section:first-child>section.status-section>div>p:nth-child(2){
+body main section:first-child>section.status-section>div>p:first-child{
     color: #162A5F;
-    font-family: Inter;
+    font-family: Inter, cursive;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     display: inline-block;
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 100px;
 }
 
-body main section:first-child>section.status-section>div>p:nth-child(3){
+body main section:first-child>section.status-section>div>p:last-child{
     display: inline-block;
     position: absolute;
     color: #FA5700;
-    font-family: Inter, serif;
+    font-family: Inter, monospace;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
