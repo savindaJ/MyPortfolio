@@ -373,7 +373,7 @@ main section:nth-child(2)>aside:nth-child(4)>div>div{
 main section:nth-child(2)>aside:nth-child(4)>div>h4{
     text-align: center;
     color: #15295F;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, cursive;
     font-size: 23px;
     font-style: normal;
     font-weight: 700;
@@ -458,7 +458,7 @@ main section:nth-child(2)>aside:last-child>div>div{
 main section:nth-child(2)>aside:last-child>div>h4{
     text-align: center;
     color: #15295F;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, cursive;
     font-size: 23px;
     font-style: normal;
     font-weight: 700;
@@ -901,3 +901,13 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 /*general life section ----------------------------------------------------------------------------------------------*/
 
+.general-life-section{
+    width: 100%;
+    height: 99.5vh;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.general-life-section>h4{
+
+}
