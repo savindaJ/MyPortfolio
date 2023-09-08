@@ -13,7 +13,6 @@ header{
     background: #FFF;
     width: 99vw;
     height: 49px;
-    flex-shrink: 0;
     position: fixed;
     border-radius: 10px;
     top: 0;
@@ -26,8 +25,8 @@ header nav>div>menu{
 }
 
 header nav>div>menu>li{
-    display: inline-flex;
-    margin-left: 50px;
+    display: inline-block;
+    margin-left: 3vw;
 }
 
 header nav>div>menu>li>a{
@@ -63,17 +62,28 @@ h4{
 }*/
 
 /*header section ------------------------------------------------------------------------------------------- */
+main>div:last-child{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/background-image-fixed.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+}
 
 body main{
     margin-top: 49px;
     position: relative;
-    z-index: 5;
+    z-index: 8;
 }
 
 body main section:first-child{
     position: relative;
     height: 95vh;
     width: 99.85%;
+    z-index: 6;
 }
 
  body main section:first-child>div:nth-child(4){
@@ -300,7 +310,7 @@ body main section:first-child>section.status-section>div>p:nth-child(3){
 end headder style -----------------------------------------------------------------------------------------------*/
 
 /*service section -----------------------------------------------------------------------------------------------*/
-body main section:nth-child(2)>h4{
+.service-section>h4{
     text-align: center;
     color: #162A5F;
     font-family: Libre Baskerville, serif;
@@ -308,11 +318,11 @@ body main section:nth-child(2)>h4{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
-body main section:nth-child(2) h1{
+.service-section>h1{
     text-align: center;
     color: #000;
     font-family: Libre Baskerville, serif;
