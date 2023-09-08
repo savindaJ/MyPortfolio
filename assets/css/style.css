@@ -876,7 +876,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 .general-life-section{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     border: 1px solid red;
     box-sizing: border-box;
 }
@@ -938,3 +938,126 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 }
 
 /*contact section ------------------------------------------------------------------------------------------*/
+
+.contact-section{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.contact-section>h1{
+    color: #000;
+    text-align: center;
+    font-family: Libre Baskerville, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.contact-section>h4{
+    color: #162A5F;
+    font-family: Libre Baskerville, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.contact-section>hr{
+    width: 20vw;
+    height: 0.3vh;
+    background: #FD6E0A;
+}
+
+.contact-section>section{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10vh;
+}
+
+.contact-section>section>address{
+    width: 40vw;
+    height: 80vh;
+}
+
+.contact-section>section>address h4{
+    color: #162A5F;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact-section>section>address a{
+    color: #494949;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-section>section>address p{
+    color: #494949;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.contact-section>section>address>h4{
+    margin-bottom: 0;
+}
+
+.contact-section>section>aside{
+    width: 40vw;
+    height: 80vh;
+}
+
+.contact-section>section>address>div{
+    display: flex;
+    margin-top: 2.5vh;
+}
+
+.contact-section>section>address>div:first-child{
+    margin-top: 0;
+}
+
+.contact-section>section>address>div>div:first-child{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+}
+
+.contact-section>section>address>div>div:last-child{
+    position: relative;
+    left: 5vw;
+}
+
+.contact-section>section>address>div>div:last-child>h4{
+    margin-bottom: 0;
+}
+
+.contact-section>section>address>div:first-child>div:first-child{
+    background: url("../images/call-img.png");
+    background-size: cover;
+}
+
+.contact-section>section>address>div:nth-child(2)>div:first-child{
+    width: 6vw;
+    background: url("../images/email-img.png");
+    background-size: cover;
+}
+
+.contact-section>section>address>div:nth-child(3)>div:first-child{
+    background: url("../images/location-img.png");
+    background-size: cover;
+}
