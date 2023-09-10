@@ -940,8 +940,9 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 .contact-section{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .contact-section>h1{
@@ -1094,4 +1095,65 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 /*footer section---------------------------------------------------------------------------------------*/
 
+body footer{
+    width: 100%;
+    height: 40vh;
+    box-sizing: border-box;
+    position: relative;
+    background: #FF770A;
+}
 
+body footer section{
+    display: flex;
+}
+
+body footer section>div:nth-child(2){
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    position: absolute;
+    right: 4vw;
+    top: 10vh;
+    margin: auto;
+}
+
+body footer section>div:nth-child(2)>div:first-child{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 100%;
+    background: url("../images/down-icon.png");
+    background-size: cover;
+    margin-right: 2vw;
+}
+
+body footer section>div:first-child{
+    display: flex;
+    position: relative;
+    left: 5vw;
+    top: 3vh;
+}
+
+body footer section>div:first-child>div:first-child{
+    width: 8vw;
+    height: 10vw;
+    background: url("../images/footer-img.png");
+    background-size: cover;
+    margin-right: 3vw;
+}
+
+footer>nav{
+    width: 27vw;
+    position: relative;
+    margin: auto;
+}
+
+footer>div:last-child>small{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    margin: auto;
+    bottom: 1vh;
+    right: 0;
+    left: 0;
+    color: white;
+}
