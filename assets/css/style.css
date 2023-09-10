@@ -1049,6 +1049,11 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     background-size: cover;
 }
 
+.contact-section>section>address>div:first-child>div:first-child{
+    background: url("../images/call-img.png");
+    background-size: cover;
+}
+
 .contact-section>section>address>div:nth-child(2)>div:first-child{
     width: 6vw;
     background: url("../images/email-img.png");
