@@ -1044,23 +1044,54 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     margin-bottom: 0;
 }
 
-.contact-section>section>address>div:first-child>div:first-child{
-    background: url("../images/call-img.png");
-    background-size: cover;
+.contact-section>section>address>div>div:first-child{
+    font-size: 4em;
+    color: #FD6E0A;
 }
 
-.contact-section>section>address>div:first-child>div:first-child{
-    background: url("../images/call-img.png");
-    background-size: cover;
+.contact-section aside>form>fieldset{
+    border: none;
 }
 
-.contact-section>section>address>div:nth-child(2)>div:first-child{
-    width: 6vw;
-    background: url("../images/email-img.png");
-    background-size: cover;
+.contact-section aside>form>fieldset>input{
+    width: 526px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 10px 20px;
+    background: rgba(255, 178, 51, 0.37);
+    border: 0;
 }
 
-.contact-section>section>address>div:nth-child(3)>div:first-child{
-    background: url("../images/location-img.png");
-    background-size: cover;
+.contact-section aside>form>fieldset>textarea{
+    width: 526px;
+    height: 154px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 10px 20px;
+    background: rgba(255, 178, 51, 0.37);
+    border: 0;
 }
+
+.contact-section aside>form>fieldset>label{
+    color: #494949;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 62px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.contact-section aside>form>fieldset>button{
+    width: 185px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #21609B;
+    color: white;
+}
+
+/*footer section---------------------------------------------------------------------------------------*/
+
+
