@@ -940,9 +940,8 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
 
 .contact-section{
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .contact-section>h1{
@@ -1061,6 +1060,8 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     border-radius: 20px 20px 10px 20px;
     background: rgba(255, 178, 51, 0.37);
     border: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .contact-section aside>form>fieldset>textarea{
@@ -1156,4 +1157,34 @@ footer>div:last-child>small{
     right: 0;
     left: 0;
     color: white;
+}
+
+footer div:first-child h4{
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+footer div:first-child p{
+    color: #FFF;
+    font-family: Inter, cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+footer section>div:nth-child(2) h4{
+    color: #FFF;
+    font-family: Kaushan Script, cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
 }
