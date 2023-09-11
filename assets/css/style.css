@@ -924,22 +924,27 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 }
 
 .certificate-section>section>button{
-    width: 10vw;
-    height: 15vh;
+    width: max-content;
+    height: 6vw;
+    border-radius: 100%;
 }
 
-.certificate-section>section>button{
+.certificate-section>section>button {
     font-size: 75px;
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
     color: #f6b458;
+    position: relative;
+    box-shadow: 0 2px 25px rgb(232, 139, 10);
+    transition: all 0.2s ease-in;
 }
 
 .certificate-section>section>button:hover{
-    color: #09509b;
+    transform: scale(1.01);
+    box-shadow: 0 6px 4px #e88b0a;
 }
 
 .certificate-section>section>div:nth-child(2){
