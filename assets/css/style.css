@@ -619,7 +619,7 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 .education-section{
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 130vh;
 }
 
 .education-section h1{
@@ -660,12 +660,13 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 
 .education-section #line{
     width: 3px;
-    height: 65vh;
     border-left: 3px solid #0a2a5a;
     position: absolute;
     margin: auto;
     right: 0;
     left: 0;
+    top: 0;
+    bottom: 28vh;
 }
 
 .education-section section:last-child{
