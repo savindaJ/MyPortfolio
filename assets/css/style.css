@@ -684,6 +684,10 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
     margin: 0;
 }
 
+.fa-graduation-cap{
+    font-size: 20px;
+}
+
 .education-section section>.detail{
     width: 30vw;
 }
