@@ -722,6 +722,10 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 }
 
 /*skill section ---------------------------------------------------------------------------------------------------*/
+.language-tools{
+    width: 100%;
+    height: 70vh;
+}
 .language-tools>h4{
     text-align: center;
     color: #162A5F;
@@ -749,16 +753,17 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
     background: #FD6E0A;
 }
 
-.language-tools>div{
-    position: relative;
-    width: 85vw;
+.language-tools>div:last-child{
+    width: 90%;
     height: 60vh;
     margin: auto;
-    top: 10vh;
+    position: relative;
+    top: 5vh;
 }
 
-.language-tools>div>img{
-    width: 80vw;
+.language-tools>div:last-child>svg line{
+    stroke: rgb(97, 160, 255);
+    stroke-width:2;
 }
 
 /*recent works section-------------------------------------------------------------------------------------------------*/
