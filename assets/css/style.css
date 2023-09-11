@@ -805,84 +805,76 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 .recent-works>section{
     position: relative;
     width: 90%;
-    height: 60vh;
+    height: 52vh;
     top: 10vh;
     margin: auto;
+    display: flex;
 }
 
-.recent-works>section>div{
-    display: inline-block;
-    width: 25vw;
-    height: 50vh;
-    position: relative;
-
-}
-
-.recent-works>section>div>svg{
-    position: relative;
-    left: -1.2vw;
-}
-
-.recent-works>section>div:last-child{
+.recent-works>section>div>div{
+    width: 25%;
     position: absolute;
-    right: 0;
-}
-
-.recent-works>section>div:nth-child(2){
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
-
-.recent-works>section>div>div:last-child{
-    width: 20vw;
-    position: absolute;
-    margin: auto;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    margin-left: 3.8vw;
 }
 
-.recent-works>section>div>div:last-child>h4{
+.recent-works>section>div>div>div:first-child{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    top: 5vh;
+}
+
+.recent-works>section>div:nth-child(1)>div>div:first-child{
+    width: 8vw;
+    height: 13vh;
+    background: url("../images/enterprise-icon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.recent-works>section>div:nth-child(2)>div>div:first-child{
+    background: url("../images/web-icon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.recent-works>section>div:nth-child(3)>div>div:first-child{
+    background: url("../images/uiux-icon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.recent-works>section>div>div>h4{
     text-align: center;
+    position: relative;
+    top: 5vh;
     color: #15295F;
-    font-family: Libre Baskerville, serif;
+    font-family: Libre Baskerville;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.recent-works>section>div>div:last-child>img{
-    width: 7vw;
+.recent-works>section>div>div>p{
+    text-align: center;
     position: relative;
-    margin: auto;
-    top: 20px;
-    right: 0;
-    left: 6vw;
-}
-
-.recent-works>section>div>div:last-child>p{
+    top: 2vh;
     color: #838383;
     text-align: center;
-    font-family: Hind, serif;
+    font-family: Hind;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.recent-works>section>div>div:last-child>a{
-    color: #15295F;
-    font-family: Libre Baskerville, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.recent-works>section>div>div>a{
     position: relative;
-    bottom: -10px;
+    top: 5vh;
 }
 /*Certificate-section ------------------------------------------------------------------------------------------------*/
 .certificate-section{
