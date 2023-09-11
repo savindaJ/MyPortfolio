@@ -80,17 +80,15 @@ main>div:first-child{
 body main{
     margin-top: 49px;
     position: relative;
-    z-index: 8;
 }
 
-body main section:nth-child(2){
+body main>section:nth-child(2){
     position: relative;
     height: 95vh;
     width: 99.85%;
-    z-index: 6;
 }
 
- body main section:nth-child(2)>div:nth-child(4){
+ body main>section:nth-child(2)>div:nth-child(4){
      width: 325px;
      height: 326px;
      flex-shrink: 0;
@@ -101,7 +99,7 @@ body main section:nth-child(2){
      right: 40px;
  }
 
-body main section:nth-child(2)>div:nth-child(5){
+body main>section:nth-child(2)>div:nth-child(5){
     width: 323px;
     height: 326px;
     flex-shrink: 0;
@@ -112,7 +110,7 @@ body main section:nth-child(2)>div:nth-child(5){
     right: 70px;
 }
 
-body main section:nth-child(2)>div:nth-child(6){
+body main>section:nth-child(2)>div:nth-child(6){
     width: 330px;
     height: 330px;
     flex-shrink: 0;
@@ -123,7 +121,7 @@ body main section:nth-child(2)>div:nth-child(6){
     right: 100px;
 }
 
-body main section:nth-child(2)>div:nth-child(7){
+body main>section:nth-child(2)>div:nth-child(7){
     width: 25vw;
     height: 60vh;
     position: absolute;
@@ -134,7 +132,7 @@ body main section:nth-child(2)>div:nth-child(7){
     border-radius: 20%;
 }
 
-body main section:nth-child(2) #mainHeader{
+body main>section:nth-child(2) #mainHeader{
     text-align: center;
     font-size: 100px;
     z-index: 0;
@@ -146,18 +144,18 @@ body main section:nth-child(2) #mainHeader{
     opacity: 8%;
 }
 
-body main section:nth-child(2)>aside{
+body main>section:nth-child(2)>aside{
     position: absolute;
     top: 40px;
     left: 8vw;
 }
 
-body main section:nth-child(2) h1{
+body main>section:nth-child(2) h1{
     position: relative;
     right: 0;
 }
 
-body main section:nth-child(2)>aside>div:first-child p:first-child{
+body main>section:nth-child(2)>aside>div:first-child p:first-child{
     color: #FD6E0A;
     font-family: JejuGothic;
     font-size: 24px;
@@ -166,7 +164,7 @@ body main section:nth-child(2)>aside>div:first-child p:first-child{
     line-height: normal;
 }
 
-body main section:nth-child(2)>aside>div>h1{
+body main>section:nth-child(2)>aside>div>h1{
     color: #162A5F;
     font-family: Libre Baskerville;
     font-size: 48px;
@@ -175,7 +173,7 @@ body main section:nth-child(2)>aside>div>h1{
     line-height: normal;
 }
 
-body main section:nth-child(2)>aside>div>h4{
+body main>section:nth-child(2)>aside>div>h4{
     color: #15295F;
     font-family: Libre Baskerville;
     font-size: 24px;
@@ -183,7 +181,7 @@ body main section:nth-child(2)>aside>div>h4{
     font-weight: 700;
     line-height: normal;
 }
-body main section:nth-child(2)>aside>div>h4>span{
+body main>section:nth-child(2)>aside>div>h4>span{
     color: #FC801D;
     font-family: Libre Baskerville;
     font-size: 24px;
@@ -192,7 +190,7 @@ body main section:nth-child(2)>aside>div>h4>span{
     line-height: normal;
 }
 
-body main section:nth-child(2)>aside>div>p:nth-child(4){
+body main>section:nth-child(2)>aside>div>p:nth-child(4){
     color: #171212;
     font-family: Libre Baskerville;
     font-size: 17px;
@@ -201,13 +199,13 @@ body main section:nth-child(2)>aside>div>p:nth-child(4){
     line-height: normal;
 }
 
-body main section:nth-child(2)>aside>div:last-child{
+body main>section:nth-child(2)>aside>div:last-child{
     position: relative;
     left: -80px;
     top: 80px;
 }
 
-body main section:nth-child(2)>aside>strong{
+body main>section:nth-child(2)>aside>strong{
     color: #15295F;
     font-family: Libre Bodoni, cursive;
     font-size: 18px;
@@ -219,7 +217,7 @@ body main section:nth-child(2)>aside>strong{
 
 }
 
-body main section:nth-child(2)>aside>div:last-child>a>button{
+body main>section:nth-child(2)>aside>div:last-child>a>button{
     border-radius: 50px;
     background: #FD6E0A;
     width: 127px;
@@ -229,14 +227,14 @@ body main section:nth-child(2)>aside>div:last-child>a>button{
     border: 2px solid #3f1ea2;
 }
 
-body main section:nth-child(2)>section:last-child>div{
+body main>section:nth-child(2)>section:last-child>div{
     display: inline-block;
     position: relative;
     top: 8px;
     margin: auto;
 }
 
-body main section:nth-child(2)>section.status-section{
+body main>section:nth-child(2)>section.status-section{
     width: 55vw;
     height: 15vh;
     flex-shrink: 0;
@@ -251,10 +249,10 @@ body main section:nth-child(2)>section.status-section{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 30;
+    z-index: 8;
 }
 
-body main section:nth-child(2)>section.status-section>div{
+body main>section:nth-child(2)>section.status-section>div{
     width: 7vw;
     height: 7vw;
     border-radius: 100%;
@@ -263,28 +261,28 @@ body main section:nth-child(2)>section.status-section>div{
     border: 2px solid #faa039;
 }
 
-body main section:nth-child(2)>section.status-section>div:first-child{
+body main>section:nth-child(2)>section.status-section>div:first-child{
     background: url("../images/service-header.png");
     background-size: cover;
     position: relative;
     left: 1.5vw;
 }
 
-body main section:nth-child(2)>section.status-section>div:last-child{
+body main>section:nth-child(2)>section.status-section>div:last-child{
     background: url("../images/project-header.png");
     background-size: cover;
     position: relative;
     left: 25vw;
 }
 
-body main section:nth-child(2)>section.status-section>div:nth-child(2){
+body main>section:nth-child(2)>section.status-section>div:nth-child(2){
     background: url("../images/skill-header.png");
     background-size: cover;
     position: relative;
     left: 13vw;
 }
 
-body main section:nth-child(2)>section.status-section>div>p:first-child{
+body main>section:nth-child(2)>section.status-section>div>p:first-child{
     color: #162A5F;
     font-family: Inter, cursive;
     font-size: 24px;
@@ -297,7 +295,7 @@ body main section:nth-child(2)>section.status-section>div>p:first-child{
     left: 100px;
 }
 
-body main section:nth-child(2)>section.status-section>div>p:last-child{
+body main>section:nth-child(2)>section.status-section>div>p:last-child{
     display: inline-block;
     position: absolute;
     color: #FA5700;
