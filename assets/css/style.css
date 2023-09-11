@@ -15,7 +15,7 @@ header{
     display: inline-flex;
     border-bottom: 2px solid #faa151;
     background: #FFF;
-    width: 99vw;
+    width: 99.9vw;
     height: 49px;
     position: fixed;
     border-radius: 10px;
@@ -25,7 +25,7 @@ header{
 
 header nav>div>menu{
     position: relative;
-    left: 40vw;
+    left: 30vw;
 }
 
 header nav>div>menu>li{
@@ -36,10 +36,11 @@ header nav>div>menu>li{
 header nav>div>menu>li>a{
     color: #162A5F;
     font-family: Libre Baskerville;
-    font-size: 16px;
+    font-size: 1.2em;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
+    text-decoration: none;
 }
 
 header nav>div>menu>li>a:hover{
