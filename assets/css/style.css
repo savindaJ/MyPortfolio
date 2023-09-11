@@ -924,8 +924,22 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 }
 
 .certificate-section>section>button{
-    width: 50px;
-    height: 80px;
+    width: 10vw;
+    height: 15vh;
+}
+
+.certificate-section>section>button{
+    font-size: 75px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: #f6b458;
+}
+
+.certificate-section>section>button:hover{
+    color: #09509b;
 }
 
 .certificate-section>section>div:nth-child(2){
