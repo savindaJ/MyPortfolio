@@ -66,7 +66,7 @@ h4{
 }*/
 
 /*header section ------------------------------------------------------------------------------------------- */
-main>div:last-child{
+main>div:first-child{
     width: 100%;
     height: 100vh;
     background: url("../images/background-image-fixed.jpg");
@@ -83,14 +83,14 @@ body main{
     z-index: 8;
 }
 
-body main section:first-child{
+body main section:nth-child(2){
     position: relative;
     height: 95vh;
     width: 99.85%;
     z-index: 6;
 }
 
- body main section:first-child>div:nth-child(4){
+ body main section:nth-child(2)>div:nth-child(4){
      width: 325px;
      height: 326px;
      flex-shrink: 0;
@@ -101,7 +101,7 @@ body main section:first-child{
      right: 40px;
  }
 
-body main section:first-child>div:nth-child(5){
+body main section:nth-child(2)>div:nth-child(5){
     width: 323px;
     height: 326px;
     flex-shrink: 0;
@@ -112,7 +112,7 @@ body main section:first-child>div:nth-child(5){
     right: 70px;
 }
 
-body main section:first-child>div:nth-child(6){
+body main section:nth-child(2)>div:nth-child(6){
     width: 330px;
     height: 330px;
     flex-shrink: 0;
@@ -123,7 +123,7 @@ body main section:first-child>div:nth-child(6){
     right: 100px;
 }
 
-body main section:first-child>div:nth-child(7){
+body main section:nth-child(2)>div:nth-child(7){
     width: 25vw;
     height: 60vh;
     position: absolute;
@@ -134,7 +134,7 @@ body main section:first-child>div:nth-child(7){
     border-radius: 20%;
 }
 
-body main section:first-child #mainHeader{
+body main section:nth-child(2) #mainHeader{
     text-align: center;
     font-size: 100px;
     z-index: 0;
@@ -146,18 +146,18 @@ body main section:first-child #mainHeader{
     opacity: 8%;
 }
 
-body main section:first-child>aside{
+body main section:nth-child(2)>aside{
     position: absolute;
     top: 40px;
     left: 8vw;
 }
 
-body main section:first-child h1{
+body main section:nth-child(2) h1{
     position: relative;
     right: 0;
 }
 
-body main section:first-child>aside>div:first-child p:first-child{
+body main section:nth-child(2)>aside>div:first-child p:first-child{
     color: #FD6E0A;
     font-family: JejuGothic;
     font-size: 24px;
@@ -166,7 +166,7 @@ body main section:first-child>aside>div:first-child p:first-child{
     line-height: normal;
 }
 
-body main section:first-child>aside>div>h1{
+body main section:nth-child(2)>aside>div>h1{
     color: #162A5F;
     font-family: Libre Baskerville;
     font-size: 48px;
@@ -175,7 +175,7 @@ body main section:first-child>aside>div>h1{
     line-height: normal;
 }
 
-body main section:first-child>aside>div>h4{
+body main section:nth-child(2)>aside>div>h4{
     color: #15295F;
     font-family: Libre Baskerville;
     font-size: 24px;
@@ -183,7 +183,7 @@ body main section:first-child>aside>div>h4{
     font-weight: 700;
     line-height: normal;
 }
-body main section:first-child>aside>div>h4>span{
+body main section:nth-child(2)>aside>div>h4>span{
     color: #FC801D;
     font-family: Libre Baskerville;
     font-size: 24px;
@@ -192,7 +192,7 @@ body main section:first-child>aside>div>h4>span{
     line-height: normal;
 }
 
-body main section:first-child>aside>div>p:nth-child(4){
+body main section:nth-child(2)>aside>div>p:nth-child(4){
     color: #171212;
     font-family: Libre Baskerville;
     font-size: 17px;
@@ -201,13 +201,13 @@ body main section:first-child>aside>div>p:nth-child(4){
     line-height: normal;
 }
 
-body main section:first-child>aside>div:last-child{
+body main section:nth-child(2)>aside>div:last-child{
     position: relative;
     left: -80px;
     top: 80px;
 }
 
-body main section:first-child>aside>strong{
+body main section:nth-child(2)>aside>strong{
     color: #15295F;
     font-family: Libre Bodoni, cursive;
     font-size: 18px;
@@ -219,7 +219,7 @@ body main section:first-child>aside>strong{
 
 }
 
-body main section:first-child>aside>div:last-child>a>button{
+body main section:nth-child(2)>aside>div:last-child>a>button{
     border-radius: 50px;
     background: #FD6E0A;
     width: 127px;
@@ -229,14 +229,14 @@ body main section:first-child>aside>div:last-child>a>button{
     border: 2px solid #3f1ea2;
 }
 
-body main section:first-child>section:last-child>div{
+body main section:nth-child(2)>section:last-child>div{
     display: inline-block;
     position: relative;
     top: 8px;
     margin: auto;
 }
 
-body main section:first-child>section.status-section{
+body main section:nth-child(2)>section.status-section{
     width: 55vw;
     height: 15vh;
     flex-shrink: 0;
@@ -254,7 +254,7 @@ body main section:first-child>section.status-section{
     z-index: 30;
 }
 
-body main section:first-child>section.status-section>div{
+body main section:nth-child(2)>section.status-section>div{
     width: 7vw;
     height: 7vw;
     border-radius: 100%;
@@ -263,28 +263,28 @@ body main section:first-child>section.status-section>div{
     border: 2px solid #faa039;
 }
 
-body main section:first-child>section.status-section>div:first-child{
+body main section:nth-child(2)>section.status-section>div:first-child{
     background: url("../images/service-header.png");
     background-size: cover;
     position: relative;
     left: 1.5vw;
 }
 
-body main section:first-child>section.status-section>div:last-child{
+body main section:nth-child(2)>section.status-section>div:last-child{
     background: url("../images/project-header.png");
     background-size: cover;
     position: relative;
     left: 25vw;
 }
 
-body main section:first-child>section.status-section>div:nth-child(2){
+body main section:nth-child(2)>section.status-section>div:nth-child(2){
     background: url("../images/skill-header.png");
     background-size: cover;
     position: relative;
     left: 13vw;
 }
 
-body main section:first-child>section.status-section>div>p:first-child{
+body main section:nth-child(2)>section.status-section>div>p:first-child{
     color: #162A5F;
     font-family: Inter, cursive;
     font-size: 24px;
@@ -297,7 +297,7 @@ body main section:first-child>section.status-section>div>p:first-child{
     left: 100px;
 }
 
-body main section:first-child>section.status-section>div>p:last-child{
+body main section:nth-child(2)>section.status-section>div>p:last-child{
     display: inline-block;
     position: absolute;
     color: #FA5700;
@@ -357,7 +357,7 @@ end headder style --------------------------------------------------------------
     line-height: normal;
 }
 
-main section:nth-child(2){
+main section:nth-child(3){
     width: 100%;
     height: 120vh;
     position: relative;
@@ -453,20 +453,20 @@ main section:nth-child(2){
 
 /*about me section ------------------------------------------------------------------------------------------*/
 
-main section:nth-child(3){
+main section:nth-child(4){
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-main section:nth-child(3)>div:nth-child(2){
+main>section:nth-child(4)>div:nth-child(2){
     position: relative;
     margin: auto;
     width: 20vw;
     top: 5vh;
 }
 
-main section:nth-child(3)>div:nth-child(2)>h1{
+main>section:nth-child(4)>div:nth-child(2)>h1{
     display: inline-block;
     color: #FA5700;
     font-family: Inter, serif;
@@ -476,7 +476,7 @@ main section:nth-child(3)>div:nth-child(2)>h1{
     line-height: normal;
 }
 
-main section:nth-child(3)>div:nth-child(2)>h1>span{
+main>section:nth-child(4)>div:nth-child(2)>h1>span{
     color: #162A5F;
     font-family: Inter, serif;
     font-size: 64px;
@@ -485,7 +485,7 @@ main section:nth-child(3)>div:nth-child(2)>h1>span{
     line-height: normal;
 }
 
-main section:nth-child(3)>div:nth-child(2)>img{
+main>section:nth-child(4)>div:nth-child(2)>img{
     width: 57px;
     height: 62px;
     flex-shrink: 0;
@@ -494,18 +494,18 @@ main section:nth-child(3)>div:nth-child(2)>img{
     bottom: -10px;
 }
 
-main section:nth-child(3) aside:nth-child(3){
+main>section:nth-child(4) aside:nth-child(3){
     position: relative;
     left: 8vw;
     width: 25vw;
     top: 8vh;
 }
 
-main section:nth-child(3) aside:nth-child(3)>img{
+main>section:nth-child(4) aside:nth-child(3)>img{
     width: 30vw;
 }
 
-main section:nth-child(3) aside:last-child{
+main>section:nth-child(4) aside:last-child{
     width: 50vw;
     height: 40vh;
     position: absolute;
@@ -515,7 +515,7 @@ main section:nth-child(3) aside:last-child{
     margin: auto;
 }
 
-main section:nth-child(3) aside:last-child>p:first-child{
+main>section:nth-child(4) aside:last-child>p:first-child{
     color: #000;
     font-family: Libre Baskerville, serif;
     font-size: 21px;
@@ -524,7 +524,7 @@ main section:nth-child(3) aside:last-child>p:first-child{
     line-height: normal;
 }
 
-main section:nth-child(3) aside:last-child>p:first-child span{
+main>section:nth-child(4) aside:last-child>p:first-child span{
     color: #162A5F;
     font-family: Libre Baskerville, serif;
     font-size: 23px;
@@ -533,7 +533,7 @@ main section:nth-child(3) aside:last-child>p:first-child span{
     line-height: 5vh;
 }
 
-main section:nth-child(3) aside:last-child>p:last-child{
+main>section:nth-child(4) aside:last-child>p:last-child{
     color: #171212;
     font-family: Libre Baskerville, sans-serif;
     font-size: 20px;
@@ -544,7 +544,7 @@ main section:nth-child(3) aside:last-child>p:last-child{
     top: 5vh;
 }
 
-main section:nth-child(3) aside:last-child>p:last-child>span{
+main>section:nth-child(4) aside:last-child>p:last-child>span{
     color: #FD6E0A;
     font-family: Libre Baskerville, sans-serif;
     font-size: 24px;
@@ -907,7 +907,7 @@ main section:nth-child(3) aside:last-child>p:last-child>span{
     background: #FD6E0A;
 }
 
-.general-life-section>section{
+.general-life-section>section:nth-child(4){
     position: relative;
     top: 5vh;
     margin: auto;
