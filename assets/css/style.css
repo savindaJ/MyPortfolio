@@ -51,21 +51,7 @@ header>div{
     left: 2vw;
 }
 
-/*h1{
-    color: #0d0d72;
-    text-space: 20px;
-    text-align: center;
-    font-size: 40px;
-}
-
-h4{
-    color: #000000;
-    text-space: 5px;
-    text-align: center;
-    font-size: 20px;
-}*/
-
-/*header section ------------------------------------------------------------------------------------------- */
+/*background ----------------------------------------------------*/
 main>div:first-child{
     width: 100%;
     height: 100vh;
@@ -76,6 +62,7 @@ main>div:first-child{
     position: absolute;
     top: 0;
 }
+/*header section ------------------------------------------------------------------------------------------- */
 
 body main{
     margin-top: 49px;
@@ -149,7 +136,6 @@ body main>section:nth-child(2)>div:nth-child(8)>div{
     position: relative;
     left: 2.5vw;
 }
-
 
 .switch {
     position: relative;
@@ -964,7 +950,7 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 
 .general-life-section{
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     box-sizing: border-box;
 }
 
