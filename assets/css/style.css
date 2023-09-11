@@ -754,7 +754,7 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 }
 
 .language-tools>div:last-child>svg line{
-    stroke: rgb(97, 160, 255);
+    stroke: rgb(5, 5, 14);
     stroke-width:2;
 }
 
