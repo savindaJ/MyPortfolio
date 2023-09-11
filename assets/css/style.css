@@ -875,6 +875,12 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 .recent-works>section>div>div>a{
     position: relative;
     top: 5vh;
+    color: #15295F;
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 /*Certificate-section ------------------------------------------------------------------------------------------------*/
 .certificate-section{
@@ -1009,13 +1015,48 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 .general-life-section>section div:nth-child(1){
     grid-column: 1/2;
     grid-row: 1/3;
-    background: url("../images/p1.png");
+    background: url("../images/galle-my.jpeg");
+    background-size: cover;
+}
+
+.general-life-section>section div:nth-child(2){
+    background: url("../images/glass-my.jpg");
+    background-size: cover;
+}
+
+.general-life-section>section div:nth-child(3){
+    background: url("../images/edit.jpeg");
+    background-size: cover;
+}
+
+.general-life-section>section div:last-child{
+    background: url("../images/kottu-my.jpeg");
     background-size: cover;
 }
 
 .general-life-section>section div:nth-child(6){
     grid-row: 1/4;
     grid-column: 4/5;
+    background: url("../images/new-year-my.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.general-life-section>section div:nth-child(5){
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background: url("../images/group-my.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.general-life-section>section div:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background: url("../images/innovesta-my.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /*contact section ------------------------------------------------------------------------------------------*/
@@ -1136,8 +1177,8 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 }
 
 .contact-section aside>form>fieldset>input{
-    width: 526px;
-    height: 51px;
+    width: 38vw;
+    height: 8vh;
     flex-shrink: 0;
     border-radius: 20px 20px 10px 20px;
     background: rgba(255, 178, 51, 0.37);
@@ -1147,8 +1188,8 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 }
 
 .contact-section aside>form>fieldset>textarea{
-    width: 526px;
-    height: 154px;
+    width: 38vw;
+    height: 15vh;
     flex-shrink: 0;
     border-radius: 20px 20px 10px 20px;
     background: rgba(255, 178, 51, 0.37);
