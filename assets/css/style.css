@@ -776,7 +776,7 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 
 .recent-works>h4{
     color: #162A5F;
-    font-family: Libre Baskerville, Serif;
+    font-family: Libre Baskerville;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -936,6 +936,14 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
 .certificate-section>section>button{
     width: 50px;
     height: 80px;
+}
+
+.certificate-section>section>div:nth-child(2){
+    width: 70%;
+    height: 65vh;
+    background: url("../images/certificate-img.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .certificate-section>section>button:first-child{
