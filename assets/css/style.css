@@ -73,7 +73,7 @@ body main{
 body main>section:nth-child(2){
     position: relative;
     height: 95vh;
-    width: 99.85%;
+    width: 100%;
 }
 
  body main>section:nth-child(2)>div:nth-child(4){
@@ -331,7 +331,6 @@ body main>section:nth-child(2)>section.status-section>div:first-child{
     background: url("../images/service-header.png");
     background-size: cover;
     position: relative;
-    left: 1.5vw;
 }
 
 body main>section:nth-child(2)>section.status-section>div:last-child{
@@ -1015,7 +1014,7 @@ main>section:nth-child(4) aside:last-child>p:last-child>span{
     height: 70vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
 }
 
 .general-life-section>section div{
