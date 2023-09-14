@@ -1276,7 +1276,7 @@ body footer section>div:first-child>div:first-child{
 }
 
 footer>nav{
-    width: 27vw;
+    width: max-content;
     position: relative;
     margin: auto;
 }
