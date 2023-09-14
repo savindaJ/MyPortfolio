@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition case 2</title>
+    <style>
+        body{
+            background-color: #fcfc6f;
+        }
+
+        section{
+            width: 40vw;
+            height: 35vw;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        section>div:last-child{
+            width: 30vw;
+            height: 30vw;
+            background-color: #f6b458;
+            border-radius: 100%;
+            margin: auto;
+            border: 20px solid #b9abff;
+            border-top: 20px solid #e80a0a;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        section>div:last-child:hover{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+        section>div>h1{
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            white-space: nowrap;
+        }
+
+        section>div:hover h1{
+            transform: rotate(-360deg);
+            transition: 3s all;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>RWAD</h1>
+        </div>
+    </section>
+</body>
+</html>
