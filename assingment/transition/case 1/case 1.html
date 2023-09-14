@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>transition case 1</title>
+  <style>
+    section{
+      width: 100%;
+      height: 70vh;
+      margin-top: 20vh;
+    }
+
+    section>div{
+      display: flex;
+      width: 20vw;
+      height: 10vh;
+      background-color: purple;
+      position: relative;
+      margin-top: 20px;
+      left: -175px;
+      transition-duration: 3s;
+      border-radius: 20px;
+      font-size: 20px;
+      color: white;
+      justify-content: space-around;
+    }
+
+    section>div:hover{
+      left: -10px;
+      transition-duration: 3s;
+    }
+
+    section>div>i:last-child{
+      font-size: 30px;
+      position: relative;
+      top: 20px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../../myWorks/assets/font-awsome/fontawesome-free-6.4.2-web/css/all.css">
+  <link rel="stylesheet" href="../../../assets/font/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<body>
+<section>
+  <div>
+    <h4>Menu-one</h4>
+    <i class="fa-solid fa-user"></i>
+  </div>
+  <div>
+    <h4>Menu-two</h4>
+    <i class="fa-solid fa-truck-moving"></i>
+  </div>
+  <div>
+    <h4>Menu-three</h4>
+    <i class="fa-solid fa-calendar-days"></i>
+  </div>
+  <div>
+    <h4>Menu-four</h4>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <div>
+    <h4>Menu-five</h4>
+    <i class="fa-solid fa-layer-group"></i>
+  </div>
+</section>
+</body>
+</html>
