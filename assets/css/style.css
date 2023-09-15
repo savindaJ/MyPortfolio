@@ -70,13 +70,7 @@ body main{
     position: relative;
 }
 
-body main>section:nth-child(2){
-    position: relative;
-    height: 95vh;
-    width: 100%;
-}
-
- body main>section:nth-child(2)>div:nth-child(4){
+ /*body main>section:nth-child(2)>div:nth-child(4){
      width: 325px;
      height: 326px;
      flex-shrink: 0;
@@ -136,6 +130,233 @@ body main>section:nth-child(2)>div:nth-child(8){
 body main>section:nth-child(2)>div:nth-child(8)>div{
     position: relative;
     left: 2.5vw;
+}*/
+
+.home-section{
+    position: relative;
+    height: 95vh;
+    width: 100%;
+}
+
+.home-section>section:nth-child(3){
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+.home-section>section:nth-child(3)>section{
+    width: 40%;
+    height: 85vh;
+    margin: auto;
+    position: relative;
+    top: -16vh;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>h1:first-child{
+    font-size: 7vw;
+    opacity: 10%;
+    position: relative;
+    left: 30vw;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child{
+    position: absolute;
+    top: 0;
+    height: 30vh;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:first-child{
+    color: #FD6E0A;
+    font-family: JejuGothic, ui-sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h1:nth-child(2){
+    color: #162A5F;
+    font-family: Libre Baskerville;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3){
+    color: #15295F;
+    font-family: Libre Baskerville;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2vw;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3)>span{
+    color: #FC801D;
+    font-family: Libre Baskerville;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4){
+    color: #171212;
+    font-family: Libre Baskerville;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside>strong{
+    color: #15295F;
+    font-family: Libre Bodoni;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    top: 20vh;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child{
+    position: absolute;
+    bottom: -4vw;
+    left: -2vw;
+}
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button{
+    width: 10.5vw;
+    height: 7vh;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FD6E0A;
+    font-size: 1vw;
+}
+
+.home-section>section:nth-child(3)>section:last-child>div:first-child{
+    position: fixed;
+    right: 0;
+    width: 6vw;
+    height: 6vh;
+    background-color: #FCC419;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index: 10;
+}
+
+.home-section>section:nth-child(3)>section:last-child>div:first-child>div{
+    position: relative;
+    left: 2vw;
+}
+
+.home-section>section:nth-child(3)>section:last-child>div:last-child>div:first-child{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background: #FCE8E7;
+    position: absolute;
+    right: 0;
+    top: 5vh;
+}
+
+.home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(2){
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background: #FFDEDB;
+    position: absolute;
+    right: 2vw;
+    top: 5vh;
+}
+
+.home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(3){
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background: #FCC419;
+    position: absolute;
+    right: 4vw;
+    top: 5vh;
+}
+
+.home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(4){
+    width: 28vw;
+    height: 28vw;
+    background: url("../images/my-img.png");
+    background-size: cover;
+    position: relative;
+    top: 10vh;
+    left: 7vw;
+}
+
+.status-section{
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid #8AEDF3;
+    background: #FFF;
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(100px);
+    width: 50%;
+    height: 15vh;
+    margin: auto;
+    position: relative;
+    top: -37vh;
+    justify-content: space-around;
+}
+
+.status-section>div{
+    position: relative;
+    display: flex;
+}
+
+.status-section>div h4{
+    color: #162A5F;
+    font-family: Inter;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.status-section>div p{
+    color: #FA5700;
+    font-family: Inter;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.status-section>div>div:first-child{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 100%;
+    margin-right: 1vw;
+}
+
+.status-section>div:first-child>div:first-child{
+    background: url("../images/service-header.png");
+    background-size: cover;
+}
+
+.status-section>div:nth-child(2)>div:first-child{
+    background: url("../images/project-header.png");
+    background-size: cover;
+}
+
+.status-section>div:last-child>div:first-child{
+    background: url("../images/skill-header.png");
+    background-size: cover;
 }
 
 .switch {
@@ -198,7 +419,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-body main>section:nth-child(2) #mainHeader{
+/*body main>section:nth-child(2) #mainHeader{
     text-align: center;
     font-size: 100px;
     z-index: 0;
@@ -372,7 +593,7 @@ body main>section:nth-child(2)>section.status-section>div>p:last-child{
     left: 8vw;
     bottom: 0;
     margin-top: 0;
-}
+}*/
 
 .custom-shape-divider-bottom-1693915055 {
     position: absolute;
@@ -516,7 +737,7 @@ main section:nth-child(3){
 
 /*about me section ------------------------------------------------------------------------------------------*/
 
-main section:nth-child(4){
+main>section:nth-child(4){
     width: 100%;
     height: 100vh;
     position: relative;
