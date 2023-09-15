@@ -1646,4 +1646,48 @@ footer section>div:nth-child(2) h4{
     .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4) {
        display: none;
     }
+
+    .service-section>h4 {
+        font-size: 14px;
+    }
+
+    .service-section>h1 {
+        font-size: 20px;
+    }
+
+    .service-section>aside>div {
+        width: 89vw;
+        height: 178px;
+        margin-bottom: 5vh;
+    }
+
+    .service-section>aside:nth-child(4) {
+        display: grid;
+        width: 90%;
+        height: 40vh;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .service-section>aside:nth-child(4)>div:first-child div:nth-child(1) {
+        width: 62px;
+        height: 51px;
+    }
+
+    .service-section>aside>div h4 {
+        font-size: 1em;
+    }
+
+    .service-section>aside>div p {
+        font-size: 0.8em;
+    }
+
+    .service-section>aside:last-child {
+        top: 77vh;
+        display: grid;
+        justify-content: space-around;
+    }
+
+    main>section:nth-child(4) {
+        margin-top: 82vh;
+    }
 }
