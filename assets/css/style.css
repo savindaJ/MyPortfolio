@@ -16,7 +16,7 @@ header{
     border-bottom: 2px solid #faa151;
     background: #FFF;
     width: 99.9vw;
-    height: 49px;
+    height: 8vh;
     position: fixed;
     border-radius: 10px;
     top: 0;
@@ -66,7 +66,7 @@ main>div:first-child{
 /*header section ------------------------------------------------------------------------------------------- */
 
 body main{
-    margin-top: 49px;
+    margin-top: 8vh;
     position: relative;
 }
 
@@ -233,7 +233,7 @@ body main>section:nth-child(2)>aside>div:first-child p:first-child{
 body main>section:nth-child(2)>aside>div>h1{
     color: #162A5F;
     font-family: Libre Baskerville;
-    font-size: 48px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1320,4 +1320,10 @@ footer section>div:nth-child(2) h4{
     font-weight: 400;
     line-height: normal;
     margin: 0;
+}
+
+/*media quary--------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 425px){
+
 }
