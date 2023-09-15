@@ -1553,4 +1553,25 @@ footer section>div:nth-child(2) h4{
     .education-section section>.detail#detail3 {
         left: 5vw;
     }
+
+    /*skill section ------------------------------------------*/
+    .language-tools {
+        margin-top: 11vh;
+    }
+
+    .language-tools>h4 {
+        font-size: 16px;
+    }
+
+    .language-tools > h1 {
+        font-size: 20px;
+    }
+
+    .language-tools > hr {
+        width: 40vw;
+    }
+
+    .language-tools>div:last-child {
+        top: -7vh;
+    }
 }
