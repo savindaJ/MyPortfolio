@@ -419,182 +419,6 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/*body main>section:nth-child(2) #mainHeader{
-    text-align: center;
-    font-size: 100px;
-    z-index: 0;
-    position: absolute;
-    top: 5vh;
-    right: 0;
-    left: 0;
-    margin: auto;
-    opacity: 8%;
-}
-
-body main>section:nth-child(2)>aside{
-    position: absolute;
-    top: 40px;
-    left: 8vw;
-}
-
-body main>section:nth-child(2) h1{
-    position: relative;
-    right: 0;
-}
-
-body main>section:nth-child(2)>aside>div:first-child p:first-child{
-    color: #FD6E0A;
-    font-family: JejuGothic;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-body main>section:nth-child(2)>aside>div>h1{
-    color: #162A5F;
-    font-family: Libre Baskerville;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-body main>section:nth-child(2)>aside>div>h4{
-    color: #15295F;
-    font-family: Libre Baskerville;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-body main>section:nth-child(2)>aside>div>h4>span{
-    color: #FC801D;
-    font-family: Libre Baskerville;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-body main>section:nth-child(2)>aside>div>p:nth-child(4){
-    color: #171212;
-    font-family: Libre Baskerville;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-body main>section:nth-child(2)>aside>div:last-child{
-    position: relative;
-    left: -80px;
-    top: 80px;
-}
-
-body main>section:nth-child(2)>aside>strong{
-    color: #15295F;
-    font-family: Libre Bodoni, cursive;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    top: 50px;
-
-}
-
-body main>section:nth-child(2)>aside>div:last-child>a>button{
-    border-radius: 50px;
-    background: #FD6E0A;
-    width: 127px;
-    height: 50px;
-    flex-shrink: 0;
-    color: white;
-    border: 2px solid #3f1ea2;
-}
-
-body main>section:nth-child(2)>section:last-child>div{
-    display: inline-block;
-    position: relative;
-    top: 8px;
-    margin: auto;
-}
-
-body main>section:nth-child(2)>section.status-section{
-    width: 55vw;
-    height: 15vh;
-    flex-shrink: 0;
-    position: absolute;
-    border-radius: 50px;
-    border: 1px solid #eac96f;
-    background: #FFF;
-    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(100px);
-    margin: auto;
-    top: 30vh;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 8;
-}
-
-body main>section:nth-child(2)>section.status-section>div{
-    width: 7vw;
-    height: 7vw;
-    border-radius: 100%;
-    position: relative;
-    top: 1px;
-    border: 2px solid #faa039;
-}
-
-body main>section:nth-child(2)>section.status-section>div:first-child{
-    background: url("../images/service-header.png");
-    background-size: cover;
-    position: relative;
-}
-
-body main>section:nth-child(2)>section.status-section>div:last-child{
-    background: url("../images/project-header.png");
-    background-size: cover;
-    position: relative;
-    left: 25vw;
-}
-
-body main>section:nth-child(2)>section.status-section>div:nth-child(2){
-    background: url("../images/skill-header.png");
-    background-size: cover;
-    position: relative;
-    left: 13vw;
-}
-
-body main>section:nth-child(2)>section.status-section>div>p:first-child{
-    color: #162A5F;
-    font-family: Inter, cursive;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: inline-block;
-    position: absolute;
-    top: -25px;
-    left: 100px;
-}
-
-body main>section:nth-child(2)>section.status-section>div>p:last-child{
-    display: inline-block;
-    position: absolute;
-    color: #FA5700;
-    font-family: Inter, monospace;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    left: 8vw;
-    bottom: 0;
-    margin-top: 0;
-}*/
-
 .custom-shape-divider-bottom-1693915055 {
     position: absolute;
     bottom: 0;
@@ -754,8 +578,10 @@ main section:nth-child(3){
 .aboutme-section>section:nth-child(3)>aside:first-child{
     width: 30%;
     height: 70vh;
-    background: url("../images/about-img.png");
-    background-size: cover;
+}
+
+.aboutme-section>section:nth-child(3)>aside:first-child img{
+    width: 100%;
 }
 
 .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child{
@@ -1682,5 +1508,50 @@ footer section>div:nth-child(2) h4{
     }
 
     /*about me responsive -----------------------*/
+    main>section:nth-child(4) {
+        margin-top: 87vh;
+    }
 
+    .aboutme-section>section:nth-child(3) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:first-child {
+        width: 56%;
+        height: 36vh;
+        position: relative;
+        top: -10vh;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:first-child {
+        width: 56vw;
+        margin: auto;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
+        font-size: 3.5vw;
+        line-height: 5vh;
+        position: relative;
+        position: relative;
+        top: -90px;
+        left: 10vh;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span {
+        font-size: 3.5vw;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:last-child>p:last-child {
+
+        font-size: 3vw;
+        font-style: normal;
+        position: relative;
+        text-align: center;
+        margin: auto;
+        top: -15vh;
+    }
+
+    /*eduction section --------------------------------*/
 }
