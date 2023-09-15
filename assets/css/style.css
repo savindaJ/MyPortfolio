@@ -70,68 +70,6 @@ body main{
     position: relative;
 }
 
- /*body main>section:nth-child(2)>div:nth-child(4){
-     width: 325px;
-     height: 326px;
-     flex-shrink: 0;
-     border-radius: 326px;
-     background: #FCE8E7;
-     position: absolute;
-     top: 20px;
-     right: 40px;
- }
-
-body main>section:nth-child(2)>div:nth-child(5){
-    width: 323px;
-    height: 326px;
-    flex-shrink: 0;
-    border-radius: 326px;
-    background: #FFDEDB;
-    position: absolute;
-    top: 20px;
-    right: 70px;
-}
-
-body main>section:nth-child(2)>div:nth-child(6){
-    width: 330px;
-    height: 330px;
-    flex-shrink: 0;
-    border-radius: 387px;
-    background: rgb(253, 208, 79);
-    position: absolute;
-    top: 20px;
-    right: 100px;
-}
-
-body main>section:nth-child(2)>div:nth-child(7){
-    width: 25vw;
-    height: 60vh;
-    position: absolute;
-    top: 5vh;
-    right: 8vw;
-    background: url("../images/my-img.png");
-    background-size: cover;
-    border-radius: 20%;
-}
-
-body main>section:nth-child(2)>div:nth-child(8){
-    width: 8vw;
-    height: 6vh;
-    position: fixed;
-    top: 10vh;
-    right: 0;
-    z-index: 15;
-    background: #FCC419;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-body main>section:nth-child(2)>div:nth-child(8)>div{
-    position: relative;
-    left: 2.5vw;
-}*/
-
 .home-section{
     position: relative;
     height: 95vh;
@@ -709,7 +647,7 @@ main section:nth-child(3){
     right: 0;
     left: 0;
     top: 0;
-    bottom: 28vh;
+    bottom: 0;
 }
 
 .education-section section:last-child{
@@ -1564,6 +1502,7 @@ footer section>div:nth-child(2) h4{
 
     .education-section {
         margin-top: 30vh;
+        height: 115vh;
     }
 
     .education-section>h4:first-child {
@@ -1576,5 +1515,42 @@ footer section>div:nth-child(2) h4{
 
     .education-section hr {
         width: 45vw;
+    }
+
+    .education-section section>.detail#detail1 {
+        left: 5vw;
+    }
+
+    .education-section section>.detail>h4 {
+        font-size: 15px;
+    }
+
+    .education-section>section:nth-child(4) .detail>p{
+        font-size: 10px;
+    }
+
+    .circles {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .fa-graduation-cap{
+        font-size: 15px;
+    }
+
+    .education-section section>.detail {
+        width: 37vw;
+    }
+
+    .education-section section>.detail#detail2 {
+        left: 65vw;
+    }
+
+    .education-section section>.detail#detail4 {
+        right: -2vw;
+    }
+
+    .education-section section>.detail#detail3 {
+        left: 5vw;
     }
 }
