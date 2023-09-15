@@ -778,7 +778,7 @@ main section:nth-child(3){
     position: relative;
     width: 90%;
     height: 52vh;
-    top: 10vh;
+    top: 0vh;
     margin: auto;
     display: flex;
 }
@@ -796,7 +796,12 @@ main section:nth-child(3){
     height: 100px;
     margin: auto;
     position: relative;
-    top: 5vh;
+    top: 10vh;
+}
+
+.work-svg{
+    width: 30vw;
+    height: 70vh;
 }
 
 .recent-works>section>div:nth-child(1)>div>div:first-child{
@@ -822,7 +827,7 @@ main section:nth-child(3){
 .recent-works>section>div>div>h4{
     text-align: center;
     position: relative;
-    top: 5vh;
+    top: 10vh;
     color: #15295F;
     font-family: Libre Baskerville;
     font-size: 24px;
@@ -834,7 +839,7 @@ main section:nth-child(3){
 .recent-works>section>div>div>p{
     text-align: center;
     position: relative;
-    top: 2vh;
+    top: 10vh;
     color: #838383;
     text-align: center;
     font-family: Hind;
@@ -846,7 +851,7 @@ main section:nth-child(3){
 
 .recent-works>section>div>div>a{
     position: relative;
-    top: 5vh;
+    top: 15vh;
     color: #15295F;
     font-family: Libre Baskerville;
     font-size: 20px;
@@ -1578,5 +1583,92 @@ footer section>div:nth-child(2) h4{
     /*recent works section --------------------*/
     .recent-works {
         top: -21vh;
+    }
+
+    .recent-works>h4 {
+        font-size: 16px;
+    }
+
+    .recent-works>h1 {
+        font-size: 20px;
+    }
+
+    .recent-works>hr {
+        width: 31vw;
+    }
+
+    .recent-works>section {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: relative;
+        top: 5vh;
+        left: 3vh;
+    }
+
+    .work-svg{
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+        position: relative;
+    }
+
+    .recent-works>section>div{
+        position: relative;
+    }
+
+    .recent-works>section>div>div{
+        position: absolute;
+        width: 60vw;
+        margin: auto;
+        left: -8.5vw;
+        right: 0;
+        top: 2vh;
+    }
+
+    .recent-works>section>div>div>div:first-child {
+        width: 16vw;
+        height: 20vw;
+        position: relative;
+        top: 2vh;
+    }
+
+    .recent-works>section>div:nth-child(1)>div>div:first-child {
+        width: 15vw;
+        height: 10vh;
+    }
+
+    .recent-works>section>div>div>h4 {
+        top: 6vh;
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .recent-works>section>div>div>p {
+        top: 5vh;
+        font-size: 15px;
+    }
+
+    .recent-works>section>div>div>a {
+        top: 6vh;
+        font-size: 18px;
+        left: 3vw;
+    }
+
+    /* certificate section ---------------*/
+
+    .certificate-section {
+        margin-top: 57vh;
+    }
+
+    .certificate-section > h4 {
+        font-size: 16px;
+    }
+
+    .certificate-section > h1 {
+        font-size: 20px;
+    }
+
+    .certificate-section > hr {
+        width: 35vw;
     }
 }
