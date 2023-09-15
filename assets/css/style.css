@@ -604,6 +604,12 @@ body main>section:nth-child(2)>section.status-section>div>p:last-child{
     line-height: 0;
 }
 
+.curve{
+    position: relative;
+    background-color: rgba(246,234,113,0.66);
+    min-height: 100vh;
+}
+
 .custom-shape-divider-bottom-1693915055 svg {
     position: relative;
     display: block;
@@ -1546,5 +1552,98 @@ footer section>div:nth-child(2) h4{
 /*media quary--------------------------------------------------------------------------------------*/
 
 @media all and (max-width: 425px){
+    header{
+        display: none;
+    }
 
+    body main {
+        margin-top: 0vh;
+        position: relative;
+    }
+
+    .custom-shape-divider-bottom-1693915055 svg {
+        height: 60px;
+    }
+
+    .curve{
+        min-height: 40vh;
+    }
+
+    .status-section{
+        display: none;
+    }
+
+    .dark-button{
+        display: none;
+    }
+
+    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(4) {
+        width: 34vw;
+        height: 38vw;
+        top: 0vh;
+        left: 1vw;
+    }
+
+    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(3) {
+        width: 34vw;
+        height: 34vw;
+        right: 3vw;
+        top: -1vh;
+    }
+
+    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(2) {
+        width: 34vw;
+        height: 34vw;
+        right: 0vw;
+        top: -1vh;
+    }
+
+    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:first-child {
+        width: 34vw;
+        height: 34vw;
+        right: -8px;
+        top: -1vh;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong {
+        top: 18vh;
+        font-size: 3vw;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
+        position: absolute;
+        top: 40vw;
+        left: 57vw;
+        display: flex;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+        width: 16.5vw;
+        height: 5vh;
+        font-size: 2vw;
+        color: white;
+    }
+    .home-section {
+        height: 37vh;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h1:nth-child(2) {
+        font-size: 7.5vw;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:first-child {
+        font-size: 4vw;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3) {
+        font-size: 4vw;
+        margin-top: -10px;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3)>span {
+        font-size: 4vw;
+    }
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4) {
+       display: none;
+    }
 }
