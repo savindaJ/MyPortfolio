@@ -741,6 +741,7 @@ main section:nth-child(3){
 
 /*end service section style ---------------------------------------------------------------------------------*/
 .aboutme-section{
+    margin-top: 5vh;
     width: 100%;
     height: 90vh;
 }
@@ -751,12 +752,10 @@ main section:nth-child(3){
 }
 
 .aboutme-section>section:nth-child(3)>aside:first-child{
-    width: max-content;
-    height: max-content;
-}
-
-.aboutme-section>section:nth-child(3)>aside:first-child img{
-    width: 30vw;
+    width: 30%;
+    height: 70vh;
+    background: url("../images/about-img.png");
+    background-size: cover;
 }
 
 .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child{
