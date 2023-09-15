@@ -1534,9 +1534,16 @@ footer section>div:nth-child(2) h4{
         font-size: 3.5vw;
         line-height: 5vh;
         position: relative;
-        position: relative;
         top: -90px;
         left: 10vh;
+    }
+
+    .aboutme-section>div:nth-child(2)>h1>span:first-child {
+        font-size: 9vw;
+    }
+
+    .aboutme-section>div:nth-child(2)>h1 {
+        font-size: 5vw;
     }
 
     .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span {
@@ -1554,4 +1561,20 @@ footer section>div:nth-child(2) h4{
     }
 
     /*eduction section --------------------------------*/
+
+    .education-section {
+        margin-top: 30vh;
+    }
+
+    .education-section>h4:first-child {
+        font-size: 16px;
+    }
+
+    .education-section h1 {
+        font-size: 20px;
+    }
+
+    .education-section hr {
+        width: 45vw;
+    }
 }
