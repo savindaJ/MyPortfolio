@@ -1574,4 +1574,9 @@ footer section>div:nth-child(2) h4{
     .language-tools>div:last-child {
         top: -7vh;
     }
+
+    /*recent works section --------------------*/
+    .recent-works {
+        top: -21vh;
+    }
 }
