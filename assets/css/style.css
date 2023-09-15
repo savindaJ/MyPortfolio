@@ -1543,11 +1543,11 @@ footer section>div:nth-child(2) h4{
     }
 
     .education-section section>.detail#detail2 {
-        left: 65vw;
+        left: 60vw;
     }
 
     .education-section section>.detail#detail4 {
-        right: -2vw;
+        right: 0;
     }
 
     .education-section section>.detail#detail3 {
