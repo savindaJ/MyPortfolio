@@ -1310,7 +1310,7 @@ footer section>div:nth-child(2) h4{
 
 /*media quary--------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 425px){
+@media all and (max-width: 580px){
     header{
         display: none;
     }
@@ -1828,9 +1828,5 @@ footer section>div:nth-child(2) h4{
     footer>div:last-child>small {
         font-size: 10px;
     }
-
-}
-
-@media all and (min-width: 425px) and (max-width: 768px) {
 
 }
