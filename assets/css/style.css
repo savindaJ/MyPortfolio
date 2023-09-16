@@ -1633,7 +1633,7 @@ footer section>div:nth-child(2) h4{
     }
 
     .recent-works>section>div:nth-child(1)>div>div:first-child {
-        width: 15vw;
+        width: 20vw;
         height: 10vh;
     }
 
@@ -1670,5 +1670,115 @@ footer section>div:nth-child(2) h4{
 
     .certificate-section > hr {
         width: 35vw;
+    }
+
+    .certificate-section>section>div:nth-child(2) {
+        height: 34vh;
+    }
+
+    .certificate-section>section>button {
+        font-size: 24px;
+    }
+
+    .certificate-section>section:last-child {
+        height: 25vh;
+        width: 95vw;
+        top: 0vh;
+    }
+
+    .certificate-section {
+        height: 55vh;
+    }
+
+    /*blog section -------------------------------*/
+
+    .general-life-section>section:nth-child(4) {
+        width: 89%;
+        height: 50vh;
+    }
+
+    .general-life-section>section div {
+        border-radius: 5px;
+    }
+
+    .general-life-section>h4 {
+        font-size: 16px;
+    }
+
+    .general-life-section>h1 {
+        font-size: 20px;
+    }
+
+    .general-life-section>hr {
+        width: 46vw;
+    }
+
+    .general-life-section {
+        height: 72vh;
+    }
+
+    /*contact me section*/
+
+    .contact-section>section {
+        flex-direction: column;
+        top: 4vh;
+        align-content: center;
+        align-items: center;
+    }
+
+    .contact-section>section>address h4 {
+        font-size: 16px;
+    }
+
+    .contact-section>section>address a {
+        font-size: 15px;
+    }
+
+    .contact-section>section>address>div>div:first-child {
+        font-size: 2em;
+    }
+
+    .contact-section>section>address {
+        width: 76vw;
+        height: 63vh;
+    }
+
+    .contact-section>section>address>div>div:last-child {
+        left: 25vw;
+    }
+
+    .contact-section>section>address p {
+        font-size: 14px;
+    }
+
+    .contact-section>section>aside {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .contact-section aside>form>fieldset>input {
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .contact-section aside>form>fieldset>label {
+        font-size: 14px;
+    }
+
+    .contact-section>h4 {
+        font-size: 16px;
+    }
+
+    .contact-section>h1 {
+        font-size: 20px;
+    }
+
+    .contact-section>hr {
+        width: 34vw;
+    }
+
+    .contact-section aside>form>fieldset>textarea {
+        width: 80vw;
+        height: 9vh;
     }
 }
