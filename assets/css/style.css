@@ -1836,3 +1836,7 @@ footer section>div:nth-child(2) h4{
     }
 
 }
+
+@media all and (min-width: 581px) and (max-width: 768px){
+
+}
