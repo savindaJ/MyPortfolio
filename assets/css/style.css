@@ -1781,4 +1781,14 @@ footer section>div:nth-child(2) h4{
         width: 80vw;
         height: 9vh;
     }
+    .contact-section aside>form>fieldset>button {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+    /*footer----------------------------------------*/
+
+    body footer {
+        margin-top: 32vh;
+    }
 }
