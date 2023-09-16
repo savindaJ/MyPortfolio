@@ -1791,4 +1791,42 @@ footer section>div:nth-child(2) h4{
     body footer {
         margin-top: 32vh;
     }
+
+    body footer section>div:first-child>div:first-child {
+        width: 13vw;
+        height: 16vw;
+    }
+
+    footer div:first-child h4 {
+        margin-top: 0;
+    }
+
+    footer div:first-child h4 {
+        font-size: 20px;
+    }
+
+    footer div:first-child p {
+        font-size: 16px;
+    }
+
+    footer>nav>a>abbr>img{
+        width: 10vw;
+    }
+
+    footer>nav{
+        position: relative;
+        top: 12vh;
+    }
+    body footer section>div:nth-child(2) {
+        width: 35vw;
+        height: 9vh;
+        top: 13vh;
+    }
+    footer section>div:nth-child(2) h4 {
+        font-size: 16px;
+    }
+    footer>div:last-child>small {
+        font-size: 10px;
+    }
+
 }
