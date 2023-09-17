@@ -1843,6 +1843,11 @@ footer section>div:nth-child(2) h4{
         left: 7vw;
     }
 
+    .home-section {
+        height: 60vh;
+        border: 1px solid red;
+    }
+
     header nav>div>menu>li>a {
         font-size: 12px;
     }
@@ -1851,4 +1856,49 @@ footer section>div:nth-child(2) h4{
         width: 68px;
         height: 30px;
     }
+
+    .curve {
+        min-height: 60vh;
+    }
+
+    .custom-shape-divider-bottom-1693915055 svg {
+        height: 150px;
+    }
+
+    main section:nth-child(3) {
+        height: 0;
+    }
+
+    .home-section>section:nth-child(3)>section {
+        height: 24vh;
+        top: 3vh;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
+        bottom: -22vw;
+        left: -1vw;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong {
+        top: 14vh;
+    }
+
+    .status-section {
+        width: 45%;
+        height: 10vh;
+        top: -90px;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+        width: 65px;
+        height: 27px;
+        font-size: 7px;
+        color: wheat;
+    }
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4) {
+        font-size: 11px;
+    }
+
+    /*end header section !*/
+
 }
