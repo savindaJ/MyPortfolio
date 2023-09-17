@@ -1423,7 +1423,7 @@ footer section>div:nth-child(2) h4{
     .service-section>aside:nth-child(4) {
         display: grid;
         width: 90%;
-        height: 40vh;
+        height: 85vh;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
@@ -1441,9 +1441,9 @@ footer section>div:nth-child(2) h4{
     }
 
     .service-section>aside:last-child {
-        top: 77vh;
         display: grid;
         justify-content: space-around;
+        top: 32vh;
     }
 
     main>section:nth-child(4) {
@@ -1838,5 +1838,17 @@ footer section>div:nth-child(2) h4{
 }
 
 @media all and (min-width: 581px) and (max-width: 768px){
+    header nav>div>menu {
+        position: relative;
+        left: 7vw;
+    }
 
+    header nav>div>menu>li>a {
+        font-size: 12px;
+    }
+
+    .home-section>section:nth-child(3)>section:last-child>div:first-child {
+        width: 68px;
+        height: 30px;
+    }
 }
