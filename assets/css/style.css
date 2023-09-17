@@ -1838,9 +1838,14 @@ footer section>div:nth-child(2) h4{
 }
 
 @media all and (min-width: 581px) and (max-width: 768px){
+
     header nav>div>menu {
         position: relative;
         left: 7vw;
+    }
+
+    header nav>div>menu>li>a {
+        font-size: 12px;
     }
 
     .home-section {
@@ -1848,57 +1853,38 @@ footer section>div:nth-child(2) h4{
         border: 1px solid red;
     }
 
-    header nav>div>menu>li>a {
-        font-size: 12px;
+    main>section:nth-child(3) {
+        height: 125vh;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:first-child {
-        width: 68px;
-        height: 30px;
+    .home-section>section:nth-child(3)>section {
+        top: 0vh;
+    }
+
+    .home-section>section:nth-child(3)>section {
+        height: 60vh;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
+        bottom: 0vw;
+    }
+
+    .custom-shape-divider-bottom-1693915055 svg {
+        height: 125px;
     }
 
     .curve {
         min-height: 60vh;
     }
 
-    .custom-shape-divider-bottom-1693915055 svg {
-        height: 150px;
-    }
-
-    main section:nth-child(3) {
-        height: 0;
-    }
-
-    .home-section>section:nth-child(3)>section {
-        height: 24vh;
-        top: 3vh;
-    }
-
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
-        bottom: -22vw;
-        left: -1vw;
-    }
-
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong {
-        top: 14vh;
-    }
-
     .status-section {
-        width: 45%;
         height: 10vh;
-        top: -90px;
+        top: -20vh;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
-        width: 65px;
-        height: 27px;
-        font-size: 7px;
-        color: wheat;
+    .home-section>section:nth-child(3) {
+        height: 60vh;
+        position: absolute;
+        box-sizing: border-box;
     }
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4) {
-        font-size: 11px;
-    }
-
-    /*end header section !*/
-
 }
