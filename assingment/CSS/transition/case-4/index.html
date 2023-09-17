@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition case 4</title>
+    <style>
+        section{
+            width: 30vw;
+            height: 30vw;
+            border: 20px solid #978989;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-top: 20px solid red;
+            display: flex;
+        }
+
+        section>div:first-child{
+            width: 20px;
+            height: 15vw;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 22vh;
+            left: 10vw;
+            right: 0;
+            transform: rotate(40deg);
+        }
+
+        section>div>div:last-child{
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+            top: -5vh;
+            right: 0.5vw;
+        }
+
+        section:hover{
+            transition-duration: 3s;
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+</body>
+</html>
