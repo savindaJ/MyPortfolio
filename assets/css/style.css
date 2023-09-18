@@ -1850,7 +1850,6 @@ footer section>div:nth-child(2) h4{
 
     .home-section {
         height: 60vh;
-        border: 1px solid red;
     }
 
     main>section:nth-child(3) {
@@ -1898,6 +1897,24 @@ footer section>div:nth-child(2) h4{
         top: 10vh;
     }
 
+    .lable{
+        font-size: 10px;
+        position: relative;
+        top: -5px;
+        left: 15px;
+    }
+
+    .switch {
+        width: 50px;
+        height: 17px;
+        top: -6px;
+    }
+
+    .slider:before {
+        height: 14px;
+        width: 14px;
+    }
+
     /*end header ----------------------------------------------*/
 
     .service-section>h4 {
@@ -1929,8 +1946,8 @@ footer section>div:nth-child(2) h4{
     }
 
     .service-section>aside:nth-child(4)>div:first-child div:nth-child(1) {
-        width: 9vw;
-        height: 9vh;
+        width: 87px;
+        height: 71px;
     }
 
     .service-section>aside>div p {
@@ -1941,18 +1958,24 @@ footer section>div:nth-child(2) h4{
         width: 65%;
     }
 
-
-
-
     .aboutme-section {
-        height: 65vh;
+        height: 60vh;
     }
 
     .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
-        line-height: 5.5vh;
+        line-height: 3.5vh;
     }
 
     .aboutme-section>section:nth-child(3)>aside:last-child>p:last-child>span {
         font-size: 20px;
     }
+
+    .aboutme-section>section:nth-child(3) {
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    /*education section----------------*/
 }
