@@ -2221,3 +2221,31 @@ footer section>div:nth-child(2) h4{
         width: 40vw;
     }
 }
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    main section:nth-child(3) {
+        height: 70vh;
+    }
+
+    .home-section>section:nth-child(3)>section {
+        top: 2vh;
+        height: 70vh;
+    }
+
+    .status-section {
+        height: 14vh;
+        top: -28vh;
+    }
+
+    .custom-shape-divider-bottom-1693915055 svg {
+        height: 126px;
+    }
+
+    .curve {
+        min-height: 80vh;
+    }
+
+    .home-section {
+        height: 75vh;
+    }
+}
