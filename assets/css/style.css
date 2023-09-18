@@ -1864,6 +1864,11 @@ footer section>div:nth-child(2) h4{
         height: 60vh;
     }
 
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong {
+        top: 15vh;
+    }
+
     .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
         bottom: 0vw;
     }
