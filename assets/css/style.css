@@ -2138,5 +2138,53 @@ footer section>div:nth-child(2) h4{
         height: 90vh;
     }
 
-    /**/
+    /*contact section------------------------*/
+
+    .contact-section>h4 {
+        font-size: 20px;
+    }
+
+    .contact-section>h1 {
+        font-size: 25px;
+    }
+
+    .contact-section>hr {
+        width: 23vw;
+        height: 3px;
+    }
+
+    .contact-section>section>address>div>div:first-child {
+        font-size: 45px;
+    }
+
+    .contact-section>section>address h4 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .contact-section>section>address>h4{
+        margin-top: 50px;
+    }
+
+    .contact-section>section>address p {
+        font-size: 15px;
+    }
+
+    .contact-section aside>form>fieldset>label {
+        font-size: 15px;
+    }
+
+    .contact-section aside>form>fieldset>input {
+        width: 40vw;
+        height: 6vh;
+    }
+
+    .contact-section aside>form>fieldset>button {
+        width: 145px;
+        height: 40px;
+    }
+
+    .contact-section {
+        height: 110vh;
+    }
 }
