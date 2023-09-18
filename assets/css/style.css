@@ -2113,4 +2113,30 @@ footer section>div:nth-child(2) h4{
     .certificate-section>section>button {
         font-size: 40px;
     }
+
+    /*blog section --------------------*/
+
+    .general-life-section>h4 {
+        font-size: 20px;
+    }
+
+    .general-life-section>h1 {
+        font-size: 25px;
+    }
+
+    .general-life-section>hr {
+        width: 30vw;
+    }
+
+    .general-life-section>section:nth-child(4) {
+        width: 80%;
+        height: 60vh;
+
+    }
+
+    .general-life-section {
+        height: 90vh;
+    }
+
+    /**/
 }
