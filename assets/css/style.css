@@ -1892,6 +1892,12 @@ footer section>div:nth-child(2) h4{
         font-size: 11px;
     }
 
+    .home-section>section:nth-child(3)>section:last-child>div:first-child {
+        width: 77px;
+        height: 32px;
+        top: 10vh;
+    }
+
     /*end header ----------------------------------------------*/
 
     .service-section>h4 {
