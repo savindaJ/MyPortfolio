@@ -2187,4 +2187,32 @@ footer section>div:nth-child(2) h4{
     .contact-section {
         height: 110vh;
     }
+
+    /*footer ----------------------------*/
+
+    footer div:first-child h4 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    footer div:first-child p {
+        font-size: 20px;
+    }
+
+    body footer section>div:nth-child(2) {
+        width: 30vw;
+        top: 3vh;
+    }
+
+    footer>nav {
+        top: 6vh;
+    }
+
+    .contact-section>section>aside {
+        width: 41vw;
+    }
+
+    .contact-section aside>form>fieldset>textarea {
+        width: 40vw;
+    }
 }
