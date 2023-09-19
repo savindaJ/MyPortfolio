@@ -45,6 +45,7 @@ header nav>div>menu>li>a{
 
 header nav>div>menu>li>a:hover{
     color: #FD6E0A;
+    transition-duration: 1s;
 }
 
 header>div{
@@ -439,6 +440,21 @@ main section:nth-child(3){
     box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
     width: 28vw;
     flex-shrink: 0;
+    transition-duration: 1s;
+}
+
+.service-section>aside>div:hover div{
+    transition-duration: 3s;
+    transform: rotate(360deg);
+}
+
+.service-section>aside>div:hover{
+    box-shadow: 0px 5px 30px 5px rgb(232, 139, 10);
+}
+
+.service-section>aside>div:hover p{
+    color: black;
+    transition-duration: 1s;
 }
 
 .service-section>aside>div div:first-child{
@@ -858,6 +874,18 @@ main section:nth-child(3){
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.recent-works>section>div>div>a:hover{
+    font-size: 25px;
+    transition-duration: 2s;
+    color: #FD6E0A;
+}
+
+.recent-works>section>div>div:hover div{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+
 }
 /*Certificate-section ------------------------------------------------------------------------------------------------*/
 .certificate-section{
