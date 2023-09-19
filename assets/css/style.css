@@ -2339,4 +2339,61 @@ footer section>div:nth-child(2) h4{
     .recent-works {
         top: 0;
     }
+
+
+    .recent-works>hr {
+        width: 25vw;
+    }
+
+    .recent-works {
+        height: 170vh;
+    }
+
+    .recent-works>section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .work-svg {
+        width: 45vw;
+    }
+
+    .recent-works>section>div:last-child{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin: auto;
+        position: relative;
+    }
+
+    .recent-works>section>div>div {
+        width: 35vw;
+    }
+
+    .recent-works>section>div>div>div:first-child {
+        width: 70px;
+        height: 70px;
+        top: 15vh;
+    }
+
+    .recent-works>section>div>div>h4 {
+        font-size: 25px;
+    }
+
+    .recent-works>section>div>div>p {
+        font-size: 20px;
+    }
+
+    .recent-works>section>div>div>a {
+        top: 10vh;
+        left: 3vw;
+        font-size: 20px;
+    }
+
+    .recent-works>section>div:nth-child(1)>div>div:first-child {
+        width: 79px;
+        height: 64px;
+    }
+
+
 }
