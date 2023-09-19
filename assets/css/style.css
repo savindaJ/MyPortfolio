@@ -176,6 +176,7 @@ body main{
     border-radius: 50px;
     background: #FD6E0A;
     font-size: 1vw;
+    transition-duration: 2s;
 }
 
 .home-section>section:nth-child(3)>section:last-child>div:first-child{
@@ -384,6 +385,13 @@ input:checked + .slider:before {
 .custom-shape-divider-bottom-1693915055 .shape-fill {
     fill: #FFFFFF;
 }
+
+.home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button:hover{
+    background-color: #0a2a5a;
+    color: white;
+    transition-duration: 2s;
+}
+
 
 /*
 end headder style -----------------------------------------------------------------------------------------------*/
@@ -1034,6 +1042,7 @@ main section:nth-child(3){
 .general-life-section>section div{
     border: 1px solid orange;
     border-radius: 20px;
+    transition-duration: 2s;
 }
 
 .general-life-section>section div:nth-child(1){
@@ -1083,6 +1092,11 @@ main section:nth-child(3){
     background-position: center;
 }
 
+.general-life-section>section div:hover {
+    transition-duration: 2s;
+    box-shadow: 0px 5px 30px 5px rgb(232, 139, 10);
+
+}
 /*contact section ------------------------------------------------------------------------------------------*/
 
 .contact-section{
@@ -1239,6 +1253,14 @@ main section:nth-child(3){
     border-radius: 10px;
     background: #21609B;
     color: white;
+    transition-duration: 2s;
+}
+
+.contact-section aside>form>fieldset>button:hover {
+  background-color: #f6b458;
+    transition-duration: 2s;
+    color: black;
+    border: white;
 }
 
 /*footer section---------------------------------------------------------------------------------------*/
@@ -2255,7 +2277,7 @@ footer section>div:nth-child(2) h4{
     }
 }
 
-@media all and (min-width: 769px) and (max-width: 1024px){
+@media all and (min-width: 769px) and (max-width: 1100px){
     main section:nth-child(3) {
         height: 70vh;
     }
