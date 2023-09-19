@@ -35,7 +35,8 @@ header nav>div>menu>li{
 
 header nav>div>menu>li>a{
     color: #162A5F;
-    font-family: Libre Baskerville;
+    font-family: 'PT Sans Narrow', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     font-size: 1.2em;
     font-style: normal;
     font-weight: 500;
@@ -400,7 +401,7 @@ end headder style --------------------------------------------------------------
 .service-section>h4{
     text-align: center;
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -411,7 +412,7 @@ end headder style --------------------------------------------------------------
 .service-section>h1{
     text-align: center;
     color: #000;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -518,7 +519,7 @@ main section:nth-child(3){
 .service-section>aside>div p{
     color: #838383;
     text-align: center;
-    font-family: Hind;
+    font-family: 'PT Serif', serif;
     font-size: 1em;
     font-style: normal;
     font-weight: 400;
@@ -548,7 +549,7 @@ main section:nth-child(3){
 
 .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child{
     color: #000;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
@@ -563,7 +564,7 @@ main section:nth-child(3){
 
 .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span{
     color: #162A5F;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 1.5vw;
     font-style: normal;
     font-weight: 700;
@@ -572,7 +573,7 @@ main section:nth-child(3){
 
 .aboutme-section>section:nth-child(3)>aside:last-child>p:last-child{
     color: #171212;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 2vw;
     font-style: normal;
     font-weight: 400;
@@ -584,7 +585,7 @@ main section:nth-child(3){
 
 .aboutme-section>section:nth-child(3)>aside:last-child>p:last-child>span{
     color: #FD6E0A;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 4vh;
     font-style: normal;
     font-weight: 400;
@@ -609,7 +610,7 @@ main section:nth-child(3){
 
 .aboutme-section>div:nth-child(2)>h1{
     color: #FD6E0A;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 2vw;
 }
 
@@ -629,7 +630,7 @@ main section:nth-child(3){
 
 .education-section h1{
     color: #000;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -640,7 +641,7 @@ main section:nth-child(3){
 
 .education-section>h4:first-child{
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -681,7 +682,7 @@ main section:nth-child(3){
 
 .education-section section>.detail>h4{
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -725,7 +726,7 @@ main section:nth-child(3){
 .language-tools>h4{
     text-align: center;
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -734,7 +735,7 @@ main section:nth-child(3){
 
 .language-tools > h1{
     color: #000;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -772,7 +773,7 @@ main section:nth-child(3){
 
 .recent-works>h4{
     color: #162A5F;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -783,7 +784,7 @@ main section:nth-child(3){
 .recent-works>h1{
     color: #000;
     text-align: center;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -904,7 +905,7 @@ main section:nth-child(3){
 .certificate-section > h1{
     color: #000;
     text-align: center;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -914,7 +915,7 @@ main section:nth-child(3){
 
 .certificate-section > h4{
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -1002,7 +1003,7 @@ main section:nth-child(3){
 
 .general-life-section>h4{
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -1013,7 +1014,7 @@ main section:nth-child(3){
 .general-life-section>h1{
     color: #000;
     text-align: center;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1108,7 +1109,7 @@ main section:nth-child(3){
 .contact-section>h1{
     color: #000;
     text-align: center;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1118,7 +1119,7 @@ main section:nth-child(3){
 
 .contact-section>h4{
     color: #162A5F;
-    font-family: Libre Baskerville, serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
