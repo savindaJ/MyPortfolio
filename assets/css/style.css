@@ -2396,4 +2396,42 @@ footer section>div:nth-child(2) h4{
     }
 
 
+    /*Certificate -----------------------------*/
+
+    .certificate-section>section:last-child {
+        width: 88%;
+       top: 5vh;
+    }
+    .certificate-section>section>button {
+        font-size: 75px;
+    }
+
+    .certificate-section>section>button {
+        height: 10vw;
+    }
+
+    /*contact section ---------------*/
+
+    .contact-section>section>address p {
+        font-size: 16px;
+    }
+
+    .contact-section aside>form>fieldset>label {
+        font-size: 16px;
+    }
+
+    /*footer ----------------*/
+
+    footer div:first-child h4 {
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    footer div:first-child p {
+        font-size: 20px;
+    }
+
+    body footer section>div:nth-child(2) {
+        width: 24vw;
+    }
 }
