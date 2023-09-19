@@ -1530,11 +1530,11 @@ footer section>div:nth-child(2) h4{
     }
 
     .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
-        font-size: 3.5vw;
+        font-size: 10px;
         line-height: 5vh;
         position: relative;
         top: 0;
-        left: 10vh;
+        left: 7vh;
     }
 
     .aboutme-section>div:nth-child(2)>h1>span:first-child {
