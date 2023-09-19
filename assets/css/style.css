@@ -1920,6 +1920,11 @@ footer section>div:nth-child(2) h4{
         width: 14px;
     }
 
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+        font-size: 10px;
+        color: white;
+    }
+
     /*end header ----------------------------------------------*/
 
     .service-section>h4 {
@@ -2281,5 +2286,57 @@ footer section>div:nth-child(2) h4{
         width: 12px;
         left: 6px;
         bottom: 1px;
+    }
+
+    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+        font-size: 12px;
+        color: wheat;
+    }
+
+    /*service ------------------------------*/
+
+    #service{
+        height: 120vh;
+    }
+
+    .service-section>aside>div h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .service-section>aside>div p {
+        font-size: 14px;
+    }
+
+    .service-section>aside:nth-child(4)>div:first-child div:nth-child(1) {
+        width: 73px;
+        height: 61px;
+    }
+
+    /*about me section*/
+
+    .aboutme-section {
+        height: 80vh;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span {
+        font-size: 16px;
+    }
+
+    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
+        font-size: 18px;
+    }
+
+
+    /* education section*/
+
+    .education-section {
+        height: 155vh;
+    }
+
+    /*my works*/
+
+    .recent-works {
+        top: 0;
     }
 }
