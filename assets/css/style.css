@@ -1870,7 +1870,7 @@ footer section>div:nth-child(2) h4{
     }
 
     .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
-        bottom: 0vw;
+        bottom: 0;
     }
 
     .custom-shape-divider-bottom-1693915055 svg {
@@ -2247,5 +2247,39 @@ footer section>div:nth-child(2) h4{
 
     .home-section {
         height: 75vh;
+    }
+    
+    header nav>div>menu>li>a {
+        font-size: 15px;
+    }
+
+    header nav>div>menu {
+        left: 0;
+    }
+
+    .home-section>section:nth-child(3)>section:last-child>div:first-child {
+        width: 65px;
+        height: 35px;
+    }
+
+    .lable{
+        font-size: 10px;
+        position: relative;
+        left: 10px;
+        top: -5px;
+    }
+
+    .switch {
+        width: 46px;
+        height: 14px;
+        position: relative;
+        top: -5px;
+    }
+
+    .slider:before {
+        height: 12px;
+        width: 12px;
+        left: 6px;
+        bottom: 1px;
     }
 }
