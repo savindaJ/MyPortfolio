@@ -126,7 +126,7 @@ main section>aside>img{
     border-radius: 10px;
 }
 
-@media all and (max-width: 580px){
+@media all and (max-width: 600px){
     main h1 {
         font-size: 30px;
     }
