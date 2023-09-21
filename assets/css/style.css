@@ -1,4 +1,4 @@
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@
     background-color: #eea337;
 }
 
-header{
+header {
     display: inline-flex;
     border-bottom: 2px solid #faa151;
     background: #FFF;
@@ -23,17 +23,17 @@ header{
     z-index: 10;
 }
 
-header nav>div>menu{
+header nav > div > menu {
     position: relative;
     left: 30vw;
 }
 
-header nav>div>menu>li{
+header nav > div > menu > li {
     display: inline-block;
     margin-left: 3vw;
 }
 
-header nav>div>menu>li>a{
+header nav > div > menu > li > a {
     color: #162A5F;
     font-family: 'PT Sans Narrow', sans-serif;
     /*font-family: 'Roboto', sans-serif;*/
@@ -44,18 +44,18 @@ header nav>div>menu>li>a{
     text-decoration: none;
 }
 
-header nav>div>menu>li>a:hover{
+header nav > div > menu > li > a:hover {
     color: #FD6E0A;
     transition-duration: 1s;
 }
 
-header>div{
+header > div {
     position: relative;
     left: 2vw;
 }
 
 /*background ----------------------------------------------------*/
-main>div:first-child{
+main > div:first-child {
     width: 100%;
     height: 100vh;
     background: url("../images/background-image-fixed.jpg");
@@ -65,26 +65,27 @@ main>div:first-child{
     position: absolute;
     top: 0;
 }
+
 /*header section ------------------------------------------------------------------------------------------- */
 
-body main{
+body main {
     margin-top: 8vh;
     position: relative;
 }
 
-.home-section{
+.home-section {
     position: relative;
     height: 95vh;
     width: 100%;
 }
 
-.home-section>section:nth-child(3){
+.home-section > section:nth-child(3) {
     position: absolute;
     top: 0;
     display: flex;
 }
 
-.home-section>section:nth-child(3)>section{
+.home-section > section:nth-child(3) > section {
     width: 40%;
     height: 85vh;
     margin: auto;
@@ -92,20 +93,20 @@ body main{
     top: -16vh;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>h1:first-child{
+.home-section > section:nth-child(3) > section:nth-child(1) > h1:first-child {
     font-size: 7vw;
     opacity: 10%;
     position: relative;
     left: 30vw;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child {
     position: absolute;
     top: 0;
     height: 30vh;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:first-child{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > p:first-child {
     color: #FD6E0A;
     font-family: 'PT Serif', serif;
     font-size: 2vw;
@@ -114,7 +115,7 @@ body main{
     line-height: normal;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h1:nth-child(2){
+.home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h1:nth-child(2) {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 3.5vw;
@@ -124,7 +125,7 @@ body main{
 
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3){
+.home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h4:nth-child(3) {
     color: #15295F;
     font-family: 'PT Serif', serif;
     font-size: 2vw;
@@ -134,7 +135,7 @@ body main{
     margin-bottom: 2vw;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3)>span{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h4:nth-child(3) > span {
     color: #FC801D;
     /*font-family: 'poppins', Roboto;*/
     font-family: 'poppins', Roboto;
@@ -144,7 +145,7 @@ body main{
     line-height: normal;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4){
+.home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > p:nth-child(4) {
     color: #171212;
     font-family: Libre Baskerville;
     font-size: 1.5vw;
@@ -154,7 +155,7 @@ body main{
     margin-top: 0;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside>strong{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside > strong {
     color: #15295F;
     font-family: 'PT Serif', serif;
     font-size: 2vw;
@@ -165,13 +166,13 @@ body main{
     top: 20vh;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child {
     position: absolute;
     bottom: -4vw;
     left: -2vw;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child > a > button {
     width: 10.5vw;
     height: 7vh;
     flex-shrink: 0;
@@ -182,7 +183,7 @@ body main{
     color: white;
 }
 
-.home-section>section:nth-child(3)>section:last-child>div:first-child{
+.home-section > section:nth-child(3) > section:last-child > div:first-child {
     position: fixed;
     right: 0;
     width: 6vw;
@@ -193,12 +194,12 @@ body main{
     z-index: 10;
 }
 
-.home-section>section:nth-child(3)>section:last-child>div:first-child>div{
+.home-section > section:nth-child(3) > section:last-child > div:first-child > div {
     position: relative;
     left: 2vw;
 }
 
-.home-section>section:nth-child(3)>section:last-child>div:last-child>div:first-child{
+.home-section > section:nth-child(3) > section:last-child > div:last-child > div:first-child {
     width: 30vw;
     height: 30vw;
     border-radius: 100%;
@@ -208,7 +209,7 @@ body main{
     top: 5vh;
 }
 
-.home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(2){
+.home-section > section:nth-child(3) > section:last-child > div:last-child > div:nth-child(2) {
     width: 30vw;
     height: 30vw;
     border-radius: 100%;
@@ -218,7 +219,7 @@ body main{
     top: 5vh;
 }
 
-.home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(3){
+.home-section > section:nth-child(3) > section:last-child > div:last-child > div:nth-child(3) {
     width: 30vw;
     height: 30vw;
     border-radius: 100%;
@@ -228,7 +229,7 @@ body main{
     top: 5vh;
 }
 
-.home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(4){
+.home-section > section:nth-child(3) > section:last-child > div:last-child > div:nth-child(4) {
     width: 28vw;
     height: 28vw;
     background: url("../images/my-img.png");
@@ -238,7 +239,7 @@ body main{
     left: 7vw;
 }
 
-.status-section{
+.status-section {
     display: flex;
     border-radius: 50px;
     border: 1px solid #8AEDF3;
@@ -253,12 +254,12 @@ body main{
     justify-content: space-around;
 }
 
-.status-section>div{
+.status-section > div {
     position: relative;
     display: flex;
 }
 
-.status-section>div h4{
+.status-section > div h4 {
     color: #162A5F;
     font-family: Inter;
     font-size: 1.7vw;
@@ -268,7 +269,7 @@ body main{
     margin-bottom: 0;
 }
 
-.status-section>div p{
+.status-section > div p {
     color: #FA5700;
     font-family: Inter;
     font-size: 1.2vw;
@@ -277,7 +278,7 @@ body main{
     line-height: normal;
 }
 
-.status-section>div>div:first-child{
+.status-section > div > div:first-child {
     position: relative;
     top: 0;
     bottom: 0;
@@ -287,17 +288,17 @@ body main{
     margin-right: 1vw;
 }
 
-.status-section>div:first-child>div:first-child{
+.status-section > div:first-child > div:first-child {
     background: url("../images/service-header.png");
     background-size: cover;
 }
 
-.status-section>div:nth-child(2)>div:first-child{
+.status-section > div:nth-child(2) > div:first-child {
     background: url("../images/project-header.png");
     background-size: cover;
 }
 
-.status-section>div:last-child>div:first-child{
+.status-section > div:last-child > div:first-child {
     background: url("../images/skill-header.png");
     background-size: cover;
 }
@@ -371,9 +372,9 @@ input:checked + .slider:before {
     line-height: 0;
 }
 
-.curve{
+.curve {
     position: relative;
-    background-color: rgba(246,234,113,0.66);
+    background-color: rgba(246, 234, 113, 0.66);
     min-height: 100vh;
 }
 
@@ -389,7 +390,7 @@ input:checked + .slider:before {
     fill: #FFFFFF;
 }
 
-.home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button:hover{
+.home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child > a > button:hover {
     background-color: #0a2a5a;
     color: white;
     transition-duration: 2s;
@@ -400,7 +401,7 @@ input:checked + .slider:before {
 end headder style -----------------------------------------------------------------------------------------------*/
 
 /*service section -----------------------------------------------------------------------------------------------*/
-.service-section>h4{
+.service-section > h4 {
     text-align: center;
     color: #162A5F;
     font-family: 'PT Serif', serif;
@@ -411,7 +412,7 @@ end headder style --------------------------------------------------------------
 }
 
 
-.service-section>h1{
+.service-section > h1 {
     text-align: center;
     color: #000;
     font-family: 'PT Serif', serif;
@@ -421,14 +422,14 @@ end headder style --------------------------------------------------------------
     line-height: normal;
 }
 
-main section:nth-child(3){
+main section:nth-child(3) {
     width: 100%;
     height: 120vh;
     position: relative;
     box-sizing: border-box;
 }
 
-.service-section>aside:nth-child(4){
+.service-section > aside:nth-child(4) {
     margin: auto;
     display: flex;
     width: 90%;
@@ -436,7 +437,7 @@ main section:nth-child(3){
     justify-content: space-between;
 }
 
-.service-section>aside:last-child{
+.service-section > aside:last-child {
     position: relative;
     top: 10vh;
     margin: auto;
@@ -445,7 +446,7 @@ main section:nth-child(3){
     justify-content: space-between;
 }
 
-.service-section>aside>div{
+.service-section > aside > div {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
@@ -454,21 +455,21 @@ main section:nth-child(3){
     transition-duration: 1s;
 }
 
-.service-section>aside>div:hover div{
+.service-section > aside > div:hover div {
     transition-duration: 3s;
     transform: rotate(360deg);
 }
 
-.service-section>aside>div:hover{
+.service-section > aside > div:hover {
     box-shadow: 0px 5px 30px 5px rgb(232, 139, 10);
 }
 
-.service-section>aside>div:hover p{
+.service-section > aside > div:hover p {
     color: black;
     transition-duration: 1s;
 }
 
-.service-section>aside>div div:first-child{
+.service-section > aside > div div:first-child {
     width: 7vw;
     height: 7vw;
     margin: auto;
@@ -476,7 +477,7 @@ main section:nth-child(3){
     top: 2vh;
 }
 
-.service-section>aside:nth-child(4)>div:first-child div:nth-child(1){
+.service-section > aside:nth-child(4) > div:first-child div:nth-child(1) {
     width: 110px;
     height: 90px;
     background: url("../images/enterprise-icon.png");
@@ -484,31 +485,31 @@ main section:nth-child(3){
     background-position: center;
 }
 
-.service-section>aside:nth-child(4)>div:nth-child(2) div:nth-child(1){
+.service-section > aside:nth-child(4) > div:nth-child(2) div:nth-child(1) {
     background: url("../images/web-icon.png");
     background-size: cover;
     background-position: center;
 }
 
-.service-section>aside:nth-child(4)>div:nth-child(3) div:nth-child(1){
+.service-section > aside:nth-child(4) > div:nth-child(3) div:nth-child(1) {
     background: url("../images/uiux-icon.png");
     background-size: cover;
     background-position: center;
 }
 
-.service-section>aside:last-child>div:first-child div:nth-child(1){
+.service-section > aside:last-child > div:first-child div:nth-child(1) {
     background: url("../images/freelance-icon.png");
     background-size: cover;
     background-position: center;
 }
 
-.service-section>aside:last-child>div:last-child div:nth-child(1){
+.service-section > aside:last-child > div:last-child div:nth-child(1) {
     background: url("../images/bugFix-icon.png");
     background-size: cover;
     background-position: center;
 }
 
-.service-section>aside>div h4{
+.service-section > aside > div h4 {
     color: #15295F;
     font-family: Libre Baskerville, cursive;
     font-size: 1.5em;
@@ -518,7 +519,7 @@ main section:nth-child(3){
     text-align: center;
 }
 
-.service-section>aside>div p{
+.service-section > aside > div p {
     color: #838383;
     text-align: center;
     font-family: 'PT Serif', serif;
@@ -529,27 +530,27 @@ main section:nth-child(3){
 }
 
 /*end service section style ---------------------------------------------------------------------------------*/
-.aboutme-section{
+.aboutme-section {
     margin-top: 5vh;
     width: 100%;
     height: 90vh;
 }
 
-.aboutme-section>section:nth-child(3){
+.aboutme-section > section:nth-child(3) {
     display: flex;
     justify-content: space-evenly;
 }
 
-.aboutme-section>section:nth-child(3)>aside:first-child{
+.aboutme-section > section:nth-child(3) > aside:first-child {
     width: 30%;
     height: 70vh;
 }
 
-.aboutme-section>section:nth-child(3)>aside:first-child img{
+.aboutme-section > section:nth-child(3) > aside:first-child img {
     width: 100%;
 }
 
-.aboutme-section>section:nth-child(3)>aside:last-child>p:first-child{
+.aboutme-section > section:nth-child(3) > aside:last-child > p:first-child {
     color: #000;
     font-family: 'PT Serif', serif;
     font-size: 1.5vw;
@@ -564,7 +565,7 @@ main section:nth-child(3){
     margin-right: 0;
 }
 
-.aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span{
+.aboutme-section > section:nth-child(3) > aside:last-child > p:first-child > span {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 1.5vw;
@@ -573,7 +574,7 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.aboutme-section>section:nth-child(3)>aside:last-child>p:last-child{
+.aboutme-section > section:nth-child(3) > aside:last-child > p:last-child {
     color: #171212;
     font-family: 'PT Serif', serif;
     font-size: 2vw;
@@ -585,7 +586,7 @@ main section:nth-child(3){
     position: relative;
 }
 
-.aboutme-section>section:nth-child(3)>aside:last-child>p:last-child>span{
+.aboutme-section > section:nth-child(3) > aside:last-child > p:last-child > span {
     color: #FD6E0A;
     font-family: 'PT Serif', serif;
     font-size: 4vh;
@@ -594,29 +595,29 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.aboutme-section a{
+.aboutme-section a {
     text-decoration: none;
 }
 
-.aboutme-section>div:nth-child(2){
+.aboutme-section > div:nth-child(2) {
     margin: auto;
     width: max-content;
     height: max-content;
     display: flex;
 }
 
-.aboutme-section>div:nth-child(2)>h1>span:first-child{
+.aboutme-section > div:nth-child(2) > h1 > span:first-child {
     font-size: 5vw;
     color: #162A5F;
 }
 
-.aboutme-section>div:nth-child(2)>h1{
+.aboutme-section > div:nth-child(2) > h1 {
     color: #FD6E0A;
     font-family: 'PT Serif', serif;
     font-size: 2vw;
 }
 
-.aboutme-section>div:nth-child(2)>h1>span:last-child{
+.aboutme-section > div:nth-child(2) > h1 > span:last-child {
     color: black;
     font-size: 4vw;
 }
@@ -624,13 +625,13 @@ main section:nth-child(3){
 /*about me section ------------------------------------------------------------------------------------------*/
 
 /*education section------------------------------------------------------------------------------------*/
-.education-section{
+.education-section {
     position: relative;
     width: 100%;
     height: 130vh;
 }
 
-.education-section h1{
+.education-section h1 {
     color: #000;
     font-family: 'PT Serif', serif;
     font-size: 40px;
@@ -641,7 +642,7 @@ main section:nth-child(3){
     margin-bottom: 0;
 }
 
-.education-section>h4:first-child{
+.education-section > h4:first-child {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 24px;
@@ -651,13 +652,13 @@ main section:nth-child(3){
     text-align: center;
 }
 
-.education-section hr{
+.education-section hr {
     width: 20vw;
     height: 3px;
     background-color: #FA5700;
 }
 
-.circles{
+.circles {
     width: 2vw;
     height: 2vw;
     border-radius: 100%;
@@ -666,7 +667,7 @@ main section:nth-child(3){
     margin: auto;
 }
 
-.education-section #line{
+.education-section #line {
     width: 3px;
     border-left: 3px solid #0a2a5a;
     position: absolute;
@@ -677,12 +678,12 @@ main section:nth-child(3){
     bottom: 0;
 }
 
-.education-section section:last-child{
+.education-section section:last-child {
     position: relative;
     top: 10vh;
 }
 
-.education-section section>.detail>h4{
+.education-section section > .detail > h4 {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 20px;
@@ -692,40 +693,41 @@ main section:nth-child(3){
     margin: 0;
 }
 
-.fa-graduation-cap{
+.fa-graduation-cap {
     font-size: 20px;
 }
 
-.education-section section>.detail{
+.education-section section > .detail {
     width: 30vw;
 }
 
-.education-section section>.detail#detail1{
+.education-section section > .detail#detail1 {
     position: relative;
     left: 20vw;
 }
 
-.education-section section>.detail#detail2{
+.education-section section > .detail#detail2 {
     position: relative;
     left: 60vw;
 }
 
-.education-section section>.detail#detail3{
+.education-section section > .detail#detail3 {
     position: relative;
     left: 20vw;
 }
 
-.education-section section>.detail#detail4{
+.education-section section > .detail#detail4 {
     position: absolute;
     right: 10vw;
 }
 
 /*skill section ---------------------------------------------------------------------------------------------------*/
-.language-tools{
+.language-tools {
     width: 100%;
     height: 70vh;
 }
-.language-tools>h4{
+
+.language-tools > h4 {
     text-align: center;
     color: #162A5F;
     font-family: 'PT Serif', serif;
@@ -735,7 +737,7 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.language-tools > h1{
+.language-tools > h1 {
     color: #000;
     font-family: 'PT Serif', serif;
     font-size: 40px;
@@ -746,13 +748,13 @@ main section:nth-child(3){
     margin-bottom: 0;
 }
 
-.language-tools > hr{
+.language-tools > hr {
     width: 20vw;
     height: 3px;
     background: #FD6E0A;
 }
 
-.language-tools>div:last-child{
+.language-tools > div:last-child {
     width: 90%;
     height: 60vh;
     margin: auto;
@@ -760,36 +762,36 @@ main section:nth-child(3){
     top: 5vh;
 }
 
-.language-tools>div:last-child>svg line{
+.language-tools > div:last-child > svg line {
     stroke: rgb(5, 5, 14);
-    stroke-width:2;
+    stroke-width: 2;
     transition-duration: 2s;
 }
 
-.language-tools>div:last-child>svg ellipse{
+.language-tools > div:last-child > svg ellipse {
     transition-duration: 2s;
 }
 
-.language-tools>div:last-child>svg:hover line{
+.language-tools > div:last-child > svg:hover line {
     stroke: rgb(250, 152, 91);
-    stroke-width:2;
+    stroke-width: 2;
     transition-duration: 2s;
 }
 
-.language-tools>div:last-child>svg:hover ellipse{
+.language-tools > div:last-child > svg:hover ellipse {
     fill: #084bac;
     transition-duration: 2s;
 }
 
 /*recent works section-------------------------------------------------------------------------------------------------*/
-.recent-works{
+.recent-works {
     width: 100%;
     height: 100vh;
     position: relative;
     top: 10vh;
 }
 
-.recent-works>h4{
+.recent-works > h4 {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 24px;
@@ -799,7 +801,7 @@ main section:nth-child(3){
     text-align: center;
 }
 
-.recent-works>h1{
+.recent-works > h1 {
     color: #000;
     text-align: center;
     font-family: 'PT Serif', serif;
@@ -810,14 +812,14 @@ main section:nth-child(3){
     margin-bottom: 0;
 }
 
-.recent-works>hr{
+.recent-works > hr {
     width: 20vw;
     height: 3px;
     margin: auto;
     background: #FD6E0A;
 }
 
-.recent-works>section{
+.recent-works > section {
     position: relative;
     width: 90%;
     height: 52vh;
@@ -826,7 +828,7 @@ main section:nth-child(3){
     display: flex;
 }
 
-.recent-works>section>div>div{
+.recent-works > section > div > div {
     width: 25%;
     position: absolute;
     top: 0;
@@ -834,7 +836,7 @@ main section:nth-child(3){
     margin-left: 3.8vw;
 }
 
-.recent-works>section>div>div>div:first-child{
+.recent-works > section > div > div > div:first-child {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -842,12 +844,12 @@ main section:nth-child(3){
     top: 10vh;
 }
 
-.work-svg{
+.work-svg {
     width: 30vw;
     height: 70vh;
 }
 
-.recent-works>section>div:nth-child(1)>div>div:first-child{
+.recent-works > section > div:nth-child(1) > div > div:first-child {
     width: 8vw;
     height: 13vh;
     background: url("../images/enterprise-icon.png");
@@ -855,19 +857,19 @@ main section:nth-child(3){
     background-position: center;
 }
 
-.recent-works>section>div:nth-child(2)>div>div:first-child{
+.recent-works > section > div:nth-child(2) > div > div:first-child {
     background: url("../images/web-icon.png");
     background-size: cover;
     background-position: center;
 }
 
-.recent-works>section>div:nth-child(3)>div>div:first-child{
+.recent-works > section > div:nth-child(3) > div > div:first-child {
     background: url("../images/uiux-icon.png");
     background-size: cover;
     background-position: center;
 }
 
-.recent-works>section>div>div>h4{
+.recent-works > section > div > div > h4 {
     text-align: center;
     position: relative;
     top: 10vh;
@@ -879,7 +881,7 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.recent-works>section>div>div>p{
+.recent-works > section > div > div > p {
     text-align: center;
     position: relative;
     top: 10vh;
@@ -892,7 +894,7 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.recent-works>section>div>div>a{
+.recent-works > section > div > div > a {
     position: relative;
     top: 15vh;
     color: #15295F;
@@ -903,24 +905,25 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.recent-works>section>div>div>a:hover{
+.recent-works > section > div > div > a:hover {
     font-size: 25px;
     transition-duration: 2s;
     color: #FD6E0A;
 }
 
-.recent-works>section>div>div:hover div{
+.recent-works > section > div > div:hover div {
     transform: rotate(360deg);
     transition-duration: 2s;
 
 }
+
 /*Certificate-section ------------------------------------------------------------------------------------------------*/
-.certificate-section{
+.certificate-section {
     width: 100%;
     height: 100vh;
 }
 
-.certificate-section > h1{
+.certificate-section > h1 {
     color: #000;
     text-align: center;
     font-family: 'PT Serif', serif;
@@ -931,7 +934,7 @@ main section:nth-child(3){
     margin-bottom: 0;
 }
 
-.certificate-section > h4{
+.certificate-section > h4 {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 24px;
@@ -941,13 +944,13 @@ main section:nth-child(3){
     text-align: center;
 }
 
-.certificate-section > hr{
+.certificate-section > hr {
     width: 20vw;
     height: 3px;
     background: #FD6E0A;
 }
 
-.certificate-section>section:last-child{
+.certificate-section > section:last-child {
     width: 70%;
     height: 70vh;
     position: relative;
@@ -955,7 +958,7 @@ main section:nth-child(3){
     top: 10vh;
 }
 
-.certificate-section>section:last-child>div{
+.certificate-section > section:last-child > div {
     width: 70%;
     position: relative;
     top: 0;
@@ -963,13 +966,13 @@ main section:nth-child(3){
     margin: auto;
 }
 
-.certificate-section>section>button{
+.certificate-section > section > button {
     width: max-content;
     height: 6vw;
     border-radius: 100%;
 }
 
-.certificate-section>section>button {
+.certificate-section > section > button {
     font-size: 75px;
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -982,12 +985,12 @@ main section:nth-child(3){
     transition: all 0.2s ease-in;
 }
 
-.certificate-section>section>button:hover{
+.certificate-section > section > button:hover {
     transform: scale(1.01);
     box-shadow: 0 6px 4px #e88b0a;
 }
 
-.certificate-section>section>div:nth-child(2){
+.certificate-section > section > div:nth-child(2) {
     width: 70%;
     height: 65vh;
     background: url("../images/certificate-img.png");
@@ -995,7 +998,7 @@ main section:nth-child(3){
     background-position: center;
 }
 
-.certificate-section>section>button:first-child{
+.certificate-section > section > button:first-child {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1003,7 +1006,7 @@ main section:nth-child(3){
     margin: auto;
 }
 
-.certificate-section>section>button:last-child{
+.certificate-section > section > button:last-child {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1013,13 +1016,13 @@ main section:nth-child(3){
 
 /*general life section ----------------------------------------------------------------------------------------------*/
 
-.general-life-section{
+.general-life-section {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
 }
 
-.general-life-section>h4{
+.general-life-section > h4 {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 24px;
@@ -1029,7 +1032,7 @@ main section:nth-child(3){
     text-align: center;
 }
 
-.general-life-section>h1{
+.general-life-section > h1 {
     color: #000;
     text-align: center;
     font-family: 'PT Serif', serif;;
@@ -1040,13 +1043,13 @@ main section:nth-child(3){
     margin-bottom: 0;
 }
 
-.general-life-section>hr{
+.general-life-section > hr {
     width: 22vw;
     height: 3px;
     background: #FD6E0A;
 }
 
-.general-life-section>section:nth-child(4){
+.general-life-section > section:nth-child(4) {
     position: relative;
     top: 5vh;
     margin: auto;
@@ -1058,35 +1061,35 @@ main section:nth-child(3){
     gap: 5px;
 }
 
-.general-life-section>section div{
+.general-life-section > section div {
     border: 1px solid orange;
     border-radius: 20px;
     transition-duration: 2s;
 }
 
-.general-life-section>section div:nth-child(1){
+.general-life-section > section div:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/3;
     background: url("../images/galle-my.jpeg");
     background-size: cover;
 }
 
-.general-life-section>section div:nth-child(2){
+.general-life-section > section div:nth-child(2) {
     background: url("../images/glass-my.jpg");
     background-size: cover;
 }
 
-.general-life-section>section div:nth-child(3){
+.general-life-section > section div:nth-child(3) {
     background: url("../images/edit.jpeg");
     background-size: cover;
 }
 
-.general-life-section>section div:last-child{
+.general-life-section > section div:last-child {
     background: url("../images/kottu-my.jpeg");
     background-size: cover;
 }
 
-.general-life-section>section div:nth-child(6){
+.general-life-section > section div:nth-child(6) {
     grid-row: 1/4;
     grid-column: 4/5;
     background: url("../images/new-year-my.jpg");
@@ -1094,7 +1097,7 @@ main section:nth-child(3){
     background-position: center;
 }
 
-.general-life-section>section div:nth-child(5){
+.general-life-section > section div:nth-child(5) {
     grid-row: 3/4;
     grid-column: 1/3;
     background: url("../images/group-my.jpg");
@@ -1103,7 +1106,7 @@ main section:nth-child(3){
     height: 30vh;
 }
 
-.general-life-section>section div:nth-child(4){
+.general-life-section > section div:nth-child(4) {
     grid-column: 2/4;
     grid-row: 2/3;
     background: url("../images/innovesta-my.jpg");
@@ -1111,20 +1114,21 @@ main section:nth-child(3){
     background-position: center;
 }
 
-.general-life-section>section div:hover {
+.general-life-section > section div:hover {
     transition-duration: 2s;
     box-shadow: 0px 5px 30px 5px rgb(232, 139, 10);
 
 }
+
 /*contact section ------------------------------------------------------------------------------------------*/
 
-.contact-section{
+.contact-section {
     width: 100%;
     height: 120vh;
     box-sizing: border-box;
 }
 
-.contact-section>h1{
+.contact-section > h1 {
     color: #000;
     text-align: center;
     font-family: 'PT Serif', serif;
@@ -1135,7 +1139,7 @@ main section:nth-child(3){
     margin-bottom: 0;
 }
 
-.contact-section>h4{
+.contact-section > h4 {
     color: #162A5F;
     font-family: 'PT Serif', serif;
     font-size: 24px;
@@ -1145,25 +1149,25 @@ main section:nth-child(3){
     text-align: center;
 }
 
-.contact-section>hr{
+.contact-section > hr {
     width: 20vw;
     height: 0.3vh;
     background: #FD6E0A;
 }
 
-.contact-section>section{
+.contact-section > section {
     display: flex;
     justify-content: space-around;
     position: relative;
     top: 10vh;
 }
 
-.contact-section>section>address{
+.contact-section > section > address {
     width: 40vw;
     height: 80vh;
 }
 
-.contact-section>section>address h4{
+.contact-section > section > address h4 {
     color: #162A5F;
     font-family: Inter;
     font-size: 1.5em;
@@ -1172,7 +1176,7 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.contact-section>section>address a{
+.contact-section > section > address a {
     color: #494949;
     font-family: Inter;
     font-size: 20px;
@@ -1181,7 +1185,7 @@ main section:nth-child(3){
     line-height: normal;
 }
 
-.contact-section>section>address p{
+.contact-section > section > address p {
     color: #494949;
     font-family: Inter;
     font-size: 20px;
@@ -1191,49 +1195,49 @@ main section:nth-child(3){
     margin-top: 0;
 }
 
-.contact-section>section>address>h4{
+.contact-section > section > address > h4 {
     margin-bottom: 0;
 }
 
-.contact-section>section>aside{
+.contact-section > section > aside {
     width: 40vw;
     height: 80vh;
 }
 
-.contact-section>section>address>div{
+.contact-section > section > address > div {
     display: flex;
     margin-top: 2.5vh;
 }
 
-.contact-section>section>address>div:first-child{
+.contact-section > section > address > div:first-child {
     margin-top: 0;
 }
 
-.contact-section>section>address>div>div:first-child{
+.contact-section > section > address > div > div:first-child {
     width: 5vw;
     height: 5vw;
     position: relative;
 }
 
-.contact-section>section>address>div>div:last-child{
+.contact-section > section > address > div > div:last-child {
     position: relative;
     left: 5vw;
 }
 
-.contact-section>section>address>div>div:last-child>h4{
+.contact-section > section > address > div > div:last-child > h4 {
     margin-bottom: 0;
 }
 
-.contact-section>section>address>div>div:first-child{
+.contact-section > section > address > div > div:first-child {
     font-size: 4em;
     color: #FD6E0A;
 }
 
-.contact-section aside>form>fieldset{
+.contact-section aside > form > fieldset {
     border: none;
 }
 
-.contact-section aside>form>fieldset>input{
+.contact-section aside > form > fieldset > input {
     width: 38vw;
     height: 8vh;
     flex-shrink: 0;
@@ -1244,7 +1248,7 @@ main section:nth-child(3){
     margin-bottom: 2vh;
 }
 
-.contact-section aside>form>fieldset>textarea{
+.contact-section aside > form > fieldset > textarea {
     width: 38vw;
     height: 15vh;
     flex-shrink: 0;
@@ -1253,7 +1257,7 @@ main section:nth-child(3){
     border: 0;
 }
 
-.contact-section aside>form>fieldset>label{
+.contact-section aside > form > fieldset > label {
     color: #494949;
     font-family: Inter, sans-serif;
     font-size: 20px;
@@ -1265,7 +1269,7 @@ main section:nth-child(3){
     flex-shrink: 0;
 }
 
-.contact-section aside>form>fieldset>button{
+.contact-section aside > form > fieldset > button {
     width: 185px;
     height: 47px;
     flex-shrink: 0;
@@ -1275,8 +1279,8 @@ main section:nth-child(3){
     transition-duration: 2s;
 }
 
-.contact-section aside>form>fieldset>button:hover {
-  background-color: #f6b458;
+.contact-section aside > form > fieldset > button:hover {
+    background-color: #f6b458;
     transition-duration: 2s;
     color: black;
     border: white;
@@ -1284,7 +1288,7 @@ main section:nth-child(3){
 
 /*footer section---------------------------------------------------------------------------------------*/
 
-body footer{
+body footer {
     width: 100%;
     height: 40vh;
     box-sizing: border-box;
@@ -1292,11 +1296,11 @@ body footer{
     background: #FF770A;
 }
 
-body footer section{
+body footer section {
     display: flex;
 }
 
-body footer section>div:nth-child(2){
+body footer section > div:nth-child(2) {
     width: 20vw;
     height: 5vh;
     display: flex;
@@ -1306,7 +1310,7 @@ body footer section>div:nth-child(2){
     margin: auto;
 }
 
-body footer section>div:nth-child(2)>div:first-child{
+body footer section > div:nth-child(2) > div:first-child {
     width: 6vw;
     height: 6vw;
     border-radius: 100%;
@@ -1315,14 +1319,14 @@ body footer section>div:nth-child(2)>div:first-child{
     margin-right: 2vw;
 }
 
-body footer section>div:first-child{
+body footer section > div:first-child {
     display: flex;
     position: relative;
     left: 5vw;
     top: 3vh;
 }
 
-body footer section>div:first-child>div:first-child{
+body footer section > div:first-child > div:first-child {
     width: 8vw;
     height: 10vw;
     background: url("../images/footer-img.png");
@@ -1330,13 +1334,13 @@ body footer section>div:first-child>div:first-child{
     margin-right: 3vw;
 }
 
-footer>nav{
+footer > nav {
     width: max-content;
     position: relative;
     margin: auto;
 }
 
-footer>div:last-child>small{
+footer > div:last-child > small {
     width: max-content;
     height: max-content;
     position: absolute;
@@ -1347,7 +1351,7 @@ footer>div:last-child>small{
     color: white;
 }
 
-footer div:first-child h4{
+footer div:first-child h4 {
     color: #FFF;
     font-family: Inter, sans-serif;
     font-size: 32px;
@@ -1357,7 +1361,7 @@ footer div:first-child h4{
     margin-bottom: 0;
 }
 
-footer div:first-child p{
+footer div:first-child p {
     color: #FFF;
     font-family: Inter, cursive;
     font-size: 24px;
@@ -1367,7 +1371,7 @@ footer div:first-child p{
     margin: 0;
 }
 
-footer section>div:nth-child(2) h4{
+footer section > div:nth-child(2) h4 {
     color: #FFF;
     font-family: Kaushan Script, cursive;
     font-size: 24px;
@@ -1379,8 +1383,8 @@ footer section>div:nth-child(2) h4{
 
 /*media quary--------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 580px){
-    header{
+@media all and (max-width: 580px) {
+    header {
         display: none;
     }
 
@@ -1393,161 +1397,162 @@ footer section>div:nth-child(2) h4{
         height: 60px;
     }
 
-    .curve{
+    .curve {
         min-height: 50vh;
     }
 
-    .status-section{
+    .status-section {
         display: none;
     }
 
-    .dark-button{
+    .dark-button {
         display: none;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(4) {
+    .home-section > section:nth-child(3) > section:last-child > div:last-child > div:nth-child(4) {
         width: 34vw;
         height: 38vw;
         top: 0vh;
         left: 1vw;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(3) {
+    .home-section > section:nth-child(3) > section:last-child > div:last-child > div:nth-child(3) {
         width: 34vw;
         height: 34vw;
         right: 3vw;
         top: -1vh;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:nth-child(2) {
+    .home-section > section:nth-child(3) > section:last-child > div:last-child > div:nth-child(2) {
         width: 34vw;
         height: 34vw;
         right: 0vw;
         top: -1vh;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:last-child>div:first-child {
+    .home-section > section:nth-child(3) > section:last-child > div:last-child > div:first-child {
         width: 34vw;
         height: 34vw;
         right: -8px;
         top: -1vh;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > strong {
         top: 18vh;
         font-size: 3vw;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child {
         position: absolute;
         top: 40vw;
         left: 57vw;
         display: flex;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child > a > button {
         width: 16.5vw;
         height: 5vh;
         font-size: 2vw;
         color: white;
     }
+
     .home-section {
         height: 50vh;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h1:nth-child(2) {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h1:nth-child(2) {
         font-size: 27px;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:first-child {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > p:first-child {
         font-size: 20px;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3) {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h4:nth-child(3) {
         font-size: 4vw;
         margin-top: -10px;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3)>span {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h4:nth-child(3) > span {
         font-size: 4vw;
     }
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4) {
-       display: none;
+
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > p:nth-child(4) {
+        display: none;
     }
 
-    .service-section>h4 {
+    .service-section > h4 {
         font-size: 14px;
     }
 
-    .service-section>h1 {
+    .service-section > h1 {
         font-size: 20px;
     }
 
-    .service-section>aside>div {
+    .service-section > aside > div {
         width: 89vw;
         height: 178px;
         margin-bottom: 5vh;
     }
 
-    .service-section>aside:nth-child(4) {
+    .service-section > aside:nth-child(4) {
         display: grid;
         width: 90%;
         height: 85vh;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
-    .service-section>aside:nth-child(4)>div:first-child div:nth-child(1) {
+    .service-section > aside:nth-child(4) > div:first-child div:nth-child(1) {
         width: 62px;
         height: 51px;
     }
 
-    .service-section>aside>div h4 {
+    .service-section > aside > div h4 {
         font-size: 1em;
     }
 
-    .service-section>aside>div p {
+    .service-section > aside > div p {
         font-size: 0.8em;
     }
 
-    .service-section>aside:last-child {
+    .service-section > aside:last-child {
         display: grid;
         justify-content: space-around;
         top: 32vh;
     }
 
-    main>section:nth-child(4) {
+    main > section:nth-child(4) {
         margin-top: 82vh;
     }
 
     /*about me responsive -----------------------*/
-
     .aboutme-section {
         height: 120vh;
     }
 
-    main>section:nth-child(4) {
+    main > section:nth-child(4) {
         margin-top: 87vh;
     }
 
-    .aboutme-section>section:nth-child(3) {
+    .aboutme-section > section:nth-child(3) {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:first-child {
+    .aboutme-section > section:nth-child(3) > aside:first-child {
         width: 56%;
         height: 36vh;
         position: relative;
         top: -10vh;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:first-child {
+    .aboutme-section > section:nth-child(3) > aside:first-child {
         width: 56vw;
         margin: auto;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:first-child {
         font-size: 10px;
         line-height: 5vh;
         position: relative;
@@ -1555,19 +1560,19 @@ footer section>div:nth-child(2) h4{
         left: 7vh;
     }
 
-    .aboutme-section>div:nth-child(2)>h1>span:first-child {
+    .aboutme-section > div:nth-child(2) > h1 > span:first-child {
         font-size: 9vw;
     }
 
-    .aboutme-section>div:nth-child(2)>h1 {
+    .aboutme-section > div:nth-child(2) > h1 {
         font-size: 5vw;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:first-child > span {
         font-size: 3.5vw;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:last-child {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:last-child {
         font-size: 3vw;
         font-style: normal;
         position: relative;
@@ -1577,13 +1582,12 @@ footer section>div:nth-child(2) h4{
     }
 
     /*eduction section --------------------------------*/
-
     .education-section {
         margin-top: 20vh;
         height: 125vh;
     }
 
-    .education-section>h4:first-child {
+    .education-section > h4:first-child {
         font-size: 16px;
     }
 
@@ -1595,15 +1599,15 @@ footer section>div:nth-child(2) h4{
         width: 45vw;
     }
 
-    .education-section section>.detail#detail1 {
+    .education-section section > .detail#detail1 {
         left: 5vw;
     }
 
-    .education-section section>.detail>h4 {
+    .education-section section > .detail > h4 {
         font-size: 15px;
     }
 
-    .education-section>section:nth-child(4) .detail>p{
+    .education-section > section:nth-child(4) .detail > p {
         font-size: 10px;
     }
 
@@ -1612,23 +1616,23 @@ footer section>div:nth-child(2) h4{
         height: 5vw;
     }
 
-    .fa-graduation-cap{
+    .fa-graduation-cap {
         font-size: 15px;
     }
 
-    .education-section section>.detail {
+    .education-section section > .detail {
         width: 37vw;
     }
 
-    .education-section section>.detail#detail2 {
+    .education-section section > .detail#detail2 {
         left: 60vw;
     }
 
-    .education-section section>.detail#detail4 {
+    .education-section section > .detail#detail4 {
         right: 0;
     }
 
-    .education-section section>.detail#detail3 {
+    .education-section section > .detail#detail3 {
         left: 5vw;
     }
 
@@ -1637,7 +1641,7 @@ footer section>div:nth-child(2) h4{
         margin-top: 11vh;
     }
 
-    .language-tools>h4 {
+    .language-tools > h4 {
         font-size: 16px;
     }
 
@@ -1649,7 +1653,7 @@ footer section>div:nth-child(2) h4{
         width: 40vw;
     }
 
-    .language-tools>div:last-child {
+    .language-tools > div:last-child {
         top: -7vh;
     }
 
@@ -1658,19 +1662,19 @@ footer section>div:nth-child(2) h4{
         top: -21vh;
     }
 
-    .recent-works>h4 {
+    .recent-works > h4 {
         font-size: 16px;
     }
 
-    .recent-works>h1 {
+    .recent-works > h1 {
         font-size: 20px;
     }
 
-    .recent-works>hr {
+    .recent-works > hr {
         width: 31vw;
     }
 
-    .recent-works>section {
+    .recent-works > section {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         position: relative;
@@ -1678,18 +1682,18 @@ footer section>div:nth-child(2) h4{
         left: 3vh;
     }
 
-    .work-svg{
+    .work-svg {
         width: 90%;
         height: 50vh;
         margin: auto;
         position: relative;
     }
 
-    .recent-works>section>div{
+    .recent-works > section > div {
         position: relative;
     }
 
-    .recent-works>section>div>div{
+    .recent-works > section > div > div {
         position: absolute;
         width: 60vw;
         margin: auto;
@@ -1698,37 +1702,36 @@ footer section>div:nth-child(2) h4{
         top: 2vh;
     }
 
-    .recent-works>section>div>div>div:first-child {
+    .recent-works > section > div > div > div:first-child {
         width: 12vw;
         height: 14vw;
         position: relative;
         top: 2vh;
     }
 
-    .recent-works>section>div:nth-child(1)>div>div:first-child {
+    .recent-works > section > div:nth-child(1) > div > div:first-child {
         width: 12vw;
         height: 10vh;
     }
 
-    .recent-works>section>div>div>h4 {
+    .recent-works > section > div > div > h4 {
         top: 6vh;
         font-size: 16px;
         margin-top: 0;
     }
 
-    .recent-works>section>div>div>p {
+    .recent-works > section > div > div > p {
         top: 5vh;
         font-size: 15px;
     }
 
-    .recent-works>section>div>div>a {
+    .recent-works > section > div > div > a {
         top: 4vh;
         font-size: 18px;
         left: 10vw;
     }
 
     /* certificate section ---------------*/
-
     .certificate-section {
         margin-top: 57vh;
     }
@@ -1745,16 +1748,16 @@ footer section>div:nth-child(2) h4{
         width: 35vw;
     }
 
-    .certificate-section>section>div:nth-child(2) {
+    .certificate-section > section > div:nth-child(2) {
         height: 34vh;
         width: 280px;
     }
 
-    .certificate-section>section>button {
+    .certificate-section > section > button {
         font-size: 24px;
     }
 
-    .certificate-section>section:last-child {
+    .certificate-section > section:last-child {
         height: 25vh;
         width: 95vw;
         top: 0vh;
@@ -1765,25 +1768,24 @@ footer section>div:nth-child(2) h4{
     }
 
     /*blog section -------------------------------*/
-
-    .general-life-section>section:nth-child(4) {
+    .general-life-section > section:nth-child(4) {
         width: 89%;
         height: 50vh;
     }
 
-    .general-life-section>section div {
+    .general-life-section > section div {
         border-radius: 5px;
     }
 
-    .general-life-section>h4 {
+    .general-life-section > h4 {
         font-size: 16px;
     }
 
-    .general-life-section>h1 {
+    .general-life-section > h1 {
         font-size: 20px;
     }
 
-    .general-life-section>hr {
+    .general-life-section > hr {
         width: 46vw;
     }
 
@@ -1792,82 +1794,82 @@ footer section>div:nth-child(2) h4{
     }
 
     /*contact me section*/
-
-    .contact-section>section {
+    .contact-section > section {
         flex-direction: column;
         top: 4vh;
         align-content: center;
         align-items: center;
     }
 
-    .contact-section>section>address h4 {
+    .contact-section > section > address h4 {
         font-size: 16px;
     }
 
-    .contact-section>section>address a {
+    .contact-section > section > address a {
         font-size: 15px;
     }
 
-    .contact-section>section>address>div>div:first-child {
+    .contact-section > section > address > div > div:first-child {
         font-size: 2em;
     }
 
-    .contact-section>section>address {
+    .contact-section > section > address {
         width: 76vw;
         height: 63vh;
     }
 
-    .contact-section>section>address>div>div:last-child {
+    .contact-section > section > address > div > div:last-child {
         left: 25vw;
     }
 
-    .contact-section>section>address p {
+    .contact-section > section > address p {
         font-size: 14px;
     }
 
-    .contact-section>section>aside {
+    .contact-section > section > aside {
         width: 90vw;
         height: 80vh;
     }
 
-    .contact-section aside>form>fieldset>input {
+    .contact-section aside > form > fieldset > input {
         width: 80vw;
         height: 5vh;
     }
 
-    .contact-section aside>form>fieldset>label {
+    .contact-section aside > form > fieldset > label {
         font-size: 14px;
     }
 
-    .contact-section>h4 {
+    .contact-section > h4 {
         font-size: 16px;
     }
 
-    .contact-section>h1 {
+    .contact-section > h1 {
         font-size: 20px;
     }
 
-    .contact-section>hr {
+    .contact-section > hr {
         width: 34vw;
     }
 
-    .contact-section aside>form>fieldset>textarea {
+    .contact-section aside > form > fieldset > textarea {
         width: 80vw;
         height: 9vh;
     }
-    .contact-section aside>form>fieldset>button {
+
+    .contact-section aside > form > fieldset > button {
         width: 120px;
         height: 40px;
         font-size: 15px;
     }
-    /*footer----------------------------------------*/
 
+    /*footer----------------------------------------*/
     body footer {
         margin-top: 32vh;
         height: 46vh;
     }
 
-    body footer section>div:first-child>div:first-child {
+    body footer section > div:first-child > div:first-child {
         width: 13vw;
         height: 16vw;
     }
@@ -1884,36 +1886,39 @@ footer section>div:nth-child(2) h4{
         font-size: 16px;
     }
 
-    footer>nav>a>abbr>img{
+    footer > nav > a > abbr > img {
         width: 10vw;
     }
 
-    footer>nav{
+    footer > nav {
         position: relative;
         top: 12vh;
     }
-    body footer section>div:nth-child(2) {
+
+    body footer section > div:nth-child(2) {
         width: 35vw;
         height: 9vh;
         top: 13vh;
     }
-    footer section>div:nth-child(2) h4 {
+
+    footer section > div:nth-child(2) h4 {
         font-size: 16px;
     }
-    footer>div:last-child>small {
+
+    footer > div:last-child > small {
         font-size: 10px;
     }
 
 }
 
-@media all and (min-width: 581px) and (max-width: 768px){
+@media all and (min-width: 581px) and (max-width: 768px) {
 
-    header nav>div>menu {
+    header nav > div > menu {
         position: relative;
         left: 7vw;
     }
 
-    header nav>div>menu>li>a {
+    header nav > div > menu > li > a {
         font-size: 12px;
     }
 
@@ -1921,24 +1926,24 @@ footer section>div:nth-child(2) h4{
         height: 60vh;
     }
 
-    main>section:nth-child(3) {
+    main > section:nth-child(3) {
         height: 112vh;
     }
 
-    .home-section>section:nth-child(3)>section {
+    .home-section > section:nth-child(3) > section {
         top: 0vh;
     }
 
-    .home-section>section:nth-child(3)>section {
+    .home-section > section:nth-child(3) > section {
         height: 60vh;
     }
 
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > strong {
         top: 15vh;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child {
         bottom: 0;
     }
 
@@ -1955,23 +1960,23 @@ footer section>div:nth-child(2) h4{
         top: -20vh;
     }
 
-    .home-section>section:nth-child(3) {
+    .home-section > section:nth-child(3) {
         height: 60vh;
         position: absolute;
         box-sizing: border-box;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:nth-child(4) {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > p:nth-child(4) {
         font-size: 11px;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:first-child {
+    .home-section > section:nth-child(3) > section:last-child > div:first-child {
         width: 77px;
         height: 32px;
         top: 10vh;
     }
 
-    .lable{
+    .lable {
         font-size: 10px;
         position: relative;
         top: -5px;
@@ -1989,51 +1994,50 @@ footer section>div:nth-child(2) h4{
         width: 14px;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child > a > button {
         font-size: 10px;
         color: white;
     }
 
     /*end header ----------------------------------------------*/
-
-    .service-section>h4 {
+    .service-section > h4 {
         margin-top: 0;
         font-size: 20px;
     }
 
-    .service-section>h1 {
+    .service-section > h1 {
         font-size: 25px;
     }
 
-    .service-section>aside:nth-child(4) {
+    .service-section > aside:nth-child(4) {
         display: flex;
         width: 100%;
         justify-content: space-around;
     }
 
-    .service-section>aside>div {
+    .service-section > aside > div {
         width: 30vw;
     }
 
-    .service-section>aside>div div:first-child {
+    .service-section > aside > div div:first-child {
         width: 10vw;
         height: 10vw;
     }
 
-    .service-section>aside>div h4 {
+    .service-section > aside > div h4 {
         font-size: 17px;
     }
 
-    .service-section>aside:nth-child(4)>div:first-child div:nth-child(1) {
+    .service-section > aside:nth-child(4) > div:first-child div:nth-child(1) {
         width: 87px;
         height: 71px;
     }
 
-    .service-section>aside>div p {
+    .service-section > aside > div p {
         font-size: 11px;
     }
 
-    .service-section>aside:last-child {
+    .service-section > aside:last-child {
         width: 65%;
     }
 
@@ -2041,26 +2045,24 @@ footer section>div:nth-child(2) h4{
         height: 60vh;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:first-child {
         line-height: 3.5vh;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:last-child>span {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:last-child > span {
         font-size: 20px;
     }
 
-    .aboutme-section>section:nth-child(3) {
+    .aboutme-section > section:nth-child(3) {
         height: 50vh;
     }
 
     /*education section----------------*/
-
-
-    .aboutme-section>section:nth-child(3)>aside:first-child {
+    .aboutme-section > section:nth-child(3) > aside:first-child {
         height: 50vh;
     }
 
-    .education-section>h4:first-child {
+    .education-section > h4:first-child {
         font-size: 20px;
     }
 
@@ -2071,15 +2073,16 @@ footer section>div:nth-child(2) h4{
     .education-section hr {
         width: 32vw;
     }
-    .education-section section>.detail#detail1 {
+
+    .education-section section > .detail#detail1 {
         left: 5vw;
     }
 
-    .education-section section>.detail>h4 {
+    .education-section section > .detail > h4 {
         font-size: 15px;
     }
 
-    .education-section>section:nth-child(4) .detail>p{
+    .education-section > section:nth-child(4) .detail > p {
         font-size: 15px;
     }
 
@@ -2088,8 +2091,7 @@ footer section>div:nth-child(2) h4{
     }
 
     /*skill section---------------*/
-
-    .language-tools>h4 {
+    .language-tools > h4 {
         font-size: 20px;
     }
 
@@ -2102,16 +2104,15 @@ footer section>div:nth-child(2) h4{
     }
 
     /*recent works !*/
-
-    .recent-works>h4 {
+    .recent-works > h4 {
         font-size: 20px;
     }
 
-    .recent-works>h1 {
+    .recent-works > h1 {
         font-size: 25px;
     }
 
-    .recent-works>hr {
+    .recent-works > hr {
         width: 25vw;
     }
 
@@ -2119,7 +2120,7 @@ footer section>div:nth-child(2) h4{
         height: 160vh;
     }
 
-    .recent-works>section {
+    .recent-works > section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -2129,43 +2130,42 @@ footer section>div:nth-child(2) h4{
         width: 45vw;
     }
 
-    .recent-works>section>div:last-child{
+    .recent-works > section > div:last-child {
         grid-column: 1/3;
         grid-row: 2/3;
         margin: auto;
         position: relative;
     }
 
-    .recent-works>section>div>div {
+    .recent-works > section > div > div {
         width: 35vw;
     }
 
-    .recent-works>section>div>div>div:first-child {
+    .recent-works > section > div > div > div:first-child {
         width: 70px;
         height: 70px;
         top: 15vh;
     }
 
-    .recent-works>section>div>div>h4 {
+    .recent-works > section > div > div > h4 {
         font-size: 20px;
     }
 
-    .recent-works>section>div>div>p {
+    .recent-works > section > div > div > p {
         font-size: 17px;
     }
 
-    .recent-works>section>div>div>a {
+    .recent-works > section > div > div > a {
         top: 10vh;
         font-size: 18px;
     }
 
-    .recent-works>section>div:nth-child(1)>div>div:first-child {
+    .recent-works > section > div:nth-child(1) > div > div:first-child {
         width: 79px;
         height: 64px;
     }
 
     /*certificate section*/
-
     .certificate-section > h4 {
         font-size: 20px;
     }
@@ -2174,13 +2174,13 @@ footer section>div:nth-child(2) h4{
         font-size: 25px;
     }
 
-    .certificate-section>section:last-child {
+    .certificate-section > section:last-child {
         width: 85%;
         height: 35vh;
         top: 10vh;
     }
 
-    .certificate-section>section>div:nth-child(2) {
+    .certificate-section > section > div:nth-child(2) {
         width: 60%;
         height: 45vh;
     }
@@ -2189,25 +2189,24 @@ footer section>div:nth-child(2) h4{
         height: 75vh;
     }
 
-    .certificate-section>section>button {
+    .certificate-section > section > button {
         font-size: 40px;
     }
 
     /*blog section --------------------*/
-
-    .general-life-section>h4 {
+    .general-life-section > h4 {
         font-size: 20px;
     }
 
-    .general-life-section>h1 {
+    .general-life-section > h1 {
         font-size: 25px;
     }
 
-    .general-life-section>hr {
+    .general-life-section > hr {
         width: 30vw;
     }
 
-    .general-life-section>section:nth-child(4) {
+    .general-life-section > section:nth-child(4) {
         width: 80%;
         height: 60vh;
 
@@ -2218,47 +2217,46 @@ footer section>div:nth-child(2) h4{
     }
 
     /*contact section------------------------*/
-
-    .contact-section>h4 {
+    .contact-section > h4 {
         font-size: 20px;
     }
 
-    .contact-section>h1 {
+    .contact-section > h1 {
         font-size: 25px;
     }
 
-    .contact-section>hr {
+    .contact-section > hr {
         width: 23vw;
         height: 3px;
     }
 
-    .contact-section>section>address>div>div:first-child {
+    .contact-section > section > address > div > div:first-child {
         font-size: 45px;
     }
 
-    .contact-section>section>address h4 {
+    .contact-section > section > address h4 {
         font-size: 20px;
         margin-top: 0;
     }
 
-    .contact-section>section>address>h4{
+    .contact-section > section > address > h4 {
         margin-top: 50px;
     }
 
-    .contact-section>section>address p {
+    .contact-section > section > address p {
         font-size: 15px;
     }
 
-    .contact-section aside>form>fieldset>label {
+    .contact-section aside > form > fieldset > label {
         font-size: 15px;
     }
 
-    .contact-section aside>form>fieldset>input {
+    .contact-section aside > form > fieldset > input {
         width: 40vw;
         height: 6vh;
     }
 
-    .contact-section aside>form>fieldset>button {
+    .contact-section aside > form > fieldset > button {
         width: 145px;
         height: 40px;
     }
@@ -2268,7 +2266,6 @@ footer section>div:nth-child(2) h4{
     }
 
     /*footer ----------------------------*/
-
     footer div:first-child h4 {
         font-size: 20px;
         margin-top: 0;
@@ -2278,30 +2275,30 @@ footer section>div:nth-child(2) h4{
         font-size: 20px;
     }
 
-    body footer section>div:nth-child(2) {
+    body footer section > div:nth-child(2) {
         width: 30vw;
         top: 3vh;
     }
 
-    footer>nav {
+    footer > nav {
         top: 6vh;
     }
 
-    .contact-section>section>aside {
+    .contact-section > section > aside {
         width: 41vw;
     }
 
-    .contact-section aside>form>fieldset>textarea {
+    .contact-section aside > form > fieldset > textarea {
         width: 40vw;
     }
 }
 
-@media all and (min-width: 769px) and (max-width: 1100px){
+@media all and (min-width: 769px) and (max-width: 1100px) {
     main section:nth-child(3) {
         height: 70vh;
     }
 
-    .home-section>section:nth-child(3)>section {
+    .home-section > section:nth-child(3) > section {
         top: 2vh;
         height: 70vh;
     }
@@ -2322,21 +2319,21 @@ footer section>div:nth-child(2) h4{
     .home-section {
         height: 75vh;
     }
-    
-    header nav>div>menu>li>a {
+
+    header nav > div > menu > li > a {
         font-size: 15px;
     }
 
-    header nav>div>menu {
+    header nav > div > menu {
         left: 0;
     }
 
-    .home-section>section:nth-child(3)>section:last-child>div:first-child {
+    .home-section > section:nth-child(3) > section:last-child > div:first-child {
         width: 65px;
         height: 35px;
     }
 
-    .lable{
+    .lable {
         font-size: 10px;
         position: relative;
         left: 10px;
@@ -2357,60 +2354,56 @@ footer section>div:nth-child(2) h4{
         bottom: 1px;
     }
 
-    .home-section>section:nth-child(3)>section:nth-child(1)>aside>div:last-child>a>button {
+    .home-section > section:nth-child(3) > section:nth-child(1) > aside > div:last-child > a > button {
         font-size: 12px;
         color: wheat;
     }
 
     /*service ------------------------------*/
-
-    #service{
+    #service {
         height: 120vh;
     }
 
-    .service-section>aside>div h4 {
+    .service-section > aside > div h4 {
         font-size: 20px;
         margin-bottom: 0;
     }
 
-    .service-section>aside>div p {
+    .service-section > aside > div p {
         font-size: 14px;
     }
 
-    .service-section>aside:nth-child(4)>div:first-child div:nth-child(1) {
+    .service-section > aside:nth-child(4) > div:first-child div:nth-child(1) {
         width: 73px;
         height: 61px;
     }
 
     /*about me section*/
-
     .aboutme-section {
         height: 80vh;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child>span {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:first-child > span {
         font-size: 16px;
     }
 
-    .aboutme-section>section:nth-child(3)>aside:last-child>p:first-child {
+    .aboutme-section > section:nth-child(3) > aside:last-child > p:first-child {
         font-size: 18px;
     }
 
 
     /* education section*/
-
     .education-section {
         height: 155vh;
     }
 
     /*my works*/
-
     .recent-works {
         top: 0;
     }
 
 
-    .recent-works>hr {
+    .recent-works > hr {
         width: 25vw;
     }
 
@@ -2418,7 +2411,7 @@ footer section>div:nth-child(2) h4{
         height: 170vh;
     }
 
-    .recent-works>section {
+    .recent-works > section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -2428,69 +2421,67 @@ footer section>div:nth-child(2) h4{
         width: 45vw;
     }
 
-    .recent-works>section>div:last-child{
+    .recent-works > section > div:last-child {
         grid-column: 1/3;
         grid-row: 2/3;
         margin: auto;
         position: relative;
     }
 
-    .recent-works>section>div>div {
+    .recent-works > section > div > div {
         width: 35vw;
     }
 
-    .recent-works>section>div>div>div:first-child {
+    .recent-works > section > div > div > div:first-child {
         width: 70px;
         height: 70px;
         top: 15vh;
     }
 
-    .recent-works>section>div>div>h4 {
+    .recent-works > section > div > div > h4 {
         font-size: 25px;
     }
 
-    .recent-works>section>div>div>p {
+    .recent-works > section > div > div > p {
         font-size: 20px;
     }
 
-    .recent-works>section>div>div>a {
+    .recent-works > section > div > div > a {
         top: 10vh;
         left: 3vw;
         font-size: 20px;
     }
 
-    .recent-works>section>div:nth-child(1)>div>div:first-child {
+    .recent-works > section > div:nth-child(1) > div > div:first-child {
         width: 79px;
         height: 64px;
     }
 
 
     /*Certificate -----------------------------*/
-
-    .certificate-section>section:last-child {
+    .certificate-section > section:last-child {
         width: 88%;
-       top: 5vh;
+        top: 5vh;
     }
-    .certificate-section>section>button {
+
+    .certificate-section > section > button {
         font-size: 75px;
     }
 
-    .certificate-section>section>button {
+    .certificate-section > section > button {
         height: 10vw;
     }
 
     /*contact section ---------------*/
-
-    .contact-section>section>address p {
+    .contact-section > section > address p {
         font-size: 16px;
     }
 
-    .contact-section aside>form>fieldset>label {
+    .contact-section aside > form > fieldset > label {
         font-size: 16px;
     }
 
     /*footer ----------------*/
-
     footer div:first-child h4 {
         font-size: 25px;
         margin-top: 0;
@@ -2500,7 +2491,7 @@ footer section>div:nth-child(2) h4{
         font-size: 20px;
     }
 
-    body footer section>div:nth-child(2) {
+    body footer section > div:nth-child(2) {
         width: 24vw;
     }
 }
@@ -2536,7 +2527,6 @@ button {
         transform: rotateZ(0);
     }
 }
-
 
 
 /*button {
