@@ -107,7 +107,7 @@ body main{
 
 .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>p:first-child{
     color: #FD6E0A;
-    font-family: JejuGothic, ui-sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 2vw;
     font-style: normal;
     font-weight: 400;
@@ -116,7 +116,7 @@ body main{
 
 .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h1:nth-child(2){
     color: #162A5F;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 3.5vw;
     font-style: normal;
     font-weight: 700;
@@ -126,7 +126,7 @@ body main{
 
 .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3){
     color: #15295F;
-    font-family: Libre Baskerville;
+    font-family: 'PT Serif', serif;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -136,7 +136,8 @@ body main{
 
 .home-section>section:nth-child(3)>section:nth-child(1)>aside div:first-child>h4:nth-child(3)>span{
     color: #FC801D;
-    font-family: Libre Baskerville;
+    /*font-family: 'poppins', Roboto;*/
+    font-family: 'poppins', Roboto;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -155,7 +156,7 @@ body main{
 
 .home-section>section:nth-child(3)>section:nth-child(1)>aside>strong{
     color: #15295F;
-    font-family: Libre Bodoni;
+    font-family: 'PT Serif', serif;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -178,6 +179,7 @@ body main{
     background: #FD6E0A;
     font-size: 1vw;
     transition-duration: 2s;
+    color: white;
 }
 
 .home-section>section:nth-child(3)>section:last-child>div:first-child{
