@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>animation case 1</title>
-  <style>
-    div{
-      width: 200px;
-      height: 100px;
-      background-color: red;
-      border-radius: 20px;
-      position: relative;
-      animation-name: anim-1;
-      animation-iteration-count: infinite;
-      animation-duration: 5s;
-      animation-direction: alternate;
-    }
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            border-radius: 20px;
+            position: relative;
+            animation-name: anim-1;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-direction: alternate;
+        }
 
-    @keyframes anim-1 {
-          0%{
-            top: 0;
-            left: 0;
-            transform: rotate(360deg);
-            background-color: #8cec77;
-          }25%{
-            top: 500px;
-            left: 0;
-            transform: rotate(180deg);
-            background-color: #fcfc6f;
-          }50%{
-            left: 1100px;
-            top: 500px;
-            transform: rotate(360deg);
-            background-color: #084bac;
-          }75%{
-            top: 0;
-            left: 1100px;
-            transform: rotate(180deg);
-            background-color: #5bfaf6;
-         }100%{
-            left: 0;
-            top: 0;
-            transform: rotate(360deg);
-            background-color: #0a2a5a;
-         }
-    }
+        @keyframes anim-1 {
+            0% {
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+                background-color: #8cec77;
+            }
+            25% {
+                top: 500px;
+                left: 0;
+                transform: rotate(180deg);
+                background-color: #fcfc6f;
+            }
+            50% {
+                left: 1100px;
+                top: 500px;
+                transform: rotate(360deg);
+                background-color: #084bac;
+            }
+            75% {
+                top: 0;
+                left: 1100px;
+                transform: rotate(180deg);
+                background-color: #5bfaf6;
+            }
+            100% {
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+                background-color: #0a2a5a;
+            }
+        }
 
-  </style>
+    </style>
 </head>
 <body>
-  <div></div>
+<div></div>
 </body>
 </html>
