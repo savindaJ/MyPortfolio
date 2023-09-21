@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation case 2</title>
+  <style>
+    section{
+      width: 83%;
+      height: 95vh;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    section>section{
+        width: 600%;
+        height: 95vh;
+        display: flex;
+        animation-name: move-rectangle;
+        animation-direction: alternate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    section section>div{
+      width: calc(100%/5);
+      height: 95vh;
+      border: 1px solid #e88b0a;
+      flex-shrink: 0;
+    }
+
+    section>div:nth-child(1){
+        background: url("../case-2/assets/1.jpg");
+        background-size: cover;
+    }
+    section>div:nth-child(2){
+        background: url("../case-2/assets/2.jpg");
+        background-size: cover;
+    }
+    section>div:nth-child(3){
+        background: url("../case-2/assets/3.jpg");
+        background-size: cover;
+    }
+    section>div:nth-child(4){
+        background: url("../case-2/assets/4.jpg");
+        background-size: cover;
+    }
+    section>div:nth-child(5){
+        background: url("../case-2/assets/5.jpg");
+        background-size: cover;
+    }
+
+    @keyframes move-rectangle {
+        0%{
+            left: 0;
+        }20%{
+            left: -100vw;
+        }40%{
+            left: -200vw;
+        }60%{
+            left: -300vw;
+        }80%{
+            left: -400vw;
+        }100%{
+            left: -400vw;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+      <section>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </section>
+  </section>
+</body>
+</html>
