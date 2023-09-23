@@ -1,5 +1,6 @@
 * {
     scroll-behavior: smooth;
+    font-family: 'PT Serif', serif;
 }
 
 ::-webkit-scrollbar {
@@ -676,6 +677,19 @@ main section:nth-child(3) {
     left: 0;
     top: 0;
     bottom: 0;
+    animation-name: line-up-down;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes line-up-down {
+    0% {
+        bottom: 1px;
+    }
+    100% {
+        top: 600px;
+    }
 }
 
 .education-section section:last-child {
