@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation case 2</title>
+    <style>
+        body {
+            background-color: #152d53
+        }
+
+        body > div {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        body > div:nth-child(1) {
+            background-color: #cedaa4;
+            animation-name: moon-anim;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-duration: 4s;
+            animation-direction: alternate;
+        }
+
+        body > div:nth-child(2) {
+            background-color: #29064d;
+        }
+
+        @keyframes moon-anim {
+            0% {
+                bottom: -3vh;
+                left: -3vw;
+                background-color: #b3ba91;
+            }
+            50% {
+                bottom: 0;
+                left: 0;
+                box-shadow: 0 0 50px 50px rgba(218, 237, 166, 0.25);
+            }
+
+            100% {
+                left: 3vw;
+                bottom: 3vh;
+                box-shadow: 0 0 0 0 rgba(218, 237, 166, 0.25);
+                background-color: #b3ba91;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+</body>
+</html>
