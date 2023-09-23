@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation case 4</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+
+        body > main {
+            width: 100%;
+            height: 100vh;
+            background: url("../case-4/assets/image/sky.jpg");
+        }
+
+        body main > section {
+            width: 100%;
+            height: 70vh;
+            position: absolute;
+            bottom: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body main > section > section:first-child {
+            width: 200%;
+            height: 40vh;
+            background: url("../case-4/assets/image/city.png");
+            position: relative;
+            bottom: -17px;
+            animation-name: city-move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        body main > section > section:last-child {
+            width: 200%;
+            height: 32vh;
+            background: url("../case-4/assets/image/road.jpg");
+            animation-name: road-move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        body main > div:nth-child(2) {
+            background: url("../case-4/assets/image/car.png");
+            width: 275px;
+            height: 110px;
+            background-size: cover;
+            position: absolute;
+            margin: auto;
+            top: 50vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        body main > div + div {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            animation-name: rotate-tire;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        body main > div:nth-child(3) {
+            position: absolute;
+            margin: auto;
+            top: 60vh;
+            bottom: 0;
+            right: 0;
+            left: -12.9vw;
+            background: url("../case-4/assets/image/wheel.png");
+            background-size: cover;
+        }
+
+        body main > div:nth-child(4) {
+            position: absolute;
+            margin: auto;
+            top: 60vh;
+            bottom: 0;
+            right: 0;
+            left: 11.7vw;
+            background: url("../case-4/assets/image/wheel.png");
+            background-size: cover;
+        }
+
+        @keyframes rotate-tire {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes city-move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -100vw;
+            }
+
+        }
+
+        @keyframes road-move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -100vw;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <section></section>
+        <section></section>
+    </section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+</main>
+</body>
+</html>
