@@ -780,13 +780,27 @@ main section:nth-child(3) {
     stroke: rgb(5, 5, 14);
     stroke-width: 2;
     transition-duration: 2s;
+    animation-name: line-animate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+
+@keyframes line-animate {
+    0% {
+        stroke: rgb(5, 5, 14);
+    }
+    100% {
+        stroke: rgb(8, 75, 172);
+    }
 }
 
 .language-tools > div:last-child > svg ellipse {
     transition-duration: 2s;
 }
 
-.language-tools > div:last-child > svg:hover line {
+
+/*.language-tools > div:last-child > svg:hover line {
     stroke: rgb(250, 152, 91);
     stroke-width: 2;
     transition-duration: 2s;
@@ -795,7 +809,7 @@ main section:nth-child(3) {
 .language-tools > div:last-child > svg:hover ellipse {
     fill: #084bac;
     transition-duration: 2s;
-}
+}*/
 
 /*recent works section-------------------------------------------------------------------------------------------------*/
 .recent-works {
