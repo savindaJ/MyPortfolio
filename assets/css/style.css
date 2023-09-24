@@ -2565,10 +2565,11 @@ button {
     animation: wiggle 2s linear infinite;
 }
 
-button:hover{
+button:hover {
     animation-play-state: paused;
     transform: none;
 }
+
 /* Keyframes */
 @keyframes wiggle {
     0%, 7% {
