@@ -63,8 +63,9 @@ main > div:first-child {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: -10;
 }
 
 /*header section ------------------------------------------------------------------------------------------- */
@@ -139,7 +140,7 @@ body main {
 .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > h4:nth-child(3) > span {
     color: #FC801D;
     /*font-family: 'poppins', Roboto;*/
-    font-family: 'poppins', Roboto;
+    font-family: 'poppins', Roboto, cursive;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -148,7 +149,7 @@ body main {
 
 .home-section > section:nth-child(3) > section:nth-child(1) > aside div:first-child > p:nth-child(4) {
     color: #171212;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, serif;
     font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
@@ -262,7 +263,7 @@ body main {
 
 .status-section > div h4 {
     color: #162A5F;
-    font-family: Inter;
+    font-family: 'poppins', Roboto, ui-monospace;
     font-size: 1.7vw;
     font-style: normal;
     font-weight: 700;
@@ -272,7 +273,7 @@ body main {
 
 .status-section > div p {
     color: #FA5700;
-    font-family: Inter;
+    font-family: 'poppins', Roboto, cursive;
     font-size: 1.2vw;
     font-style: normal;
     font-weight: 700;
@@ -2319,6 +2320,10 @@ footer section > div:nth-child(2) h4 {
     .contact-section aside > form > fieldset > textarea {
         width: 40vw;
     }
+
+    body footer nav img{
+        width: 50px;
+    }
 }
 
 @media all and (min-width: 769px) and (max-width: 1100px) {
@@ -2522,6 +2527,7 @@ footer section > div:nth-child(2) h4 {
     body footer section > div:nth-child(2) {
         width: 24vw;
     }
+
 }
 
 
