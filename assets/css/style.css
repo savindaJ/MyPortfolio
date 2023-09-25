@@ -713,7 +713,7 @@ main section:nth-child(3) {
     font-size: 20px;
 }
 
-.education-section section > .detail p{
+.education-section section > .detail p {
     font-family: 'poppins', Roboto, cursive;
     width: max-content;
 }
