@@ -814,15 +814,13 @@ main section:nth-child(3) {
 @keyframes ellipse-anim {
     0% {
         fill: #FD6E0A;
-        transform: rotateY(10deg);
+        transform: rotateY(5deg);
     }
     50% {
         fill: black;
     }
     100% {
-        /*transform: rotateY(10deg);*/
-        fill: #084bac;
-        transform: rotateX(10deg);
+        fill: #a3fff8;
     }
 }
 
@@ -1177,8 +1175,8 @@ main section:nth-child(3) {
 
 .general-life-section > section div:hover {
     transition-duration: 2s;
-    box-shadow: 0px 5px 30px 5px rgb(232, 139, 10);
-    width: 120%;
+    box-shadow: 0 5px 30px 5px rgb(232, 139, 10);
+    width: 102%;
     z-index: 20;
 }
 
