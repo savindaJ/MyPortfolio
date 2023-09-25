@@ -1178,7 +1178,8 @@ main section:nth-child(3) {
 .general-life-section > section div:hover {
     transition-duration: 2s;
     box-shadow: 0px 5px 30px 5px rgb(232, 139, 10);
-
+    width: 120%;
+    z-index: 20;
 }
 
 /*contact section ------------------------------------------------------------------------------------------*/
