@@ -701,7 +701,7 @@ main section:nth-child(3) {
 
 .education-section section > .detail > h4 {
     color: #162A5F;
-    font-family: 'PT Serif', serif;
+    font-family: 'Calibri', serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -714,6 +714,7 @@ main section:nth-child(3) {
 }
 
 .education-section section > .detail p{
+    font-family: 'poppins', Roboto, cursive;
     width: max-content;
 }
 
@@ -934,7 +935,7 @@ main section:nth-child(3) {
     position: relative;
     top: 10vh;
     color: #15295F;
-    font-family: Libre Baskerville;
+    font-family: 'poppins', Roboto;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -947,7 +948,7 @@ main section:nth-child(3) {
     top: 10vh;
     color: #838383;
     text-align: center;
-    font-family: Hind;
+    font-family: 'Calibri', serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -958,7 +959,7 @@ main section:nth-child(3) {
     position: relative;
     top: 15vh;
     color: #15295F;
-    font-family: Libre Baskerville;
+    font-family: 'Roboto', cursive;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -1229,7 +1230,7 @@ main section:nth-child(3) {
 
 .contact-section > section > address h4 {
     color: #162A5F;
-    font-family: Inter;
+    font-family: 'Calibri', cursive;
     font-size: 1.5em;
     font-style: normal;
     font-weight: 700;
@@ -1238,7 +1239,7 @@ main section:nth-child(3) {
 
 .contact-section > section > address a {
     color: #494949;
-    font-family: Inter;
+    font-family: 'poppins', Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1247,7 +1248,7 @@ main section:nth-child(3) {
 
 .contact-section > section > address p {
     color: #494949;
-    font-family: Inter;
+    font-family: 'Cambria Math', cursive;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
