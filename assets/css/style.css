@@ -824,24 +824,6 @@ main section:nth-child(3) {
     }
 }
 
-/*
-.language-tools > div:last-child > svg ellipse{
-    animation-name: line-animate;
-}
-*/
-
-
-/*.language-tools > div:last-child > svg:hover line {
-    stroke: rgb(250, 152, 91);
-    stroke-width: 2;
-    transition-duration: 2s;
-}
-
-.language-tools > div:last-child > svg:hover ellipse {
-    fill: #084bac;
-    transition-duration: 2s;
-}*/
-
 /*recent works section-------------------------------------------------------------------------------------------------*/
 .recent-works {
     width: 100%;
@@ -2599,25 +2581,3 @@ button:hover {
         transform: rotateZ(0);
     }
 }
-
-
-/*button {
-    position: absolute;
-    left: calc(50% - 3em);
-    top: calc(50% - 2em);
-
-    height: 4em;
-    width: 7em;
-
-    background: #444;
-    background: linear-gradient(top, #555, #333);
-    border: none;
-    border-top: 3px solid orange;
-    border-radius: 0 0 0.2em 0.2em;
-    color: #fff;
-    font-family: Helvetica, Arial, Sans-serif;
-    font-size: 1em;
-    transform-origin: 50% 5em;
-
-    https://codepen.io/sfi0zy/pen/GREPMdL
-}*/
