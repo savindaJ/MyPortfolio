@@ -3,10 +3,6 @@ body main{
     height: 100vh;
 }
 
-body main>section:first-child{
-    height: 85vh;
-}
-
 .navbar-nav>li>a>h6:hover{
     color: #084bac;
 }
