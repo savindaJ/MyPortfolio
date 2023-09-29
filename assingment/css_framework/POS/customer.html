@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web-pos | Customer</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+
+<main class="d-flex row align-items-center justify-content-center">
+
+    <section class="shadow-lg rounded-5 col-11 " style="height: 90vh">
+
+        <section class="container">
+
+            <section class="row">
+                <nav class="navbar navbar-expand-lg bg-transparent border-bottom container-fluid w-100 sticky-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><i class="bi bi-buildings-fill text-black"></i><h4
+                                class="d-inline"> Bussiness Name</h4></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                                            class="bi bi-houses-fill text-danger"></i> Home</h6></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                                            class="bi bi-people-fill text-danger"></i> Customer</h6></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                                            class="bi bi-bag-fill text-danger"></i> Item</h6></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                                            class="bi bi-cart-check-fill text-danger "></i> Orders</h6></a>
+                                </li>
+
+                            </ul>
+
+                            <div class="d-flex w-50 justify-content-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline">
+                                            Log-out <i class="bi bi-box-arrow-in-right"></i></h6></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <!--end nav-->
+            <!--button bar-->
+            <section class="row mt-5">
+                <section class="navbar w-75 container-fluid">
+                    <form class="d-flex" role="" method="">
+                        <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/TP/Address"
+                               aria-label="Search" id="txtSearch">
+                        <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                    </form>
+
+                    <!-- Get All Button -->
+                    <button type="button" class="justify-content-end btn btn-dark" id="btnGetAll">
+                        Get All
+                    </button>
+
+                    <!--btn add-->
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                        Add New Customer
+                    </button>
+
+                </section>
+            </section>
+        </section>
+
+    </section>
+</main>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
