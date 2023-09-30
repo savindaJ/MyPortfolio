@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>web-pos | Item</title>
+    <title>web-pos | Order-detail</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -60,28 +60,10 @@
     <section class="d-flex full-height flex-column h-75 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5">
         <div class="container mt-3">
 
-            <div class="d-flex justify-content-end">
-
-                <div class="row" style="width: 20vw">
-                    <div class="col-12 col-md-4">
-                        <button class="btn btn-dark btn-sm" type="submit">Get All</button>
-                    </div>
-
-                    <div class="col-12 col-md-8">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                            + Add New Item
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
             <form class="row w-50" role="" method="">
 
                 <div class="col-12 col-md-6">
-                    <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/Code/Price"
+                    <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/TP/Address"
                            aria-label="Search" id="txtSearch">
                 </div>
                 <div class="col-12 col-md-3">
@@ -91,8 +73,8 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Name</a></li>
-                        <li><a class="dropdown-item" href="#">Code</a></li>
-                        <li><a class="dropdown-item" href="#">Price</a></li>
+                        <li><a class="dropdown-item" href="#">Address</a></li>
+                        <li><a class="dropdown-item" href="#">TP</a></li>
                     </ul>
                 </div>
 
@@ -140,30 +122,30 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-warning">
-                    <h1 class="modal-title fs-6" id="exampleModalLabel">Insert Item</h1>
+                    <h1 class="modal-title fs-6" id="exampleModalLabel">Insert Customer</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
                         <form>
                             <div class="mb-3">
-                                <label class="form-label">Item ID</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">ID</label>
+                                <input type="email" class="form-control" placeholder="ID">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Description</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Customer Name</label>
+                                <input type="email" class="form-control" placeholder="Name">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Unit Price</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Customer address</label>
+                                <input type="email" class="form-control" placeholder="Address">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">QTY</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Customer TP</label>
+                                <input type="email" class="form-control" placeholder="TP">
                             </div>
 
                             <button type="button" class="btn btn-primary">Save</button>
@@ -183,30 +165,30 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-warning">
-                    <h1 class="modal-title fs-6" id="exampleModalLabel2">Update Item</h1>
+                    <h1 class="modal-title fs-6" id="exampleModalLabel2">Update Customer</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
                         <form>
                             <div class="mb-3">
-                                <label class="form-label"> Item ID</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">ID</label>
+                                <input type="email" class="form-control" placeholder="ID">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Item Name</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Customer Name</label>
+                                <input type="email" class="form-control" placeholder="Name">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Description</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Customer address</label>
+                                <input type="email" class="form-control" placeholder="Address">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">QTY</label>
-                                <input type="email" class="form-control">
+                                <label class="form-label">Customer TP</label>
+                                <input type="email" class="form-control" placeholder="TP">
                             </div>
 
                             <button type="button" class="btn btn-primary">Save</button>
