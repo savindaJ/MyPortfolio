@@ -12,8 +12,10 @@ body main{
     background-size: cover;*/
 }
 
-.navbar-nav>li>a>h6:hover{
+.navbar-nav>li>a>h5:hover{
     color: #084bac;
+    font-size: 21px;
+    transition-duration: 0.5s;
 }
 
 .navbar-nav>li>a>h6:hover{
