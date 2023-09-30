@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>web-pos | Item</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body class="container-fluid">
+<main>
+
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-buildings-fill text-black"></i><h4
+              class="d-inline"> Bussiness Name</h4></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                    class="bi bi-houses-fill text-danger"></i> Home</h6></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                    class="bi bi-people-fill text-danger"></i> Customer</h6></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                    class="bi bi-bag-fill text-danger"></i> Item</h6></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline"><i
+                    class="bi bi-cart-check-fill text-danger "></i> Orders</h6></a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex w-50 justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href=""><h6 class="d-inline">
+                Log-out <i class="bi bi-box-arrow-in-right"></i></h6></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="d-flex full-height flex-column h-75 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5">
+    <div class="container mt-3">
+
+      <div class="d-flex justify-content-end">
+
+        <div class="row" style="width: 20vw">
+          <div class="col-12 col-md-4">
+            <button class="btn btn-dark btn-sm" type="submit">Get All</button>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              + Add New Item
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <form class="row w-50" role="" method="">
+
+        <div class="col-12 col-md-6">
+          <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/Code/Price"
+                 aria-label="Search" id="txtSearch">
+        </div>
+        <div class="col-12 col-md-3">
+          <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0 btn-sm" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+            Option
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Name</a></li>
+            <li><a class="dropdown-item" href="#">Code</a></li>
+            <li><a class="dropdown-item" href="#">Price</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-1">
+          <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="row d-flex overflow-auto h-75 col-lg-10 col-12 m-auto z-0">
+      <table class="table table-striped table-hover border" id="tblCustomer">
+        <thead class="table-bordered sticky-top overflow-auto table-info">
+        <tr>
+          <th scope="col">Customer ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Salary</th>
+          <th scope="col">Options</th>
+        </tr>
+        </thead>
+        <tbody id="body">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+          <th scope="col" class="">
+            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Edit
+            </button>
+            <button class="btn btn-danger me-3 btn-sm">Delete</button>
+          </th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-warning">
+          <h1 class="modal-title fs-6" id="exampleModalLabel">Insert Item</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Item ID</label>
+                <input type="email" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input type="email" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Unit Price</label>
+                <input type="email" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">QTY</label>
+                <input type="email" class="form-control">
+              </div>
+
+              <button type="button" class="btn btn-primary">Save</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--update modal-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-warning">
+          <h1 class="modal-title fs-6" id="exampleModalLabel2">Update Item</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">ID</label>
+                <input type="email" class="form-control" placeholder="ID">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Customer Name</label>
+                <input type="email" class="form-control" placeholder="Name">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Customer address</label>
+                <input type="email" class="form-control" placeholder="Address">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Customer TP</label>
+                <input type="email" class="form-control" placeholder="TP">
+              </div>
+
+              <button type="button" class="btn btn-primary">Save</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
