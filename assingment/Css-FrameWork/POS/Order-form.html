@@ -79,14 +79,14 @@
 
             <div class="col-12 col-md-4 border-end border-black h-75 mt-2 bg-body-secondary rounded-4">
                 <div class="row bg-warning rounded-5" style="height: 4vh">
-                    <h1 class="modal-title fs-6 text-center text-white" id="exampleModalLabel">Insert Item</h1>
+                    <h1 class="modal-title fs-6 text-center text-white" id="exampleModalLabel">Invoice Details</h1>
                 </div>
                 <form class="">
 
                     <div class="row">
                         <div class="col-6">
                             <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">ID</label>
+                                <label class="col-form-label col-form-label-sm">Order ID</label>
                                 <input type="email" class="form-control input-sm" placeholder="ID">
                             </div>
 
@@ -94,8 +94,23 @@
                         </div>
                         <div class="col-6">
                             <div class="mb-3">
+                                <label class="col-form-label col-form-label-sm">Date</label>
+                                <input type="date" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="col-form-label col-form-label-sm">Customer ID</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
                                 <label class="col-form-label col-form-label-sm">Customer Name</label>
-                                <input type="email" class="form-control" placeholder="Name">
+                                <input type="email" class="form-control" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -103,29 +118,14 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">Customer address</label>
-                                <input type="email" class="form-control" placeholder="Address">
+                                <label class="col-form-label col-form-label-sm">Customer Address</label>
+                                <input type="email" class="form-control" placeholder="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">Customer TP</label>
-                                <input type="email" class="form-control" placeholder="TP">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">Customer address</label>
-                                <input type="email" class="form-control" placeholder="Address">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">Customer TP</label>
-                                <input type="email" class="form-control" placeholder="TP">
+                                <label class="col-form-label col-form-label-sm">Salary</label>
+                                <input type="email" class="form-control" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -146,21 +146,21 @@
 
             <div class="col-12 col-md-5 h-75 border-end border-black mt-2 bg-body-secondary rounded-4">
                 <div class="row bg-success rounded-5" style="height: 4vh">
-                    <h1 class="modal-title fs-6 text-center text-white" id="">Insert Item</h1>
+                    <h1 class="modal-title fs-6 text-center text-white" id="">Item Select</h1>
                 </div>
                <form>
                    <div class="row">
                        <div class="col-6">
                            <div class="mb-3">
-                               <label class="col-form-label col-form-label-sm">Customer TP</label>
-                               <input type="email" class="form-control" placeholder="TP">
+                               <label class="col-form-label col-form-label-sm">Item ID</label>
+                               <input type="email" class="form-control" placeholder="">
                            </div>
                        </div>
 
                        <div class="col-6">
                            <div class="mb-3">
-                               <label class="col-form-label col-form-label-sm">Customer TP</label>
-                               <input type="email" class="form-control" placeholder="TP">
+                               <label class="col-form-label col-form-label-sm">Description</label>
+                               <input type="email" class="form-control" placeholder="">
                            </div>
                        </div>
                    </div>
@@ -168,20 +168,20 @@
                    <div class="row">
                        <div class="col-4">
                            <div class="mb-3">
-                               <label class="col-form-label col-form-label-sm">Customer TP</label>
-                               <input type="email" class="form-control" placeholder="TP">
+                               <label class="col-form-label col-form-label-sm">Unit Price</label>
+                               <input type="email" class="form-control" placeholder="">
                            </div>
                        </div>
                        <div class="col-6">
                            <div class="mb-3">
-                               <label class="col-form-label col-form-label-sm">Customer TP</label>
-                               <input type="email" class="form-control" placeholder="TP">
+                               <label class="col-form-label col-form-label-sm">QTY ON Hand</label>
+                               <input type="email" class="form-control" placeholder="">
                            </div>
                        </div>
                        <div class="col-2">
                            <div class="mb-3">
                                <label class="col-form-label col-form-label-sm">QTY</label>
-                               <input type="email" class="form-control" placeholder="TP">
+                               <input type="number" class="form-control" placeholder="">
                            </div>
                        </div>
                    </div>
@@ -189,13 +189,13 @@
                    <div class="row">
                        <div class="mb-3">
                            <label class="col-form-label col-form-label-sm">QTY</label>
-                           <input type="email" class="form-control" placeholder="TP">
+                           <input type="email" class="form-control" placeholder="">
                        </div>
                    </div>
 
                    <div class="row d-flex justify-content-end">
-                       <div class="col-2">
-                           <button type="button" class="btn btn-primary">Save</button>
+                       <div class="col-3">
+                           <button type="button" class="btn btn-primary">Add To Cart</button>
                        </div>
                    </div>
                </form>
@@ -207,7 +207,7 @@
 
             <div class="col-12 col-md-3 h-75 mt-2 bg-body-secondary rounded-4">
                 <div class="row bg-danger rounded-5" style="height: 4vh">
-                    <h1 class="modal-title fs-6 text-center text-white" id="exampleModalLabel@">Insert Item</h1>
+                    <h1 class="modal-title fs-6 text-center text-white" id="exampleModalLabel@">Summery</h1>
                 </div>
             <form>
                     <div class="row">
@@ -218,22 +218,22 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">QTY</label>
-                                <input type="email" class="form-control" placeholder="TP">
+                                <label class="col-form-label col-form-label-sm">Cash</label>
+                                <input type="email" class="form-control" placeholder="">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="mb-3">
-                                <label class="col-form-label col-form-label-sm">QTY</label>
-                                <input type="email" class="form-control" placeholder="TP">
+                                <label class="col-form-label col-form-label-sm">Discount</label>
+                                <input type="number" class="form-control" placeholder="%">
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="mb-3">
-                            <label class="col-form-label col-form-label-sm">QTY</label>
-                            <input type="email" class="form-control" placeholder="TP">
+                            <label class="col-form-label col-form-label-sm">Balance</label>
+                            <input type="email" class="form-control" placeholder="">
                         </div>
                     </div>
 
@@ -252,26 +252,20 @@
         <table class="table table-striped table-hover border" id="tblCustomer">
             <thead class="table-bordered sticky-top overflow-auto table-info">
             <tr>
-                <th scope="col">Customer ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Salary</th>
-                <th scope="col">Options</th>
+                <th scope="col">Item Code</th>
+                <th scope="col">Description</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">QTY</th>
+                <th scope="col">Total</th>
             </tr>
             </thead>
             <tbody id="body">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                <th scope="col" class="">
-                    <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal2">
-                        Edit
-                    </button>
-                    <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                </th>
+                <td>I001</td>
+                <td>Rice</td>
+                <td>220</td>
+                <td>4</td>
+                <td>880</td>
             </tr>
             </tbody>
         </table>
