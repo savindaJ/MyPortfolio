@@ -1,0 +1,44 @@
+body{
+    width: 100%;
+    height: 90vh;
+    background: rgba(221, 220, 229, 0.96);
+}
+
+body header{
+    top: 0;
+}
+
+body main{
+    /*background: url("");*/
+    /*background-size: cover;*/
+    height: 90vh;
+    margin-top: 10vh;
+    /*overflow: hidden;*/
+}
+
+body main>section:first-child{
+    width: 500vw;
+    height: 100%;
+    border: 2px solid #0a53be;
+    box-sizing: border-box;
+}
+
+body main>section:first-child>section{
+    width: calc(100%/5);
+    height: 100%;
+    border: 3px solid green;
+}
+
+.navbar-nav>li>a>h5:hover{
+    color: #084bac;
+    font-size: 21px;
+    transition-duration: 0.5s;
+}
+
+.navbar-nav>li>a>h6:hover{
+    color: #084bac;
+}
+
+.navbar-nav>li>a>h6:hover i{
+    color: red;
+}
