@@ -66,7 +66,9 @@
     <section class="d-flex overflow-auto" id="main-root">
         <!--dashboard-->
         <section>
-            <section class="d-flex align-items-center full-height flex-column col-10 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5" id="dashboard">
+            <section
+                    class="d-flex align-items-center full-height flex-column col-10 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5"
+                    id="dashboard">
 
                 <div class="container mt-5">
                     <div class="row gx-5" style="height: 30vh">
@@ -154,7 +156,8 @@
                     <form class="row w-50" role="" method="">
 
                         <div class="col-12 col-md-6 ">
-                            <input class="form-control me-2 mb-2 mb-lg-0 shadow-sm" type="" placeholder="Enter Name/TP/Address"
+                            <input class="form-control me-2 mb-2 mb-lg-0 shadow-sm" type=""
+                                   placeholder="Enter Name/TP/Address"
                                    aria-label="Search" id="txtSearch" style="height: 30px">
                         </div>
                         <div class="col-12 col-md-3 ">
@@ -382,173 +385,336 @@
 
         <!--order-->
         <section>
-            <div class="container-fluid mt-4">
-                <div class="row p-2">
+            <!--            <div class="container-fluid mt-4">&lt;!&ndash;-->
+            <!--                <div class="row p-2">-->
 
-                    <div class="col-12 col-md-4 border-end border-black h-75 mt-2 bg-body-secondary rounded-4">
-                        <div class="row bg-warning rounded-5" style="height: 4vh">
-                            <h1 class="modal-title fs-6 text-center text-white" id="order-labal">Invoice Details</h1>
+            <!--                    <div class="col-12 col-md-4 border-end border-black h-75 mt-2 bg-body-secondary rounded-4">-->
+            <!--                        <div class="row bg-warning rounded-5" style="height: 4vh">-->
+            <!--                            <h1 class="modal-title fs-6 text-center text-white" id="order-labal">Invoice Details</h1>-->
+            <!--                        </div>-->
+            <!--                        <form class="">-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Order ID</label>-->
+            <!--                                        <input type="email" class="form-control input-sm" placeholder="ID">-->
+            <!--                                    </div>-->
+
+
+            <!--                                </div>-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Date</label>-->
+            <!--                                        <input type="date" class="form-control" placeholder="Name">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Customer ID</label>-->
+            <!--                                        <input type="text" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Customer Name</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Customer Address</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Salary</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="mb-3">-->
+            <!--                                    <label class="col-form-label col-form-label-sm">Customer TP</label>-->
+            <!--                                    <input type="email" class="form-control" placeholder="TP">-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                        </form>-->
+            <!--                    </div>-->
+
+
+            <!--                    <div class="col-12 col-md-5 h-75 border-end border-black mt-2 bg-body-secondary rounded-4">-->
+            <!--                        <div class="row bg-success rounded-5" style="height: 4vh">-->
+            <!--                            <h1 class="modal-title fs-6 text-center text-white" id="">Item Select</h1>-->
+            <!--                        </div>-->
+            <!--                        <form>-->
+            <!--                            <div class="row">-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Item ID</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Description</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="col-4">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Unit Price</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">QTY ON Hand</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                                <div class="col-2">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">QTY</label>-->
+            <!--                                        <input type="number" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="mb-3">-->
+            <!--                                    <label class="col-form-label col-form-label-sm">QTY</label>-->
+            <!--                                    <input type="email" class="form-control" placeholder="">-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row d-flex justify-content-end">-->
+            <!--                                <div class="col-3">-->
+            <!--                                    <button type="button" class="btn btn-primary">Add To Cart</button>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </form>-->
+            <!--                    </div>-->
+
+
+            <!--                    <div class="col-12 col-md-3 h-75 mt-2 bg-body-secondary rounded-4">-->
+            <!--                        <div class="row bg-danger rounded-5" style="height: 4vh">-->
+            <!--                            <h1 class="modal-title fs-6 text-center text-white" id="exampleModalLabel@">Summery</h1>-->
+            <!--                        </div>-->
+            <!--                        <form>-->
+            <!--                            <div class="row">-->
+            <!--                                <label class="text-warning d-flex">-->
+            <!--                                    <h2>Total:<h2 class="text-primary">1800.54</h2></h2>-->
+            <!--                                </label>-->
+            <!--                                <label class="text-primary"><h3>Total:</h3></label>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Cash</label>-->
+            <!--                                        <input type="email" class="form-control" placeholder="">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                                <div class="col-6">-->
+            <!--                                    <div class="mb-3">-->
+            <!--                                        <label class="col-form-label col-form-label-sm">Discount</label>-->
+            <!--                                        <input type="number" class="form-control" placeholder="%">-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row">-->
+            <!--                                <div class="mb-3">-->
+            <!--                                    <label class="col-form-label col-form-label-sm">Balance</label>-->
+            <!--                                    <input type="email" class="form-control" placeholder="">-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+
+            <!--                            <div class="row d-flex justify-content-end">-->
+            <!--                                <div class="col-3">-->
+            <!--                                    <button type="button" class="btn btn-primary">Save</button>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </form>-->
+            <!--                    </div>-->
+
+            <!--                </div>-->
+            <!--            &ndash;&gt;</div>-->
+
+            <div class="container-fluid px-2">
+                <div class="row gx-2">
+                    <div class="col-12 col-md-4">
+                        <div class="rounded-3 p-3 border bg-light">
+                            <form class="">
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Order ID</label>
+                                            <input type="email" class="form-control input-sm" placeholder="ID">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Date</label>
+                                            <input type="date" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Customer ID</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Customer Name</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Customer Address</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Salary</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="mb-3">
+                                        <label class="col-form-label col-form-label-sm">Customer TP</label>
+                                        <input type="email" class="form-control" placeholder="TP">
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
-                        <form class="">
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Order ID</label>
-                                        <input type="email" class="form-control input-sm" placeholder="ID">
-                                    </div>
-
-
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Date</label>
-                                        <input type="date" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Customer ID</label>
-                                        <input type="text" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Customer Name</label>
-                                        <input type="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Customer Address</label>
-                                        <input type="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Salary</label>
-                                        <input type="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="mb-3">
-                                    <label class="col-form-label col-form-label-sm">Customer TP</label>
-                                    <input type="email" class="form-control" placeholder="TP">
-                                </div>
-                            </div>
-
-                        </form>
                     </div>
 
+                    <div class="col-12 col-md-5">
+                        <div class="rounded-3 p-3 border bg-light">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Item ID</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
 
-                    <div class="col-12 col-md-5 h-75 border-end border-black mt-2 bg-body-secondary rounded-4">
-                        <div class="row bg-success rounded-5" style="height: 4vh">
-                            <h1 class="modal-title fs-6 text-center text-white" id="">Item Select</h1>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Item ID</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Description</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Description</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Unit Price</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">QTY ON Hand</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">QTY</label>
+                                            <input type="number" class="form-control" placeholder="">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Unit Price</label>
-                                        <input type="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">QTY ON Hand</label>
-                                        <input type="email" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-2">
+                                <div class="row">
                                     <div class="mb-3">
                                         <label class="col-form-label col-form-label-sm">QTY</label>
-                                        <input type="number" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="mb-3">
-                                    <label class="col-form-label col-form-label-sm">QTY</label>
-                                    <input type="email" class="form-control" placeholder="">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-end">
-                                <div class="col-3">
-                                    <button type="button" class="btn btn-primary">Add To Cart</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-
-                    <div class="col-12 col-md-3 h-75 mt-2 bg-body-secondary rounded-4">
-                        <div class="row bg-danger rounded-5" style="height: 4vh">
-                            <h1 class="modal-title fs-6 text-center text-white" id="exampleModalLabel@">Summery</h1>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <label class="text-warning d-flex">
-                                    <h2>Total:<h2 class="text-primary">1800.54</h2></h2>
-                                </label>
-                                <label class="text-primary"><h3>Total:</h3></label>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Cash</label>
                                         <input type="email" class="form-control" placeholder="">
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label class="col-form-label col-form-label-sm">Discount</label>
-                                        <input type="number" class="form-control" placeholder="%">
+
+                                <div class="row d-flex justify-content-end">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="mb-3">
-                                    <label class="col-form-label col-form-label-sm">Balance</label>
-                                    <input type="email" class="form-control" placeholder="">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-end">
-                                <div class="col-3">
-                                    <button type="button" class="btn btn-primary">Save</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
 
+                    <div class="col-12 col-md-3">
+                        <div class="rounded-3 p-3 border bg-light">
+                            <form>
+                                <div class="row">
+                                    <label class="text-warning d-flex">
+                                        <h2>Total:<h2 class="text-primary">1800.54</h2></h2>
+                                    </label>
+                                    <label class="text-primary"><h3>Total:</h3></label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Cash</label>
+                                            <input type="email" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="col-form-label col-form-label-sm">Discount</label>
+                                            <input type="number" class="form-control" placeholder="%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="mb-3">
+                                        <label class="col-form-label col-form-label-sm">Balance</label>
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-end">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
 
