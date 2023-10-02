@@ -8,25 +8,29 @@ body header{
     top: 0;
 }
 
+body header a:hover{
+    cursor: pointer;
+}
+
 body main{
     /*background: url("");*/
     /*background-size: cover;*/
     height: 90vh;
     margin-top: 10vh;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 body main>section:first-child{
     width: 500vw;
     height: 100%;
-    border: 2px solid #0a53be;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+    overflow: hidden;
 }
 
 body main>section:first-child>section{
-    width: calc(100%/5);
+    width: 100vw;
     height: 100%;
-    border: 3px solid green;
+    transition-duration: 1s;
 }
 
 .navbar-nav>li>a>h5:hover{
