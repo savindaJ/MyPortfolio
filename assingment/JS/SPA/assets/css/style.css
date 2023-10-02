@@ -1,8 +1,7 @@
 body{
     width: 100%;
-    height: 90vh;
-    background: rgba(221, 220, 229, 0.96);
-    background: url("");
+    background: url("../image/cart-2.jpg");
+    background-size: cover;
 }
 
 body header{
@@ -71,6 +70,7 @@ body main>section:first-child>section{
 #item{
     height: 77vh;
 }
+
 @media all and (max-width: 768px){
     #dashboard{
        border: 4px solid black;
