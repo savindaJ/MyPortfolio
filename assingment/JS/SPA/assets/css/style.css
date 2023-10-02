@@ -30,17 +30,17 @@ body main>section:first-child{
 body main>section:first-child>section{
     width: 100vw;
     height: 100%;
-    transition-duration: 1s;
+    /*transition-duration: 1s;*/
 }
 
 .navbar-nav>li>a>h5:hover{
-    color: #084bac;
+    color: #be4e4e;
     font-size: 21px;
-    transition-duration: 0.5s;
+    /*transition-duration: 0.5s;*/
 }
 
 .navbar-nav>li>a>h6:hover{
-    color: #084bac;
+    /*color: #084bac;*/
 }
 
 .navbar-nav>li>a>h6:hover i{
