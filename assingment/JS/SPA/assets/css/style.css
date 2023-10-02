@@ -46,3 +46,9 @@ body main>section:first-child>section{
 .navbar-nav>li>a>h6:hover i{
     color: red;
 }
+
+@media all and (max-width: 768px){
+    #dashboadrd{
+       border: 4px solid black;
+    }
+}
