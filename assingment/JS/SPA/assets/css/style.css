@@ -47,20 +47,23 @@ body main>section:first-child>section{
     color: red;
 }
 
-#dashboadrd{
-    border: 1px solid red;
+#dashboard{
+    height: 77vh;
 }
 
 #orderD{
     height: 77vh;
 }
 
-#dashboadrd{
+#dashboard{
     height: 77vh;
 }
 
+#item{
+    height: 77vh;
+}
 @media all and (max-width: 768px){
-    #dashboadrd{
+    #dashboard{
        border: 4px solid black;
         height: 130vh;
     }

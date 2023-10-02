@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../SPA/assets/css/style.css">
 </head>
 <body>
-<header class="position-fixed container-fluid">
+<header class="z-3 position-fixed container-fluid">
     <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top rounded-4 " style="height: 60px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="bi bi-buildings-fill text-black"></i><h4
@@ -65,12 +65,13 @@
     <section class="d-flex overflow-auto" id="main-root">
         <!--dashboard-->
         <section>
-            <section class="d-flex align-items-center full-height flex-column col-10 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5" id="dashboadrd">
+            <section class="d-flex align-items-center full-height flex-column col-10 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5" id="dashboard">
 
                 <div class="container mt-5">
                     <div class="row gx-5" style="height: 30vh">
-                        <div class="col-12 col-md-4">
-                            <div class="p-3 border bg-primary h-100">
+                        <div class="col-12 col-md-4 ">
+
+                            <div class="p-3 border bg-primary rounded-3 h-100">
                                 <h4 class="text-center">Total Of customer</h4>
                                 <div class="row border-top border-black h-75 justify-content-center align-items-center">
                                     <h1 class="text-center font-monospace">10</h1>
@@ -78,7 +79,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4 ">
-                            <div class="p-3 border bg-danger h-100">
+
+                            <div class="p-3 border bg-danger rounded-3 h-100">
                                 <h4 class="text-center">Total Of Orders</h4>
                                 <div class="row border-top border-black h-75 justify-content-center align-items-center">
                                     <h1 class="text-center font-monospace">10</h1>
@@ -87,7 +89,8 @@
                         </div>
 
                         <div class="col-12 col-md-4">
-                            <div class="p-3 border bg-warning h-100">
+
+                            <div class="p-3 border bg-warning rounded-3 h-100">
                                 <h4 class="text-center">Total Of Items</h4>
                                 <div class="row border-top border-black h-75 justify-content-center align-items-center">
                                     <h1 class="text-center font-monospace">10</h1>
@@ -100,7 +103,8 @@
                 <div class="container mt-3 justify-content-center align-items-center d-flex">
                     <div class="row gx-5 w-100 justify-content-center" style="height: 30vh">
                         <div class="col-12  col-md-4">
-                            <div class="p-3 border bg-secondary h-100">
+
+                            <div class="p-3 border bg-secondary rounded-3 h-100">
                                 <h4 class="text-center">Finish Orders</h4>
                                 <div class="row border-top border-black h-75 justify-content-center align-items-center">
                                     <h1 class="text-center font-monospace">10</h1>
@@ -108,7 +112,8 @@
                             </div>
                         </div>
                         <div class="col-12  col-md-4">
-                            <div class="p-3 border bg-info h-100">
+
+                            <div class="p-3 border bg-info rounded-3 h-100">
                                 <h4 class="text-center">Total Of Income</h4>
                                 <div class="row border-top border-black h-75 justify-content-center align-items-center">
                                     <h1 class="text-center font-monospace">10</h1>
@@ -124,7 +129,7 @@
         <!--customer-->
         <section>
             <section class="d-flex full-height flex-column col-10 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5"
-                     style="height: 77vh" id="customer">
+                     id="customer">
                 <div class="container mt-3">
 
                     <div class="d-flex justify-content-lg-end">
@@ -574,7 +579,7 @@
         <!--item-->
         <section>
             <section class="d-flex full-height flex-column col-10 col-md-10 bg-white shadow-lg rounded-4 m-auto mt-5"
-                     style="height: 77vh" id="item">
+                     id="item">
                 <div class="container mt-3">
 
                     <div class="d-flex justify-content-lg-end">
