@@ -5,44 +5,73 @@
     <title>QUE</title>
 </head>
 <style>
-  main section{
-    width: max-content;
-    height: max-content;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: flex;
-  }
+    main section {
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+    }
 
-  main section div{
-    width: 150px;
-    height: 80px;
-  }
+    main section div {
+        width: 150px;
+        height: 80px;
+    }
 
-  main section div:first-child{
-    position: relative;
-    top: -80px;
-  }
+    main section div:first-child {
+        position: relative;
+        top: -80px;
+    }
 
-  main section div:last-child{
-    position: relative;
-    top: 80px;
-  }
+    main section div:last-child {
+        position: relative;
+        top: 80px;
+    }
 
 
 </style>
 <body>
 <main>
-  <section>
-    <div style="background: red"></div>
-    <div style="background: black"></div>
-    <div style="background: deeppink"></div>
-    <div style="background: yellow"></div>
-    <div style="background: #58d63d"></div>
-  </section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
 </main>
+
+<script>
+
+    let div_list = document.querySelectorAll("section>div");
+
+    let colors = ["red", "black", "deeppink", "yellow", "green"];
+
+    let i = 0;
+
+    for (const color of colors) {
+        div_list[i].style.background = color;
+        i = i + 1;
+    }
+
+    setInterval(function () {
+        let last = colors.pop();
+        colors.unshift(last);
+        repeat();
+    }, 1500);
+
+    function repeat() {
+        let i = 0;
+        for (const color of colors) {
+            div_list[i].style.background = color;
+            i = i + 1;
+        }
+    }
+
+</script>
 </body>
 </html>
