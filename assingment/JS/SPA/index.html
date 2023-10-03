@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="container mt-3 justify-content-center align-items-center d-flex">
-                    <div class="row gx-5 w-100 justify-content-center" style="height: 30vh">
+                    <div id="secondB" class="row gx-5 w-100 justify-content-center" style="height: 30vh">
                         <div class="col-12  col-md-4">
 
                             <div class="p-3 border bg-danger shadow-lg rounded-3 h-100">
@@ -146,7 +146,7 @@
 
                         <div class="row" style="width: 20vw">
                             <div class="col-12 col-md-4 mt-1">
-                                <button class="btn btn-dark btn-sm" type="submit" style="height: 30px">Get All</button>
+                                <button id="getAllCustomer" class="btn btn-dark btn-sm" type="submit" style="height: 30px">Get All</button>
                             </div>
 
                             <div class="col-12 col-md-8 mt-1">
@@ -198,6 +198,7 @@
                             <th scope="col">Action</th>
                         </tr>
                         </thead>
+
                         <tbody id="body">
                         <tr>
                             <td>C001</td>
@@ -213,90 +214,6 @@
                             </td>
                         </tr>
 
-
-                        <tr>
-                            <td>#</td>
-                            <td>First</td>
-                            <td>Last</td>
-                            <td>Handle</td>
-                            <td class="">
-                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
-                                    Edit
-                                </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#</td>
-                            <td>First</td>
-                            <td>Last</td>
-                            <td>Handle</td>
-                            <td class="">
-                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
-                                    Edit
-                                </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#</td>
-                            <td>First</td>
-                            <td>Last</td>
-                            <td>Handle</td>
-                            <td class="">
-                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
-                                    Edit
-                                </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#</td>
-                            <td>First</td>
-                            <td>Last</td>
-                            <td>Handle</td>
-                            <td class="">
-                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
-                                    Edit
-                                </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#</td>
-                            <td>First</td>
-                            <td>Last</td>
-                            <td>Handle</td>
-                            <td class="">
-                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
-                                    Edit
-                                </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#</td>
-                            <td>First</td>
-                            <td>Last</td>
-                            <td>Handle</td>
-                            <td class="">
-                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
-                                    Edit
-                                </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                            </td>
-                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -316,25 +233,25 @@
                                 <form>
                                     <div class="mb-3">
                                         <label class="form-label">ID</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                        <input id="customer-gmail" type="text" class="form-control" placeholder="">
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">Customer Name</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                        <input id="customer-name" type="text" class="form-control" placeholder="">
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">Customer address</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                        <input id="customer-address" type="text" class="form-control" placeholder="">
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">Customer TP</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                        <input id="customer-tp" type="text" class="form-control" placeholder="">
                                     </div>
 
-                                    <button type="button" class="btn btn-primary">Add Customer</button>
+                                    <button id="save-customer" type="button" class="btn btn-primary">Add Customer</button>
                                 </form>
                             </div>
                         </div>
