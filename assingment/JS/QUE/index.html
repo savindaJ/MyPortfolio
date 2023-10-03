@@ -51,14 +51,8 @@
 
     let colors = ["red", "black", "deeppink", "yellow", "green"];
 
-    let i = 0;
-
-    for (const color of colors) {
-        div_list[i].style.background = color;
-        i = i + 1;
-    }
-
     setInterval(function () {
+        repeat();
         let last = colors.pop();
         colors.unshift(last);
         repeat();
