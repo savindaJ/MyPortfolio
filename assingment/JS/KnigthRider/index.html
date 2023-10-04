@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight-Rider</title>
+    <link rel="stylesheet" href="../../FrameWork/POS/assets/css/bootstrap.css">
+</head>
+<style>
+
+    main > section {
+        width: max-content;
+        height: 50vh;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    main > section > h1 {
+        color: white;
+        text-align: center;
+    }
+
+    main > section > section > section:first-child {
+        width: max-content;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main > section > section > section > div {
+        width: 150px;
+        height: 50px;
+        border: 1px solid #ffffff;
+    }
+
+    main > section > section > section:last-child {
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        margin: auto;
+        top: 40vh;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        background-color: #120e5b;
+
+        border: #f8c5c5;
+    }
+</style>
+<body>
+
+<main>
+    <section>
+        <h1>Knight Rider</h1>
+
+        <section>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+            <section>
+                <button class="btn btn-primary">Start</button>
+                <button class="btn btn-danger">Stop</button>
+                <input type="range">
+            </section>
+
+        </section>
+
+    </section>
+</main>
+
+<script>
+
+    let colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "#ffc3c3", "#ffc3c3", "#ffc3c3"];
+
+    let setColor = [];
+
+    let div_list = document.querySelectorAll("main>section>section>section>div");
+
+    let i = 0;
+
+    let rightInterval;
+
+    let leftInterval;
+
+    function setLeft() {
+
+        clearInterval(leftInterval);
+
+        leftInterval = setInterval(function () {
+            setMoveLeft();
+        }, 100);
+    }
+
+    function setMoveLeft() {
+        if (setColor.length === colors.length) {
+            let last = setColor.shift();
+            setColor.unshift(last);
+        } else {
+            setColor.unshift(colors[i]);
+            for (let j = 0; j < setColor.length; j++) {
+                if (setColor[setColor.length - 1] === "#ffc3c3") {
+                    break;
+                } else {
+                    try {
+                        div_list[5 - j].style.backgroundColor = setColor[j];
+                    } catch (ex) {
+
+                    }
+                }
+                i = i + 1;
+            }
+        }
+
+        // div_list[5].style.background = `red`;
+    }
+
+
+    function setRight() {
+
+        clearInterval(rightInterval);
+
+        rightInterval = setInterval(function () {
+            setMoveRight();
+        }, 150);
+    }
+
+    function setMoveRight() {
+        if (setColor.length === colors.length) {
+            let last = setColor.shift();
+            setColor.unshift(last);
+        } else {
+            setColor.unshift(colors[i]);
+            for (let j = 0; j < setColor.length; j++) {
+                try {
+                    div_list[j].style.backgroundColor = setColor[j];
+                } catch (ex) {
+                    //    not hear
+                }
+            }
+            i = i + 1;
+        }
+        // setColor = new Array();
+    }
+
+    let main = setInterval(function () {
+        setRight();
+        setColor = new Array();
+        i = 0;
+    }, 2000);
+
+</script>
+</body>
+</html>
