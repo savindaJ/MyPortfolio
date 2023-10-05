@@ -174,24 +174,44 @@ function getAll() {
                                     Edit
                                 </button>
                                 <button class="btn btn-danger me-3 btn-sm">Delete</button></td></tr>`);
+
+        setEvent();
     }
 
+
+}
+
+function setEvent(){
+
+    $(`#tblCustomer tr`).click(function (){
+
+        var $row = $(this).closest("tr"),        // Finds the closest row <tr>
+            $tds = $row.find("td:nth-child(1)");
+        $ts = $row.find("td:nth-child(2)");
+        $tt = $row.find("td:nth-child(3)");
+        $tf = $row.find("td:nth-child(4)");
+        // let td_list =  $();
+
+        $(`#upCID`).val($tds.text());
+        $(`#upCName`).val($ts.text());
+        $(`#upCAddress`).val($tt.text());
+        $(`#upCTp`).val($tf.text());
+
+    });
 }
 
 $(`#tblCustomer tr`).click(function (){
 
-   let td_list =  $(`#tblCustomer tr td`);
+    var $row = $(this).closest("tr"),        // Finds the closest row <tr>
+        $tds = $row.find("td:nth-child(1)");
+        $ts = $row.find("td:nth-child(2)");
+        $tt = $row.find("td:nth-child(3)");
+        $tf = $row.find("td:nth-child(4)");
+        // let td_list =  $();
 
-   console.log(td_list);
-
-   let id = td_list[0];
-   let name = td_list[1];
-   let address = td_list[2];
-   let tp = td_list[3];
-
-   $(`#upCID`).val(id.textContent);
-   $(`#upCName`).val(name.textContent);
-   $(`#upCAddress`).val(address.textContent);
-   $(`#upCTp`).val(tp.textContent);
+   $(`#upCID`).val($tds.text());
+   $(`#upCName`).val($ts.text());
+   $(`#upCAddress`).val($tt.text());
+   $(`#upCTp`).val($tf.text());
 
 });
