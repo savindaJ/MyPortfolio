@@ -165,6 +165,8 @@ $(`#getAllCustomer`).click(function () {
 
 function getAll() {
 
+    $(`#body`).empty();
+
     for (const customer of customerArray) {
 
         $(`#body`).append(`<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.tp}</td><td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
