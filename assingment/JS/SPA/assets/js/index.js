@@ -196,7 +196,7 @@ function getAll() {
                                         data-bs-target="#exampleModal2">
                                     Edit
                                 </button>
-                                <button class="btn btn-danger me-3 btn-sm">Delete</button></td></tr>`);
+                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td></tr>`);
 
         setEvent();
     }
@@ -221,6 +221,12 @@ function setEvent(){
         $(`#upCTp`).val($tf.text());
 
     });
+
+    $('.delete').click(function (){
+        $(`#tblCustomer tr`).click(function (){
+            var $row = $(this).closest("tr").remove();      // Finds the closest row <t
+        });
+    });
 }
 
 $(`#tblCustomer tr`).click(function (){
@@ -236,5 +242,7 @@ $(`#tblCustomer tr`).click(function (){
    $(`#upCName`).val($ts.text());
    $(`#upCAddress`).val($tt.text());
    $(`#upCTp`).val($tf.text());
+
+
 
 });
