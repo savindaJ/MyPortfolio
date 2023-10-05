@@ -11,6 +11,29 @@ let nav_order_txt = document.getElementById("nav-order-txt");
 let nav_home_txt = document.getElementById("nav-home-txt");
 let nav_order_detail_txt = document.getElementById("nav-orderD-txt");
 
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    // add a zero in front of numbers<10
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function() {
+        startTime()
+    }, 500);
+}
+startTime();
+
+
 nav_customer.addEventListener("click", function () {
 
     nav_customer_txt.style.fontSize = `21px`;
