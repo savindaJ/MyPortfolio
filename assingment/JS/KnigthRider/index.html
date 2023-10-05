@@ -85,7 +85,7 @@
 
 <script>
 
-    let colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "#ffc3c3", "#ffc3c3", "#ffc3c3"];
+    let colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "white", "white", "white", "white", "white", "white"];
 
     let setColor = [];
 
@@ -107,61 +107,49 @@
     }
 
     function setMoveLeft() {
-        if (setColor.length === colors.length) {
-            let last = setColor.shift();
-            setColor.unshift(last);
-        } else {
-            setColor.unshift(colors[i]);
-            for (let j = 0; j < setColor.length; j++) {
-                if (setColor[setColor.length - 1] === "#ffc3c3") {
-                    break;
-                } else {
-                    try {
-                        div_list[5 - j].style.backgroundColor = setColor[j];
-                    } catch (ex) {
-
-                    }
-                }
-                i = i + 1;
-            }
-        }
-
-        // div_list[5].style.background = `red`;
-    }
-
-
-    function setRight() {
-
-        clearInterval(rightInterval);
-
-        rightInterval = setInterval(function () {
-            setMoveRight();
-        }, 150);
-    }
-
-    function setMoveRight() {
-        if (setColor.length === colors.length) {
-            let last = setColor.shift();
-            setColor.unshift(last);
-        } else {
-            setColor.unshift(colors[i]);
-            for (let j = 0; j < setColor.length; j++) {
+        setColor.unshift(colors[i]);
+        for (let j = 0; j < setColor.length; j++) {
+            if (setColor[setColor.length - 1] === "#ffc3c3") {
+                break;
+            } else {
                 try {
-                    div_list[j].style.backgroundColor = setColor[j];
+                    div_list[5 - j].style.backgroundColor = setColor[j];
                 } catch (ex) {
-                    //    not hear
+
                 }
             }
             i = i + 1;
         }
+    }
+
+
+    function setRight() {
+        clearInterval(rightInterval);
+        rightInterval = setInterval(function () {
+            setMoveRight();
+        }, 100);
+    }
+
+    function setMoveRight() {
+        setColor.unshift(colors[i]);
+        for (let j = 0; j < setColor.length; j++) {
+            try {
+                div_list[j].style.backgroundColor = setColor[j];
+            } catch (ex) {
+                //    not hear
+            }
+        }
+        i = i + 1;
         // setColor = new Array();
     }
+
+    // let root = true;
 
     let main = setInterval(function () {
         setRight();
         setColor = new Array();
         i = 0;
-    }, 2000);
+    }, 1500);
 
 </script>
 </body>
