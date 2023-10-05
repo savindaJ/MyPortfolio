@@ -124,7 +124,12 @@ nav_item.addEventListener("click", function () {
 
 //customer save option
 
-let customerArray = [];
+let customerArray = [{
+    name: `kamal`,
+    address: `galle`,
+    tp: `0714523869`,
+    id: `C001`
+}];
 
 let btnCustomer = document.getElementById("save-customer");
 
@@ -136,63 +141,37 @@ let tp = document.getElementById("customer-tp");
 let tableBody = document.getElementById("body");
 
 
-btnCustomer.addEventListener("click", function () {
+$(`#save-customer`).click(function () {
     // let customer = [id.value, address.value, name.value, tp.value];
-
     let cus = {
         name: name.value,
         id: id.value,
         address: address.value,
         tp: tp.value
     }
-
     customerArray.push(cus);
-
     for (const customer of customerArray) {
-        console.log(customer);
+        console.log(customerArray);
     }
 
     getAll();
 
 });
 
+$(`#getAllCustomer`).click(function () {
+    getAll();
+});
 
-function getAll(){
 
-
+function getAll() {
 
     for (const customer of customerArray) {
-        let tr = document.createElement('tr');
 
-        let cId = document.createElement('td');
-        let cName = document.createElement('td');
-        let cAddres = document.createElement('td');
-        let cTp = document.createElement('td');
-        let buttons = document.createElement('td');
-
-        let edit = document.createElement('button');
-        let del =document.createElement('button');
-
-        edit.textContent = 'edit';
-        del.textContent = 'delete';
-
-        del.className = "btn btn-danger bg-danger me-3 btn-sm";
-
-        edit.className = "btn btn-primary bg-primary btn-sm me-2";
-
-        buttons.append(edit,del);
-
-        tr.append(cId,cName,cAddres,cTp,buttons);
-
-        // let customerTd = customerArray[0];
-
-        cId.textContent = customer.id;
-        cName.textContent = customer.name;
-        cAddres.textContent = customer.address;
-        cTp.textContent = customer.tp;
-
-        tableBody.append(tr);
-
+        $(`#body`).append(`<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.tp}</td><td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button></td></tr>`);
     }
 
-  }
+}
