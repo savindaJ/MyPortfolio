@@ -246,3 +246,5 @@ $(`#tblCustomer tr`).click(function (){
 
 
 });
+
+getAll();
