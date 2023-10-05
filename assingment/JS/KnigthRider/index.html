@@ -85,11 +85,15 @@
 
 <script>
 
-    let colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "white", "white", "white", "white", "white", "white"];
+    let colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "white", "white", "white", "white", "white", "white"];
 
     let setColor = [];
 
     let div_list = document.querySelectorAll("main>section>section>section>div");
+
+    let interval;
+
+    let count = 0;
 
     let i = 0;
 
@@ -98,9 +102,7 @@
     let leftInterval;
 
     function setLeft() {
-
         clearInterval(leftInterval);
-
         leftInterval = setInterval(function () {
             setMoveLeft();
         }, 100);
@@ -108,18 +110,10 @@
 
     function setMoveLeft() {
         setColor.unshift(colors[i]);
-        for (let j = 0; j < setColor.length; j++) {
-            if (setColor[setColor.length - 1] === "#ffc3c3") {
-                break;
-            } else {
-                try {
-                    div_list[5 - j].style.backgroundColor = setColor[j];
-                } catch (ex) {
-
-                }
-            }
-            i = i + 1;
+        for (let j = 0; j < 6; j++) {
+            div_list[5-j].style.backgroundColor = setColor[j];
         }
+        i = i + 1;
     }
 
 
@@ -132,25 +126,51 @@
 
     function setMoveRight() {
         setColor.unshift(colors[i]);
-        for (let j = 0; j < setColor.length; j++) {
-            try {
-                div_list[j].style.backgroundColor = setColor[j];
-            } catch (ex) {
-                //    not hear
-            }
+        for (let j = 0; j < 6; j++) {
+            div_list[j].style.backgroundColor = setColor[j];
         }
         i = i + 1;
-        // setColor = new Array();
     }
 
-    // let root = true;
+    let root = true;
+
+
+    function setLeftNow(){
+        setTimeout(function (){
+            if (!root){
+                setLeft();
+                setColor = [];
+                i = 0;
+            }
+
+            root=true;
+        },1000);
+    }
+
+    function setTime(){
+
+        if (root){
+            setRight();
+            setColor = [];
+            i = 0;
+        }
+
+
+
+        setLeftNow();
+
+        // if (!root){
+        //     setLeft();
+        //     setColor = [];
+        //     i = 0;
+        // }
+
+    }
 
     let main = setInterval(function () {
-        setRight();
-        console.log(setColor.length);
-        setColor = [];
-        i = 0;
-    }, 1500);
+       setTime();
+    }, 2000);
+
 
 </script>
 </body>
