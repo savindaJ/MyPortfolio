@@ -177,3 +177,21 @@ function getAll() {
     }
 
 }
+
+$(`#tblCustomer tr`).click(function (){
+
+   let td_list =  $(`#tblCustomer tr td`);
+
+   console.log(td_list);
+
+   let id = td_list[0];
+   let name = td_list[1];
+   let address = td_list[2];
+   let tp = td_list[3];
+
+   $(`#upCID`).val(id.textContent);
+   $(`#upCName`).val(name.textContent);
+   $(`#upCAddress`).val(address.textContent);
+   $(`#upCTp`).val(tp.textContent);
+
+});
