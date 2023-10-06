@@ -170,7 +170,9 @@
         leftInterval = setInterval(function () {
             setColor_left.unshift(colors_left[i]);
             for (let j = 0; j < 6; j++) {
-                div_list[5 - j].style.backgroundColor = setColor_left[j];
+                // div_list[5 - j].style.backgroundColor = setColor_left[j];
+                let currentDiv = div_list[5 - j];
+                $(currentDiv).css('background',setColor_left[j]);
             }
             i = i + 1;
         }, animate_time);
@@ -185,7 +187,11 @@
             setColor_right.unshift(colors_right[i]);
 
             for (let j = 0; j < 6; j++) {
-                div_list[j].style.backgroundColor = setColor_right[j];
+                // div_list[j].style.backgroundColor = setColor_right[j];
+
+                let currentDiv = div_list[j];
+
+                $(currentDiv).css('background',setColor_right[j]);
             }
 
             i = i + 1;
@@ -223,14 +229,27 @@
 
     let root = true;
 
+    let second = true;
+
     function animate() {
         if (root) {
             setCompleatRight();
+
             // setCompleatLeft();
             root = false;
+
+            // if (second){
+            //     setCompleatLeft();
+            //     second = false;
+            // }
         } else {
             setCompleatLeft();
             root = true;
+
+            // if (!second){
+            //     setCompleatLeft();
+            //     second = true;
+            // }
         }
     }
 
