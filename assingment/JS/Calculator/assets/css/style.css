@@ -7,7 +7,7 @@ body main{
 
 body main>section{
     width: 40vw;
-    height: 70vh;
+    height: 100vh;
     position: absolute;
     margin: auto;
     top: 0;
@@ -19,8 +19,4 @@ body main>section{
 body main>section>div{
     height: 10vh;
     width: 100%;
-}
-
-body main>section:nth-child(2) button{
-    /*font-size: 20px;*/
 }
