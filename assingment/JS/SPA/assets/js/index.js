@@ -27,10 +27,11 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-    t = setTimeout(function() {
+    t = setTimeout(function () {
         startTime()
     }, 500);
 }
+
 startTime();
 
 
@@ -192,11 +193,18 @@ function getAll() {
 
     for (const customer of customerArray) {
 
-        $(`#body`).append(`<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.tp}</td><td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+        $(`#body`).append(`<tr>
+                                <td>${customer.id}</td>
+                                <td>${customer.name}</td>
+                                <td>${customer.address}</td>
+                                <td>${customer.tp}</td>
+                                <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal2">
                                     Edit
                                 </button>
-                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td></tr>`);
+                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
+                   
+                             </tr>`);
 
         setEvent();
     }
@@ -204,9 +212,9 @@ function getAll() {
 
 }
 
-function setEvent(){
+function setEvent() {
 
-    $(`#tblCustomer tr`).click(function (){
+    $(`#tblCustomer tr`).click(function () {
 
         var $row = $(this).closest("tr"),        // Finds the closest row <tr>
             $tds = $row.find("td:nth-child(1)");
@@ -222,27 +230,26 @@ function setEvent(){
 
     });
 
-    $('.delete').click(function (){
-        $(`#tblCustomer tr`).click(function (){
-           $(this).closest("tr").remove();      // Finds the closest row <t
+    $('.delete').click(function () {
+        $(`#tblCustomer tr`).click(function () {
+            $(this).closest("tr").remove();      // Finds the closest row <t
         });
     });
 }
 
-$(`#tblCustomer tr`).click(function (){
+$(`#tblCustomer tr`).click(function () {
 
-    var $row = $(this).closest("tr"),        // Finds the closest row <tr>
-        $tds = $row.find("td:nth-child(1)");
-        $ts = $row.find("td:nth-child(2)");
-        $tt = $row.find("td:nth-child(3)");
-        $tf = $row.find("td:nth-child(4)");
-        // let td_list =  $();
+    var $row = $(this).closest("tr");        // Finds the closest row <tr>
+    $tds = $row.find("td:nth-child(1)");
+    $ts = $row.find("td:nth-child(2)");
+    $tt = $row.find("td:nth-child(3)");
+    $tf = $row.find("td:nth-child(4)");
+    // let td_list =  $();
 
-   $(`#upCID`).val($tds.text());
-   $(`#upCName`).val($ts.text());
-   $(`#upCAddress`).val($tt.text());
-   $(`#upCTp`).val($tf.text());
-
+    $(`#upCID`).val($tds.text());
+    $(`#upCName`).val($ts.text());
+    $(`#upCAddress`).val($tt.text());
+    $(`#upCTp`).val($tf.text());
 
 
 });
