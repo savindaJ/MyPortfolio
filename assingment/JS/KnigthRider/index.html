@@ -48,6 +48,27 @@
         left: 0;
     }
 
+    main>section > div:nth-child(2){
+        width: 400px;
+        height: 50px;
+        display: flex;
+        color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    main>section > div:nth-child(2)>h2:nth-child(3){
+        position: absolute;
+        right: 80px;
+    }
+
+    main>section > div:nth-child(2)>h2:nth-child(4){
+        position: absolute;
+        right: 0;
+    }
+
     main {
         width: 100%;
         height: 100vh;
@@ -61,6 +82,10 @@
 <main>
     <section>
         <h1>Knight Rider</h1>
+        <div>
+            <h2>Speed :</h2><h2 id="speed">59</h2>
+            <h2>wait :</h2><h2 id="wait">59</h2>
+        </div>
 
         <section>
             <section>
@@ -73,9 +98,9 @@
             </section>
 
             <section>
-                <button class="btn btn-primary">Start</button>
-                <button class="btn btn-danger">Stop</button>
-                <input type="range">
+                <button id="start" class="btn btn-primary">Start</button>
+                <button id="stop" class="btn btn-danger">Stop</button>
+                <input type="range" id="range" min="40" max="100" step="1"  value="50">
             </section>
 
         </section>
@@ -85,15 +110,23 @@
 
 <script>
 
-    let colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "white", "white", "white", "white", "white", "white"];
+    let colors_right = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "white"];
 
-    let setColor = [];
+    let colors_left = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "white"];
+
+    let setColor_right = [];
+
+    let setColor_left = [];
 
     let div_list = document.querySelectorAll("main>section>section>section>div");
 
-    let interval;
+    let btnStart = document.getElementById("start");
 
-    let count = 0;
+    let btnStop = document.getElementById("stop");
+
+    // let range = document.getElementById("range");
+
+    let interval;
 
     let i = 0;
 
@@ -101,76 +134,124 @@
 
     let leftInterval;
 
+    const audio = new Audio("audio/KnightRider.mp3");
+
+    let animate_time = 50;
+
+    let wait_time = 1000;
+
+    /*function setMoveLeft() {
+      setColor.unshift(colors[i]);
+      for (let j = 0; j < 6; j++) {
+          div_list[5 - j].style.backgroundColor = setColor[j];
+      }
+      i = i + 1;
+  }*/
+
+    /* function setMoveRight() {
+       setColor.unshift(colors[i]);
+       for (let j = 0; j < 6; j++) {
+           div_list[j].style.backgroundColor = setColor[j];
+       }
+       i = i + 1;
+   }*/
+
+    audio.addEventListener("canplaythrough", () => {
+        audio.loop = true;
+        audio.play().catch(e => {
+            audio.play();
+        })
+    });
+
     function setLeft() {
         clearInterval(leftInterval);
         leftInterval = setInterval(function () {
-            setMoveLeft();
-        }, 100);
-    }
+            setColor_left.unshift(colors_left[i]);
+            for (let j = 0; j < 6; j++) {
+                div_list[5 - j].style.backgroundColor = setColor_left[j];
+            }
+            i = i + 1;
+        }, animate_time);
 
-    function setMoveLeft() {
-        setColor.unshift(colors[i]);
-        for (let j = 0; j < 6; j++) {
-            div_list[5-j].style.backgroundColor = setColor[j];
-        }
-        i = i + 1;
+        clearInterval(rightInterval);
     }
-
 
     function setRight() {
         clearInterval(rightInterval);
         rightInterval = setInterval(function () {
-            setMoveRight();
-        }, 100);
+            setColor_right.unshift(colors_right[i]);
+
+            for (let j = 0; j < 6; j++) {
+                div_list[j].style.backgroundColor = setColor_right[j];
+            }
+
+            i = i + 1;
+        }, animate_time);
+        clearInterval(leftInterval);
     }
 
-    function setMoveRight() {
-        setColor.unshift(colors[i]);
-        for (let j = 0; j < 6; j++) {
-            div_list[j].style.backgroundColor = setColor[j];
-        }
-        i = i + 1;
+    function setCompleatRight() {
+        setRight();
+        setColor_right = [];
+        i = 0;
     }
+
+    function setCompleatLeft() {
+        setLeft();
+        setColor_left = [];
+        i = 0;
+    }
+
+
+    btnStart.addEventListener('click', function () {
+        clearInterval(interval);
+        interval = setInterval(animate,wait_time);
+        audio.play();
+    });
+
+    btnStop.addEventListener('click', function () {
+        clearInterval(interval);
+        audio.pause();
+    });
 
     let root = true;
 
-
-    function setLeftNow(){
-        setTimeout(function (){
-            if (!root){
-                setLeft();
-                setColor = [];
-                i = 0;
-            }
-
-            root=true;
-        },1000);
-    }
-
-    function setTime(){
-
-        if (root){
-            setRight();
-            setColor = [];
-            i = 0;
+    function animate() {
+        if (root) {
+            setCompleatRight();
+            root = false;
+        } else {
+            setCompleatLeft();
+            root = true;
         }
-
-
-
-        setLeftNow();
-
-        // if (!root){
-        //     setLeft();
-        //     setColor = [];
-        //     i = 0;
-        // }
-
     }
 
-    let main = setInterval(function () {
-       setTime();
-    }, 2000);
+    function sum(range,time){
+        return parseInt(range) + parseInt(time);
+    }
 
+    const rangeInput = document.getElementById('range');
+    const speed = document.getElementById('speed');
+    const wait = document.getElementById('wait');
+
+    function updateValue() {
+         animate_time = rangeInput.value;
+
+         let waitT = 1000 + parseInt(rangeInput.value) + 1000;
+
+         wait_time = waitT;
+
+        speed.textContent = rangeInput.value;
+
+        wait.textContent = waitT+'';
+
+        // animate_time  = parseInt(final);
+        // console.log(value);
+    }
+
+    rangeInput.addEventListener('input', updateValue);
+
+    speed.textContent = animate_time+"";
 
 </script>
 </body>

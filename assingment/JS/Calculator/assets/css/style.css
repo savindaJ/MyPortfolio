@@ -1,0 +1,26 @@
+body main{
+    width: 100vw;
+    height: 100vh;
+    background: url("../image/background-image-fixed.jpg");
+    background-size: cover;
+}
+
+body main>section{
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body main>section>div{
+    height: 10vh;
+    width: 100%;
+}
+
+body main>section:nth-child(2) button{
+    /*font-size: 20px;*/
+}

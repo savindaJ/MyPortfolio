@@ -224,7 +224,7 @@ function setEvent(){
 
     $('.delete').click(function (){
         $(`#tblCustomer tr`).click(function (){
-            var $row = $(this).closest("tr").remove();      // Finds the closest row <t
+           $(this).closest("tr").remove();      // Finds the closest row <t
         });
     });
 }
