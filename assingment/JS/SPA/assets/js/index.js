@@ -147,6 +147,7 @@ nav_item.addEventListener("click", function () {
 });
 
 //customer save option
+/*
 
 let customerArray = [{
     name: `kamal`,
@@ -254,4 +255,4 @@ $(`#tblCustomer tr`).click(function () {
 
 });
 
-getAll();
+getAll();*/

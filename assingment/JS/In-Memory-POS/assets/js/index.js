@@ -1,4 +1,3 @@
-/*
 let nav_home = document.getElementById("nav-home");
 let nav_customer = document.getElementById("nav-customer");
 let nav_order = document.getElementById("nav-order");
@@ -148,7 +147,7 @@ nav_item.addEventListener("click", function () {
 });
 
 //customer save option
-
+/*
 let customerArray = [{
     name: `kamal`,
     address: `galle`,
