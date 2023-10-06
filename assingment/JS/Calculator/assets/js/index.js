@@ -2,7 +2,6 @@ let firstNum;
 let secondNum;
 let opt;
 let display = $('#display-text');
-
 let oparator = $('#oparator');
 
 $('#button-section .num').click(function () {
@@ -26,7 +25,6 @@ $('#btnSum').on('click', function () {
         oparator.text('+');
         opt = '+';
         firstNum = parseFloat(display.text());
-        console.log(firstNum);
         display.text('');
     }
 });
@@ -36,7 +34,6 @@ $('#decrement').on('click', function () {
         oparator.text('-');
         opt = '-';
         firstNum = parseFloat(display.text());
-        console.log(firstNum);
         display.text('');
     }
 
@@ -47,7 +44,6 @@ $('#division').on('click', function () {
         oparator.text('/');
         opt = '/';
         firstNum = parseFloat(display.text());
-        console.log(firstNum);
         display.text('');
     }
 });
