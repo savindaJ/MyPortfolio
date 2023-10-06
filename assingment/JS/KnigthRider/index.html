@@ -48,7 +48,7 @@
         left: 0;
     }
 
-    main>section > div:nth-child(2){
+    main > section > div:nth-child(2) {
         width: 400px;
         height: 50px;
         display: flex;
@@ -59,12 +59,12 @@
         margin: auto;
     }
 
-    main>section > div:nth-child(2)>h2:nth-child(3){
+    main > section > div:nth-child(2) > h2:nth-child(3) {
         position: absolute;
         right: 80px;
     }
 
-    main>section > div:nth-child(2)>h2:nth-child(4){
+    main > section > div:nth-child(2) > h2:nth-child(4) {
         position: absolute;
         right: 0;
     }
@@ -83,8 +83,10 @@
     <section>
         <h1>Knight Rider</h1>
         <div>
-            <h2 class="me-2">Speed :</h2><h2 class="text-danger" id="speed">0</h2>
-            <h2>wait :</h2><h2 class="text-danger" id="wait">1000</h2>
+            <h2 class="me-2">Speed :</h2>
+            <h2 class="text-danger" id="speed">0</h2>
+            <h2>wait :</h2>
+            <h2 class="text-danger" id="wait">1000</h2>
         </div>
 
         <section>
@@ -100,7 +102,7 @@
             <section>
                 <button id="start" class="btn btn-primary">Start</button>
                 <button id="stop" class="btn btn-danger">Stop</button>
-                <input type="range" id="range" min="40" max="100" step="1"  value="50">
+                <input type="range" id="range" min="40" max="100" step="1" value="50">
             </section>
 
         </section>
@@ -172,7 +174,7 @@
             for (let j = 0; j < 6; j++) {
                 // div_list[5 - j].style.backgroundColor = setColor_left[j];
                 let currentDiv = div_list[5 - j];
-                $(currentDiv).css('background',setColor_left[j]);
+                $(currentDiv).css('background', setColor_left[j]);
             }
             i = i + 1;
         }, animate_time);
@@ -188,10 +190,8 @@
 
             for (let j = 0; j < 6; j++) {
                 // div_list[j].style.backgroundColor = setColor_right[j];
-
                 let currentDiv = div_list[j];
-
-                $(currentDiv).css('background',setColor_right[j]);
+                $(currentDiv).css('background', setColor_right[j]);
             }
 
             i = i + 1;
@@ -214,7 +214,7 @@
 
     btnStart.on('click', function () {
         clearInterval(interval);
-        interval = setInterval(animate,wait_time);
+        interval = setInterval(animate, wait_time);
         audio.loop = true;
         audio.play();
     });
@@ -253,32 +253,34 @@
         }
     }
 
-    function sum(range,time){
+    function sum(range, time) {
         return parseInt(range) + parseInt(time);
     }
 
-    const rangeInput = document.getElementById('range');
-    const speed = document.getElementById('speed');
-    const wait = document.getElementById('wait');
+    const rangeInput = $('#range');
+    const speed = $('#speed');
+    const wait = $('#wait');
 
     function updateValue() {
-         animate_time = rangeInput.value;
+        console.log(rangeInput.val());
 
-         let waitT = 1000 + parseInt(rangeInput.value);
+        animate_time = rangeInput.val();
 
-         wait_time = waitT;
+        let waitT = 1000 + parseInt(rangeInput.val() + 2);
 
-        speed.textContent = rangeInput.value;
+        wait_time = waitT;
 
-        wait.textContent = waitT+'';
+        speed.text(rangeInput.val());
+
+        wait.text(waitT);
 
         // animate_time  = parseInt(final);
         // console.log(value);
     }
 
-    rangeInput.addEventListener('input', updateValue);
+    rangeInput.on('input', updateValue);
 
-    speed.textContent = animate_time+"";
+    // speed.textContent = animate_time+"";
 
 </script>
 </body>
