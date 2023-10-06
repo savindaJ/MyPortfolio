@@ -107,7 +107,7 @@
 
     </section>
 </main>
-
+<script src="../KnigthRider/js/code.jquery.com_jquery-3.7.1.min.js.js"></script>
 <script>
 
     let colors_right = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "white"];
@@ -118,11 +118,11 @@
 
     let setColor_left = [];
 
-    let div_list = document.querySelectorAll("main>section>section>section>div");
+    let div_list = $("main>section>section>section>div");
 
-    let btnStart = document.getElementById("start");
+    let btnStart = $("#start");
 
-    let btnStop = document.getElementById("stop");
+    let btnStop = $("#stop");
 
     // let range = document.getElementById("range");
 
@@ -204,14 +204,16 @@
     }
 
 
-    btnStart.addEventListener('click', function () {
+    btnStart.on('click', function () {
         clearInterval(interval);
         interval = setInterval(animate,wait_time);
         audio.loop = true;
         audio.play();
     });
 
-    btnStop.addEventListener('click', function () {
+    btnStop.on('click', function () {
+        clearInterval(leftInterval);
+        clearInterval(rightInterval);
         clearInterval(interval);
         audio.loop = false;
         audio.pause();
