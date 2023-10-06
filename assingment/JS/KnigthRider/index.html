@@ -166,6 +166,7 @@
 
     function setLeft() {
         clearInterval(leftInterval);
+
         leftInterval = setInterval(function () {
             setColor_left.unshift(colors_left[i]);
             for (let j = 0; j < 6; j++) {
@@ -179,6 +180,7 @@
 
     function setRight() {
         clearInterval(rightInterval);
+
         rightInterval = setInterval(function () {
             setColor_right.unshift(colors_right[i]);
 
