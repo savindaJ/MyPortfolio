@@ -1,3 +1,4 @@
+/*
 //logics for SPA
 initiateUI();
 
@@ -72,4 +73,4 @@ $("#lnkOrders").click(function () {
     setView($("#orderContent"));
 });
 
-//end of logics for SPA
+//end of logics for SPA*/

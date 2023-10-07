@@ -186,7 +186,6 @@ let tableBody = $("#body");
 
 
 $(`#save-customer`).click(function () {
-    // let customer = [id.value, address.value, name.value, tp.value];
     customer = {
         name: name.val(),
         id: id.val(),
@@ -194,14 +193,39 @@ $(`#save-customer`).click(function () {
         tp: tp.val()
     }
     customerDB.push(customer);
-
-   /* for (const customer of customerDB) {
-        console.log(customerArray);
-    }*/
-
     getAll();
-
 });
+
+$('#updateCustomer').on('click', function (){
+    updateCustomer();
+});
+
+function updateCustomer() {
+    let id = $(`#upCID`).val();
+    let name = $(`#upCName`).val();
+    let address = $(`#upCAddress`).val();
+    let tp = $(`#upCTp`).val();
+
+   let customer = {
+        id: id,
+        name: name,
+        address: address,
+        tp: tp
+    }
+
+    console.log(findIndex(id));
+    getAll();
+}
+
+function findIndex(id){
+    for (let j = 0; j < customerDB.length; j++) {
+        if (customerDB[j].id === id){
+            return j;
+        }else {
+            return -1;
+        }
+    }
+}
 
 $(`#getAllCustomer`).click(function () {
     getAll();
