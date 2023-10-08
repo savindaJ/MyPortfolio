@@ -172,60 +172,65 @@ function updateCustomer(id) {
 
 */
 
-
-//customer save option
-
-let btnCustomer = $("#save-customer");
-
-let id = $("#customer-gmail");
-let address = $("#customer-address");
-let name = $("#customer-name");
-let tp = $("#customer-tp");
-
 let tableBody = $("#body");
 
 
 $(`#save-customer`).click(function () {
-    customer = {
-        name: name.val(),
-        id: id.val(),
-        address: address.val(),
-        tp: tp.val()
+
+    if (searchCustomer(id.trim()) === undefined) {
+
+        let id = $("#customer-gmail");
+        let address = $("#customer-address");
+        let name = $("#customer-name");
+        let tp = $("#customer-tp");
+
+        customer = {
+            name: name.val(),
+            id: id.val(),
+            address: address.val(),
+            tp: tp.val()
+        }
+
+        customerDB.push(customer);
     }
-    customerDB.push(customer);
+
     getAll();
 });
 
-$('#updateCustomer').on('click', function (){
+function searchCustomer(id) {
+    return customerDB.find(function (customer) {
+        return customer.id == id;
+    });
+}
+
+$('#updateCustomer').on('click', function () {
     updateCustomer();
 });
 
 function updateCustomer() {
+
     let id = $(`#upCID`).val();
-    let name = $(`#upCName`).val();
-    let address = $(`#upCAddress`).val();
-    let tp = $(`#upCTp`).val();
 
-   let customer = {
-        id: id,
-        name: name,
-        address: address,
-        tp: tp
+    if (searchCustomer(id) == undefined) {
+        alert("No such Customer..please check the ID");
+    } else {
+        let consent = confirm("Do you really want to update this customer.?");
+        if (consent) {
+            let customer = searchCustomer(id);
+            //if the customer available can we update.?
+
+            let name = $(`#upCName`).val();
+            let address = $(`#upCAddress`).val();
+            let tp = $(`#upCTp`).val();
+
+            customer.name = name;
+            customer.address = address;
+            customer.tp = tp;
+        }
     }
-
-    console.log(findIndex(id));
     getAll();
 }
 
-function findIndex(id){
-    for (let j = 0; j < customerDB.length; j++) {
-        if (customerDB[j].id === id){
-            return j;
-        }else {
-            return -1;
-        }
-    }
-}
 
 $(`#getAllCustomer`).click(function () {
     getAll();
@@ -251,8 +256,10 @@ function getAll() {
                    
                              </tr>`);
 
-        setEvent();
+
     }
+
+    setEvent();
 
 
 }
@@ -277,9 +284,51 @@ function setEvent() {
 
     $('.delete').click(function () {
         $(`#tblCustomer tr`).click(function () {
-            $(this).closest("tr").remove();      // Finds the closest row <t
+
+            var $row = $(this).closest("tr");        // Finds the closest row <tr>
+            $tds = $row.find("td:nth-child(1)");
+
+            if (searchCustomer($tds.text()) === undefined) {
+                alert("No such Customer..please check the ID");
+            } else {
+                if (deleteFunc($tds.text())){
+                    // $(this).closest("tr").remove();
+                    alert("customer Deleted !");
+                    getAll();
+                }
+            }
         });
     });
+
+
+}
+
+$('.delete').click(function () {
+    $(`#tblCustomer tr`).click(function () {
+
+        var $row = $(this).closest("tr");        // Finds the closest row <tr>
+        $tds = $row.find("td:nth-child(1)");
+
+        if (searchCustomer($tds.text()) === undefined) {
+            alert("No such Customer..please check the ID");
+        } else {
+            if (deleteFunc($tds.text())){
+                // $(this).closest("tr").remove();
+                alert("customer Deleted !");
+                getAll();
+            }
+        }
+    });
+});
+
+function deleteFunc(id){
+    for (let i = 0; i < customerDB.length; i++) {
+        if (customerDB[i].id == id) {
+            customerDB.splice(i, 1);
+            return true
+        }
+    }
+    return false;
 }
 
 $(`#tblCustomer tr`).click(function () {
