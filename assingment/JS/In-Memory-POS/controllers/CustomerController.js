@@ -176,11 +176,7 @@ let tableBody = $("#body");
 
 
 $(`#save-customer`).click(function () {
-
     let idVal = $("#customer-gmail").val();
-
-
-
     if (searchCustomer(idVal.trim()) === undefined) {
         let id = $("#customer-gmail");
         let address = $("#customer-address");
@@ -193,11 +189,10 @@ $(`#save-customer`).click(function () {
             address: address.val(),
             tp: tp.val()
         }
-
         customerDB.push(customer);
     }
-
     getAll();
+    clearCustomerInputFields();
 });
 
 function searchCustomer(id) {
@@ -211,9 +206,7 @@ $('#updateCustomer').on('click', function () {
 });
 
 function updateCustomer() {
-
     let id = $(`#upCID`).val();
-
     if (searchCustomer(id) == undefined) {
         alert("No such Customer..please check the ID");
     } else {
@@ -221,7 +214,6 @@ function updateCustomer() {
         if (consent) {
             let customer = searchCustomer(id);
             //if the customer available can we update.?
-
             let name = $(`#upCName`).val();
             let address = $(`#upCAddress`).val();
             let tp = $(`#upCTp`).val();

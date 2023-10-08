@@ -2,26 +2,26 @@
 const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
 const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
 const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
-const CUS_SALARY_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
+const CUS_SALARY_REGEX = /^[A-Za-z ]{5,}$/;
 
 //add validations and text fields to the
 let c_vArray = new Array();
-c_vArray.push({field: $("#txtCustomerID"), regEx: CUS_ID_REGEX});
-c_vArray.push({field: $("#txtCustomerName"), regEx: CUS_NAME_REGEX});
-c_vArray.push({field: $("#txtCustomerAddress"), regEx: CUS_ADDRESS_REGEX});
-c_vArray.push({field: $("#txtCustomerSalary"), regEx: CUS_SALARY_REGEX});
+c_vArray.push({field: $("#customer-gmail"), regEx: CUS_ID_REGEX});
+c_vArray.push({field: $("#customer-name"), regEx: CUS_NAME_REGEX});
+c_vArray.push({field: $("#customer-address"), regEx: CUS_ADDRESS_REGEX});
+c_vArray.push({field: $("#customer-tp"), regEx: CUS_SALARY_REGEX});
 
 function clearCustomerInputFields() {
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").css("border", "1px solid #ced4da");
-    $("#txtCustomerID").focus();
-    setBtn();
+    $("#customer-gmail,#customer-name,#customer-address,#customer-tp").val("");
+    $("#customer-gmail,#customer-name,#customer-address,#customer-tp").css("border", "1px solid #ced4da");
+    $("#customer-gmail").focus();
+    // setBtn();
 }
 
 setBtn();
 
 //disable tab
-$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("keydown keyup", function (e) {
+$("#customer-gmail,#customer-name,#customer-address,#customer-tp").on("keydown keyup", function (e) {
     //get the index number of data input fields indexNo
     let indexNo = c_vArray.indexOf(c_vArray.find((c) => c.field.attr("id") == e.target.id));
 
@@ -45,7 +45,7 @@ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("
             }
         } else {
             if (checkValidations(c_vArray[indexNo])) {
-                saveCustomer();
+                // saveCustomer();
             }
         }
     }
@@ -86,8 +86,8 @@ function checkAll() {
 }
 
 function setBtn() {
-    $("#btnCusDelete").prop("disabled", true);
-    $("#btnUpdate").prop("disabled", true);
+    $(".delete").prop("disabled", true);
+    $("#updateCustomer").prop("disabled", true);
 
     if (checkAll()) {
         $("#btnCustomer").prop("disabled", false);
@@ -100,8 +100,8 @@ function setBtn() {
         $("#btnCusDelete").prop("disabled", true);
         $("#btnUpdate").prop("disabled", true);
     } else {
-        $("#btnCusDelete").prop("disabled", false);
-        $("#btnUpdate").prop("disabled", false);
+        $(".delete").prop("disabled", false);
+        $("#updateCustomer").prop("disabled", false);
     }
 
 }
