@@ -177,8 +177,11 @@ let tableBody = $("#body");
 
 $(`#save-customer`).click(function () {
 
-    if (searchCustomer(id.trim()) === undefined) {
+    let idVal = $("#customer-gmail").val();
 
+
+
+    if (searchCustomer(idVal.trim()) === undefined) {
         let id = $("#customer-gmail");
         let address = $("#customer-address");
         let name = $("#customer-name");
@@ -260,8 +263,6 @@ function getAll() {
     }
 
     setEvent();
-
-
 }
 
 function setEvent() {
