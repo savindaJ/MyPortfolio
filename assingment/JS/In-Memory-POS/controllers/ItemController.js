@@ -37,6 +37,31 @@ function getAllItems() {
 
 */
 
+$('#btnUpdateItem').on('click',function (){
+    updateItem();
+});
+
+function updateItem(){
+    let id = $(`#upItemId`).val();
+    if (searchItem(id) == undefined) {
+        alert("No such Customer..please check the ID");
+    } else {
+        let consent = confirm("Do you really want to update this item.?");
+        if (consent) {
+            let item = searchItem(id);
+            let description = $(`#upItemdesc`).val();
+            let unitPrice = $(`#upUnitPrice`).val();
+            let qty = $(`#upQty`).val();
+
+            item.description = description;
+            item.unitPrice = unitPrice;
+            item.qtyOnHand = qty;
+
+        }
+    }
+    getAllItem();
+}
+
 $('#btnSaveItem').on('click', function () {
     saveItem();
 });
@@ -93,17 +118,17 @@ function setEvent() {
 
     $(`#tblItem tr`).click(function () {
 
-        var $row = $(this).closest("tr"),
-            $tds = $row.find("td:nth-child(1)");
+        var $row = $(this).closest("tr");
+        $tds = $row.find("td:nth-child(1)");
         $ts = $row.find("td:nth-child(2)");
         $tt = $row.find("td:nth-child(3)");
         $tf = $row.find("td:nth-child(4)");
         // let td_list =  $();
 
-        $(`#upCID`).val($tds.text());
-        $(`#upCName`).val($ts.text());
-        $(`#upCAddress`).val($tt.text());
-        $(`#upCTp`).val($tf.text());
+        $(`#upItemId`).val($tds.text());
+        $(`#upItemdesc`).val($ts.text());
+        $(`#upUnitPrice`).val($tt.text());
+        $(`#upQty`).val($tf.text());
 
     });
 
