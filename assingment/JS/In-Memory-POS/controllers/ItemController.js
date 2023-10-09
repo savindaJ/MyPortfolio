@@ -37,4 +37,29 @@ function getAllItems() {
 
 */
 
+$('#btnGetAllItem').on('click',function (){
+    getAllItem();
+});
+
+function getAllItem(){
+    $('#Item-body').empty();
+
+    for (const item of itemDB) {
+        $(`#Item-body`).append(`<tr>
+                                <td>${item.code}</td>
+                                <td>${item.description}</td>
+                                <td>${item.unitPrice}</td>
+                                <td>${item.qtyOnHand}</td>
+                                <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
+                   
+                             </tr>`);
+    }
+}
+
+getAllItem();
+
 
