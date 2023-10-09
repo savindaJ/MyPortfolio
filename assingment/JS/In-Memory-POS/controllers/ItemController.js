@@ -37,14 +37,13 @@ function getAllItems() {
 
 */
 
-$('#btnSaveItem').on('click',function (){
+$('#btnSaveItem').on('click', function () {
     saveItem();
 });
 
-function saveItem(){
+function saveItem() {
     let itemId = $('#txtItemId').val();
-    if (searchItem(itemId.trim()) === undefined){
-        console.log("crwjhdjhfj");
+    if (searchItem(itemId.trim()) === undefined) {
         item = {
             code: $('#txtItemId').val(),
             description: $('#txtItemdec').val(),
@@ -53,24 +52,23 @@ function saveItem(){
         }
         itemDB.push(item);
         getAllItem();
-    }else {
+    } else {
         alert('already exits Item id');
     }
-
 }
 
-function searchItem(id){
+function searchItem(id) {
     return itemDB.find(function (item) {
-        return item.code == id;
+        return item.code === id;
     });
 }
 
 
-$('#btnGetAllItem').on('click',function (){
+$('#btnGetAllItem').on('click', function () {
     getAllItem();
 });
 
-function getAllItem(){
+function getAllItem() {
     $('#Item-body').empty();
 
     for (const item of itemDB) {
@@ -80,14 +78,14 @@ function getAllItem(){
                                 <td>${item.unitPrice}</td>
                                 <td>${item.qtyOnHand}</td>
                                 <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal2">
+                                        data-bs-target="#update-model">
                                     Edit
                                 </button>
-                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
+                                <button class="btn btn-danger me-3 btn-sm deleteItem">Delete</button></td>
                    
                              </tr>`);
     }
-
+    setEvent();
 }
 
 
@@ -109,25 +107,33 @@ function setEvent() {
 
     });
 
-    $('.delete').click(function () {
-        $(`#tblCustomer tr`).click(function () {
+    $('.deleteItem').click(function () {
+        console.log("delete");
+        $(`#tblItem tr`).click(function () {
 
             var $row = $(this).closest("tr");        // Finds the closest row <tr>
             $tds = $row.find("td:nth-child(1)");
 
-            if (searchCustomer($tds.text()) === undefined) {
+            if (searchItem($tds.text()) === undefined) {
                 alert("No such Customer..please check the ID");
             } else {
-                if (deleteFunc($tds.text())){
-                    // $(this).closest("tr").remove();
+                if (deleteItem($tds.text())) {
+                    getAllItem();
                     alert("customer Deleted !");
-                    getAll();
                 }
             }
         });
     });
+}
 
-
+function deleteItem(id) {
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].code == id) {
+            itemDB.splice(i, 1);
+            return true
+        }
+    }
+    return false;
 }
 
 getAllItem();
