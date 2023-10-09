@@ -224,6 +224,7 @@ function updateCustomer() {
         }
     }
     getAll();
+    clearUpdateFiald();
 }
 
 

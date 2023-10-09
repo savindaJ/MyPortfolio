@@ -173,19 +173,16 @@
                                    aria-label="Search" id="txtSearch" style="height: 30px">
                         </div>
                         <div class="col-12 col-md-3 ">
-                            <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0 btn-sm me-2" type="button"
+                            <select class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                    id="cusSearch"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                Option
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Name</a></li>
-                                <li><a class="dropdown-item" href="#">Address</a></li>
-                                <li><a class="dropdown-item" href="#">TP</a></li>
-                            </ul>
+                                <option><a class="dropdown-item" href="#">Customer Id</a></option>
+                                <option><a class="dropdown-item" href="#">Name</a></option>
+                            </select>
                         </div>
 
                         <div class="col-12 col-md-1">
-                            <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+                            <button id="btnSearch" class="btn btn-outline-success btn-sm" type="submit">Search</button>
                         </div>
 
                     </form>
