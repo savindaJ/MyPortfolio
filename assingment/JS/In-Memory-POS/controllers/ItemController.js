@@ -37,6 +37,35 @@ function getAllItems() {
 
 */
 
+$('#btnSaveItem').on('click',function (){
+    saveItem();
+});
+
+function saveItem(){
+    let itemId = $('#txtItemId').val();
+    if (searchItem(itemId.trim()) === undefined){
+        console.log("crwjhdjhfj");
+        item = {
+            code: $('#txtItemId').val(),
+            description: $('#txtItemdec').val(),
+            qtyOnHand: $('#txtItemQty').val(),
+            unitPrice: $('#txtItemUnitPrice').val()
+        }
+        itemDB.push(item);
+        getAllItem();
+    }else {
+        alert('already exits Item id');
+    }
+
+}
+
+function searchItem(id){
+    return itemDB.find(function (item) {
+        return item.code == id;
+    });
+}
+
+
 $('#btnGetAllItem').on('click',function (){
     getAllItem();
 });
@@ -58,6 +87,47 @@ function getAllItem(){
                    
                              </tr>`);
     }
+
+}
+
+
+function setEvent() {
+
+    $(`#tblItem tr`).click(function () {
+
+        var $row = $(this).closest("tr"),
+            $tds = $row.find("td:nth-child(1)");
+        $ts = $row.find("td:nth-child(2)");
+        $tt = $row.find("td:nth-child(3)");
+        $tf = $row.find("td:nth-child(4)");
+        // let td_list =  $();
+
+        $(`#upCID`).val($tds.text());
+        $(`#upCName`).val($ts.text());
+        $(`#upCAddress`).val($tt.text());
+        $(`#upCTp`).val($tf.text());
+
+    });
+
+    $('.delete').click(function () {
+        $(`#tblCustomer tr`).click(function () {
+
+            var $row = $(this).closest("tr");        // Finds the closest row <tr>
+            $tds = $row.find("td:nth-child(1)");
+
+            if (searchCustomer($tds.text()) === undefined) {
+                alert("No such Customer..please check the ID");
+            } else {
+                if (deleteFunc($tds.text())){
+                    // $(this).closest("tr").remove();
+                    alert("customer Deleted !");
+                    getAll();
+                }
+            }
+        });
+    });
+
+
 }
 
 getAllItem();

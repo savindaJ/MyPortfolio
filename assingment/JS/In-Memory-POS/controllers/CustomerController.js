@@ -16,6 +16,8 @@ $(`#save-customer`).click(function () {
             tp: tp.val()
         }
         customerDB.push(customer);
+    }else {
+        alert("already exit item iD");
     }
     getAll();
     clearCustomerInputFields();
@@ -86,7 +88,7 @@ function setEvent() {
 
     $(`#tblCustomer tr`).click(function () {
 
-        var $row = $(this).closest("tr"),        // Finds the closest row <tr>
+        var $row = $(this).closest("tr"),
             $tds = $row.find("td:nth-child(1)");
         $ts = $row.find("td:nth-child(2)");
         $tt = $row.find("td:nth-child(3)");
