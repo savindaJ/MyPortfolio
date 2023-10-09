@@ -251,8 +251,6 @@ function getAll() {
                                 <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
                    
                              </tr>`);
-
-
     }
 
     setEvent();
@@ -340,6 +338,51 @@ $(`#tblCustomer tr`).click(function () {
     $(`#upCTp`).val($tf.text());
 
 
+});
+
+$('#txtSearch').on('keyup',function (){
+
+    let txtVal = $('#txtSearch');
+
+    if (txtVal.val() === ''){
+        getAll();
+    }
+
+    $(`#body`).empty();
+    for (let customer of customerDB) {
+        if ($("#cusSearch").val() == "Customer Id") {
+            if (customer.id.indexOf($("#txtSearch").val()) !== -1) {
+                $("#tblCustomer > tbody").append($(`#body`).append(`<tr>
+                                <td>${customer.id}</td>
+                                <td>${customer.name}</td>
+                                <td>${customer.address}</td>
+                                <td>${customer.tp}</td>
+                                <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
+                   
+                             </tr>`));
+            }
+        } else {
+            if (customer.name.indexOf($("#txtSearch").val()) !== -1) {
+
+                $("#tblCustomer > tbody").append($(`#body`).append(`<tr>
+                                <td>${customer.id}</td>
+                                <td>${customer.name}</td>
+                                <td>${customer.address}</td>
+                                <td>${customer.tp}</td>
+                                <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
+                   
+                             </tr>`));
+            }
+        }
+    }
 });
 
 

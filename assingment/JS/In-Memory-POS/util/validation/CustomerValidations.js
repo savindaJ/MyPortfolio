@@ -11,10 +11,12 @@ c_vArray.push({field: $("#customer-name"), regEx: CUS_NAME_REGEX});
 c_vArray.push({field: $("#customer-address"), regEx: CUS_ADDRESS_REGEX});
 c_vArray.push({field: $("#customer-tp"), regEx: CUS_SALARY_REGEX});
 
-c_vArray.push({field: $("#upCID"), regEx: CUS_ID_REGEX});
-c_vArray.push({field: $("#upCName"), regEx: CUS_NAME_REGEX});
-c_vArray.push({field: $("#upCAddress"), regEx: CUS_ADDRESS_REGEX});
-c_vArray.push({field: $("#upCTp"), regEx: CUS_SALARY_REGEX});
+let u_vArray = new Array();
+
+u_vArray.push({field: $("#upCID"), regEx: CUS_ID_REGEX});
+u_vArray.push({field: $("#upCName"), regEx: CUS_NAME_REGEX});
+u_vArray.push({field: $("#upCAddress"), regEx: CUS_ADDRESS_REGEX});
+u_vArray.push({field: $("#upCTp"), regEx: CUS_SALARY_REGEX});
 
 function clearCustomerInputFields() {
     $("#customer-gmail,#customer-name,#customer-address,#customer-tp").val("");
@@ -64,7 +66,7 @@ $("#customer-gmail,#customer-name,#customer-address,#customer-tp").on("keydown k
 
 $("#upCID,#upCName,#upCAddress,#upCTp").on("keydown keyup", function (e) {
     //get the index number of data input fields indexNo
-    let indexNo = c_vArray.indexOf(c_vArray.find((c) => c.field.attr("id") == e.target.id));
+    let indexNo = u_vArray.indexOf(u_vArray.find((c) => c.field.attr("id") == e.target.id));
 
     //Disable tab key
     if (e.key == "Tab") {
@@ -72,20 +74,20 @@ $("#upCID,#upCName,#upCAddress,#upCTp").on("keydown keyup", function (e) {
     }
 
     //check validations
-    checkValidations(c_vArray[indexNo]);
+    checkValidations(u_vArray[indexNo]);
 
     setBtn();
 
     //If the enter key pressed cheque and focus
     if (e.key == "Enter") {
 
-        if (e.target.id != c_vArray[c_vArray.length - 1].field.attr("id")) {
+        if (e.target.id != u_vArray[u_vArray.length - 1].field.attr("id")) {
             //check validation is ok
-            if (checkValidations(c_vArray[indexNo])) {
-                c_vArray[indexNo + 1].field.focus();
+            if (checkValidations(u_vArray[indexNo])) {
+                u_vArray[indexNo + 1].field.focus();
             }
         } else {
-            if (checkValidations(c_vArray[indexNo])) {
+            if (checkValidations(u_vArray[indexNo])) {
                 // saveCustomer();
             }
         }
@@ -128,14 +130,12 @@ function checkAll() {
 
 function setBtn() {
     // $(".delete").prop("disabled", true);
-    $("#updateCustomer").prop("disabled", true);
+    // $("#save-customer").prop("disabled", true);
 
     if (checkAll()) {
         $("#save-customer").prop("disabled", false);
-        $("#updateCustomer").prop("disabled", false);
     } else {
         $("#save-customer").prop("disabled", true);
-        $("#updateCustomer").prop("disabled", true);
     }
 
     let id = $("#upCID").val();
