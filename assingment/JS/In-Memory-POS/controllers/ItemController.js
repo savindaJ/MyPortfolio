@@ -161,6 +161,57 @@ function deleteItem(id) {
     return false;
 }
 
+$('#txtSearchItem').on('keyup',function (){
+
+
+
+    let txtVal = $('#txtSearchItem');
+
+    if (txtVal.val() === ''){
+        getAllItem();
+    }
+    $(`#Item-body`).empty();
+
+    for (let item of itemDB) {
+        if ($("#itemSearch").val() === "Code") {
+            if (item.code.indexOf($("#txtSearchItem").val()) !== -1) {
+
+                $("#tblItem > tbody").append($(`#Item-body`).append(`<tr>
+                                <td>${item.code}</td>
+                                <td>${item.description}</td>
+                                <td>${item.unitPrice}</td>
+                                <td>${item.qtyOnHand}</td>
+                                <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#update-model">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm delete">Delete</button></td>
+                   
+                             </tr>`));
+            }
+        } else {
+            if (item.description.indexOf($("#txtSearchItem").val()) !== -1) {
+
+                $("#tblItem > tbody").append($(`#Item-body`).append(`<tr>
+                                <td>${item.code}</td>
+                                <td>${item.description}</td>
+                                <td>${item.unitPrice}</td>
+                                <td>${item.qtyOnHand}</td>
+                                <td><button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#update-model">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm deleteItem">Delete</button></td>
+                   
+                             </tr>`));
+            }
+        }
+    }
+
+    setEvent();
+});
+
+
 getAllItem();
 
 

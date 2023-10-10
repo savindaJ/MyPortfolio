@@ -524,19 +524,14 @@
                     <form class="row w-50" role="" method="">
 
                         <div class="col-12 col-md-6">
-                            <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/Code/Price"
-                                   aria-label="Search" id="txtSearchItem" style="width: 250px; height: 30px">
+                            <input  class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Description/Code"
+                                   aria-label="Search" id="txtSearchItem" style="width: 250px; height: 40px">
                         </div>
-                        <div class="col-12 col-md-3">
-                            <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0 btn-sm" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                Option
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Name</a></li>
-                                <li><a class="dropdown-item" href="#">Code</a></li>
-                                <li><a class="dropdown-item" href="#">Price</a></li>
-                            </ul>
+                        <div class="col-12 col-md-4">
+                            <select id="itemSearch" class="form-select" aria-label="Default select example">
+                                <option value="1">Code</option>
+                                <option value="2">Description</option>
+                            </select>
                         </div>
 
                         <div class="col-12 col-md-1">
