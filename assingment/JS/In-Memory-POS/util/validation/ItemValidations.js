@@ -28,3 +28,75 @@ function clearUpdateTxt(){
     $('#upItemId').focus();
 }
 
+$('#txtItemId,#txtItemdec,#txtItemUnitPrice,#txtItemQty').on("keydown keyup", function (e) {
+    //get the index number of data input fields indexNo
+    let indexNo = i_validity.indexOf(i_validity.find((c) => c.field.attr("id") == e.target.id));
+
+    //Disable tab key
+    if (e.key == "Tab") {
+        e.preventDefault();
+    }
+
+    //check validations
+    checkValidations(i_validity[indexNo]);
+
+    setItemBtn();
+
+    //If the enter key pressed cheque and focus
+    if (e.key == "Enter") {
+
+        if (e.target.id != i_validity[i_validity.length - 1].field.attr("id")) {
+            //check validation is ok
+            if (checkItemValidations(i_validity[indexNo])) {
+                i_validity[indexNo + 1].field.focus();
+            }
+        } else {
+            if (checkItemValidations(i_validity[indexNo])) {
+                // saveCustomer();
+            }
+        }
+    }
+});
+
+
+function checkItemValidations(object) {
+    if (object.regEx.test(object.field.val())) {
+        setBorder(true, object)
+        return true;
+    }
+    setBorder(false, object)
+    return false;
+}
+
+function setItemBtn() {
+
+    if (checkAllItem()) {
+        $("#btnSaveItem").prop("disabled", false);
+    } else {
+        $("#btnSaveItem").prop("disabled", true);
+    }
+
+    let id = $("#upItemId").val();
+
+    if (searchItemValid(id) == undefined) {
+        $("#btnUpdateItem").prop("disabled", true);
+    } else {
+        $("#btnUpdateItem").prop("disabled", false);
+    }
+
+}
+
+function searchItemValid(id) {
+    return itemDB.find(function (customer) {
+        return item.code == id;
+    });
+}
+
+function checkAllItem() {
+    for (let i = 0; i < i_validity.length; i++) {
+        if (!checkValidations(i_validity[i])) return false;
+    }
+    return true;
+}
+
+$("#btnSaveItem").prop("disabled", true);

@@ -60,6 +60,7 @@ function updateItem(){
         }
     }
     getAllItem();
+    clearUpdateTxt();
 }
 
 $('#btnSaveItem').on('click', function () {
@@ -80,6 +81,7 @@ function saveItem() {
     } else {
         alert('already exits Item id');
     }
+    clearItemTxt();
 }
 
 function searchItem(id) {
