@@ -58,6 +58,36 @@ $('#txtItemId,#txtItemdec,#txtItemUnitPrice,#txtItemQty').on("keydown keyup", fu
     }
 });
 
+$('#upItemId,#upItemdesc,#upUnitPrice,#upQty').on("keydown keyup", function (e) {
+    //get the index number of data input fields indexNo
+    let indexNo = update_validity.indexOf(update_validity.find((c) => c.field.attr("id") == e.target.id));
+
+    //Disable tab key
+    if (e.key == "Tab") {
+        e.preventDefault();
+    }
+
+    //check validations
+    checkValidations(update_validity[indexNo]);
+
+    setItemBtn();
+
+    //If the enter key pressed cheque and focus
+    if (e.key == "Enter") {
+
+        if (e.target.id != update_validity[update_validity.length - 1].field.attr("id")) {
+            //check validation is ok
+            if (checkItemValidations(update_validity[indexNo])) {
+                update_validity[indexNo + 1].field.focus();
+            }
+        } else {
+            if (checkItemValidations(update_validity[indexNo])) {
+                // saveCustomer();
+            }
+        }
+    }
+});
+
 
 function checkItemValidations(object) {
     if (object.regEx.test(object.field.val())) {
@@ -87,7 +117,7 @@ function setItemBtn() {
 }
 
 function searchItemValid(id) {
-    return itemDB.find(function (customer) {
+    return itemDB.find(function (item) {
         return item.code == id;
     });
 }
@@ -100,3 +130,4 @@ function checkAllItem() {
 }
 
 $("#btnSaveItem").prop("disabled", true);
+$("#btnUpdateItem").prop("disabled", true);
