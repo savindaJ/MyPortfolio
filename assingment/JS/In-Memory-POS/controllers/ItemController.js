@@ -44,7 +44,7 @@ $('#btnUpdateItem').on('click',function (){
 function updateItem(){
     let id = $(`#upItemId`).val();
     if (searchItem(id) == undefined) {
-        alert("No such Customer..please check the ID");
+        alert("No such Item..please check the ID");
     } else {
         let consent = confirm("Do you really want to update this item.?");
         if (consent) {
@@ -140,11 +140,11 @@ function setEvent() {
             $tds = $row.find("td:nth-child(1)");
 
             if (searchItem($tds.text()) === undefined) {
-                alert("No such Customer..please check the ID");
+                alert("No such Item..please check the ID");
             } else {
                 if (deleteItem($tds.text())) {
                     getAllItem();
-                    alert("customer Deleted !");
+                    alert("Item Deleted !");
                 }
             }
         });
