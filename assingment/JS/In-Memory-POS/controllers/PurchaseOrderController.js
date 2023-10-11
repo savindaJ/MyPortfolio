@@ -7,6 +7,8 @@ $('#txtDate').css({
 
 $('#txtDate').val(today);
 
+let finalTotal = 0;
+
 $('#btnAddOrder').on('click', function () {
 
     let price = parseFloat($('#orderItemPrice').val());
@@ -33,13 +35,15 @@ $('#btnAddOrder').on('click', function () {
 
     let totalList = $(`#order-tbl-body > tr > td:nth-child(5)`);
 
-    let finalTotal = 0;
+
 
     for (const total of totalList) {
         finalTotal += parseFloat( $(total).text());
     }
 
     $('#total').text(' '+ finalTotal + '/=');
+
+    $('#subTotal').text(finalTotal + '/=');
 
 
 });
@@ -80,6 +84,19 @@ $('#selItemId').on('change', function () {
     }
     $('#getQty').focus();
 });
+
+$('#txtDiscount').on('keyup change',function (){
+    let currentDiscount = parseFloat($('#txtDiscount').val());
+
+    let subTotal = finalTotal/100*currentDiscount;
+
+    let final = finalTotal - subTotal;
+
+    $('#subTotal').text(final + '/=');
+
+});
+
+$('#txtDiscount').val(0);
 
 loadAllItemId();
 
