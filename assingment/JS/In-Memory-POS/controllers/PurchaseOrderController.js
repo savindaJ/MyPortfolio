@@ -149,6 +149,8 @@ $('#txtDiscount').on('keyup change', function () {
 
 $('#txtDiscount').val(0);
 
+$('#selCusId').prop('disabled',true);
+
 loadAllItemId();
 
 loadCustomerId();

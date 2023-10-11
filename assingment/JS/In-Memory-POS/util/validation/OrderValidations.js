@@ -11,6 +11,7 @@ $('#txtOrderId').on('keyup keydown',function (e){
 
     if (orderId_regex.test($('#txtOrderId').val())){
         $('#txtOrderId').css("border", "2px solid #ced4da");
+        $('#selCusId').prop('disabled',false);
     }else {
         $('#txtOrderId').css("border", "2px solid red");
     }
