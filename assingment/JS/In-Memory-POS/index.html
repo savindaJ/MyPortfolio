@@ -310,7 +310,7 @@
                                     <div class="col-6">
                                         <div class="mb-3">
                                             <label class="col-form-label col-form-label-sm">Order ID</label>
-                                            <input type="email" class="form-control input-sm" placeholder="ID">
+                                            <input id="txtOrderId" type="text" class="form-control input-sm" placeholder="ID">
                                         </div>
 
 
@@ -318,7 +318,7 @@
                                     <div class="col-6">
                                         <div class="mb-3">
                                             <label class="col-form-label col-form-label-sm">Date</label>
-                                            <input type="date" class="form-control" placeholder="Name">
+                                            <input id="txtDate" type="date" class="form-control" placeholder="Name">
                                         </div>
                                     </div>
                                 </div>
@@ -393,7 +393,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-6">
                                         <div class="mb-3">
                                             <label class="col-form-label col-form-label-sm">Unit Price</label>
                                             <input id="orderItemPrice" type="text" class="form-control" placeholder="">
@@ -416,13 +416,16 @@
                                 <div class="row">
                                     <div class="mb-3">
                                         <label class="col-form-label col-form-label-sm">QTY</label>
-                                        <input contenteditable="false" id="" type="number" class="form-control" placeholder="">
+                                        <input contenteditable="false" id="getQty" type="number" class="form-control" placeholder="">
                                     </div>
                                 </div>
 
                                 <div class="row d-flex justify-content-end">
                                     <div class="col-3">
-                                        <button type="button" class="btn btn-primary">Add</button>
+                                            <button type="button" class="btn btn-danger">Clear All</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button id="btnAddOrder" type="button" class="btn btn-primary">Add</button>
                                     </div>
                                 </div>
                             </form>

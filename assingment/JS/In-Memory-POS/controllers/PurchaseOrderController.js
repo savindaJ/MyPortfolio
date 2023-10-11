@@ -1,3 +1,15 @@
+let today = new Date().toISOString().slice(0, 10);
+
+$('#txtDate').css({
+    color:'green',
+    fontWeight:'500'
+});
+$('#txtDate').val(today);
+
+$('#btnAddOrder').on('click',function (){
+
+});
+
 function loadCustomerId(){
     for (const customer of customerDB) {
         $('#selCusId').append(`<option>${customer.id}</option>`);
@@ -13,6 +25,7 @@ $('#selCusId').on('change',function (){
             $('#orderCusTp').val(customer.tp);
         }
     }
+    $('#selItemId').focus();
 });
 
 
@@ -31,6 +44,7 @@ $('#selItemId').on('change',function (){
             $('#orderQty').val(item.qtyOnHand);
         }
     }
+    $('#getQty').focus();
 });
 
 loadAllItemId();
