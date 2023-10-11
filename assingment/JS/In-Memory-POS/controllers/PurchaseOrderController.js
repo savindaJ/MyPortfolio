@@ -12,23 +12,45 @@ let finalTotal = 0;
 let final = 0;
 
 
-$('#btnClear').on('click',function (){
+$('#btnClear').on('click', function () {
     clearAll();
     clearBill();
 });
 
 //place order button
 
-$('#btnPlaceOrder').on('click',function (){
+$('#btnPlaceOrder').on('click', function () {
     let cash = parseFloat($('#txtCash').val());
     let balance = cash - final;
     $('#txtBalnce').val(balance);
 
+    $('#btnPlaceOrder').prop("disabled", true);
+
+    let itemList = [];
+
+    let trList = $('#order-tbl-body > tr');
+
+    for (const tr of trList) {
+        let child = $(tr).children();
+        let object = {
+            oid: $('#txtOrderId').val(),
+            code: $(child[0]).text(),
+            qty: $(child[3]).text(),
+            unitPrice: $(child[2]).text()
+        }
+        itemList.push(object);
+    }
+
+    orderDB.push({
+        oid: $("#txtOrderId").val(),
+        date: $('#txtDate').val(),
+        customerID: $('#selCusId').val(),
+        orderDetails: itemList
+    });
+
     clearAll();
     $('#order-tbl-body').empty();
-
-
-    $('#btnPlaceOrder').prop("disabled", true);
+    loadAllOrderDetails();
 
 });
 
@@ -41,8 +63,8 @@ $('#btnAddOrder').on('click', function () {
     let list = $(`#order-tbl-body > tr > td:nth-child(1)`);
 
     for (const td of list) {
-        if ($(td).text() == $('#selItemId').val()){
-            let row  = $(td).parent();
+        if ($(td).text() == $('#selItemId').val()) {
+            let row = $(td).parent();
             $(row).remove();
         }
     }
@@ -59,14 +81,13 @@ $('#btnAddOrder').on('click', function () {
     let totalList = $(`#order-tbl-body > tr > td:nth-child(5)`);
 
 
-
     for (const total of totalList) {
-        finalTotal += parseFloat( $(total).text());
+        finalTotal += parseFloat($(total).text());
     }
 
     final = finalTotal;
 
-    $('#total').text(' '+ finalTotal + '/=');
+    $('#total').text(' ' + finalTotal + '/=');
 
     $('#subTotal').text(finalTotal + '/=');
 
@@ -115,10 +136,10 @@ $('#selItemId').on('change', function () {
 
 });
 
-$('#txtDiscount').on('keyup change',function (){
+$('#txtDiscount').on('keyup change', function () {
     let currentDiscount = parseFloat($('#txtDiscount').val());
 
-    let subTotal = finalTotal/100*currentDiscount;
+    let subTotal = finalTotal / 100 * currentDiscount;
 
     final = finalTotal - subTotal;
 
@@ -131,3 +152,4 @@ $('#txtDiscount').val(0);
 loadAllItemId();
 
 loadCustomerId();
+

@@ -1,4 +1,7 @@
 function loadAllOrderDetails(){
+
+    $('#order-detail-body').empty();
+
     for (const object of orderDB) {
         for (let i = 0; i < object.orderDetails.length; i++) {
             $('#order-detail-body').append(`<tr>
