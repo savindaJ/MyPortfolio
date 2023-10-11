@@ -14,14 +14,19 @@ let final = 0;
 
 $('#btnClear').on('click',function (){
     clearAll();
+    clearBill();
 });
+
+//place order button
 
 $('#btnPlaceOrder').on('click',function (){
     let cash = parseFloat($('#txtCash').val());
     let balance = cash - final;
     $('#txtBalnce').val(balance);
 
-    // alert("place order successfully added !");
+    clearAll();
+    $('#order-tbl-body').empty();
+
 
 });
 
