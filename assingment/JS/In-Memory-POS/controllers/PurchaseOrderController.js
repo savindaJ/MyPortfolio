@@ -28,6 +28,8 @@ $('#btnPlaceOrder').on('click',function (){
     $('#order-tbl-body').empty();
 
 
+    $('#btnPlaceOrder').prop("disabled", true);
+
 });
 
 $('#btnAddOrder').on('click', function () {
@@ -69,6 +71,8 @@ $('#btnAddOrder').on('click', function () {
     $('#subTotal').text(finalTotal + '/=');
 
 
+    $('#btnPlaceOrder').prop("disabled", false);
+    $('#btnAddOrder').prop("disabled", true);
 });
 
 function loadCustomerId() {
@@ -106,6 +110,9 @@ $('#selItemId').on('change', function () {
         }
     }
     $('#getQty').focus();
+
+    $('#btnAddOrder').prop("disabled", false);
+
 });
 
 $('#txtDiscount').on('keyup change',function (){
