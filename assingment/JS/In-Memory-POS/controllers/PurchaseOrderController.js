@@ -9,6 +9,22 @@ $('#txtDate').val(today);
 
 let finalTotal = 0;
 
+let final = 0;
+
+
+$('#btnClear').on('click',function (){
+    clearAll();
+});
+
+$('#btnPlaceOrder').on('click',function (){
+    let cash = parseFloat($('#txtCash').val());
+    let balance = cash - final;
+    $('#txtBalnce').val(balance);
+
+    // alert("place order successfully added !");
+
+});
+
 $('#btnAddOrder').on('click', function () {
 
     let price = parseFloat($('#orderItemPrice').val());
@@ -40,6 +56,8 @@ $('#btnAddOrder').on('click', function () {
     for (const total of totalList) {
         finalTotal += parseFloat( $(total).text());
     }
+
+    final = finalTotal;
 
     $('#total').text(' '+ finalTotal + '/=');
 
@@ -90,7 +108,7 @@ $('#txtDiscount').on('keyup change',function (){
 
     let subTotal = finalTotal/100*currentDiscount;
 
-    let final = finalTotal - subTotal;
+    final = finalTotal - subTotal;
 
     $('#subTotal').text(final + '/=');
 
