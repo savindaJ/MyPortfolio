@@ -22,6 +22,10 @@
     margin: auto;
 }
 
+#loading-image h3{
+    color: orange;
+}
+
 
 * {
     scroll-behavior: smooth;
