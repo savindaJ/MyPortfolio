@@ -67,6 +67,8 @@ $('#Dark').on('click', function () {
             background: '#101820'
         });
 
+
+
         darkTrue = false;
     } else {
         window.location.reload(true);
