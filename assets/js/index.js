@@ -67,6 +67,103 @@ $('#Dark').on('click', function () {
             background: '#101820'
         });
 
+        $('#main').css('background', '#101820');
+
+        $('.home-section').css('background', '#101820');
+
+        $('.service-section > h4 ').css('color', '#FD6E0A');
+
+        $('.service-section > h1').css('color', 'white');
+
+        $('.service-section > aside > div').css('background', '#FEB062');
+
+        $('.service-section > aside:nth-child(4) > div:first-child div:nth-child(1)').css({
+            background: 'url("assets/dark-images/status1.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.service-section > aside:nth-child(4) > div:nth-child(2) div:nth-child(1)').css({
+            background: 'url("assets/dark-images/status2.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.service-section > aside:nth-child(4) > div:nth-child(3) div:nth-child(1)').css({
+            background: 'url("assets/dark-images/status3.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.service-section > aside:last-child > div:first-child div:nth-child(1)').css({
+            background: 'url("assets/dark-images/status4.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.service-section > aside:last-child > div:last-child div:nth-child(1)').css({
+            background: 'url("assets/dark-images/status5.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.service-section > aside > div p').css({
+            color: 'white'
+        });
+
+        $('.aboutme-section > div:nth-child(2) > h1 > span:first-child').css({
+            color:'#FD6E0A'
+        });
+
+        $('.aboutme-section > div:nth-child(2) > h1').css({
+            color: 'white'
+        });
+
+        $('.aboutme-section > div:nth-child(2) > h1 > span:last-child ').css({
+            color: 'gray'
+        });
+
+        $('.aboutme-section > section:nth-child(3) > aside:last-child > p:first-child > span').css({
+            color: '#FD6E0A'
+        });
+
+        $('.aboutme-section > section:nth-child(3) > aside:last-child > p:first-child').css({
+            color: 'white'
+        });
+
+        $('#aboutGmail, #aboutPhone').css({
+            color: 'white'
+        });
+
+        $('.aboutme-section > section:nth-child(3) > aside:last-child > p:last-child').css({
+            color: 'white'
+        });
+
+        $('.education-section > h4:first-child').css('color', '#FD6E0A');
+
+        $('.education-section h1').css('color', 'white');
+
+        $('.education-section section > .detail > h4').css('color', '#6891FF');
+
+        $('.education-section section > .detail p').css('color', 'white');
+
+        $('.education-section #line').css({
+            borderLeft: "3px solid white"
+        });
+
+        $('.language-tools > h4').css({
+            color: '#FD6E0A'
+        });
+
+        $('.language-tools > h1').css({
+            color: 'white'
+        });
+
+        $('.language-tools > div:last-child > svg line').css({
+            stroke: "rgb(254 254 255)"
+        });
+
+        $('.recent-works > h4').css({
+            color: '#FD6E0A'
+        });
+
+        $('.recent-works > h1').css('color', 'white');
+
 
 
         darkTrue = false;
