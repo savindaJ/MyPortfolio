@@ -231,3 +231,33 @@ $('#Dark').on('click', function () {
         darkTrue = true;
     }
 });
+
+let moveLeft = 0;
+
+let moveRight = 0;
+
+let count = 0;
+
+$('#leftButton').on('click',function (){
+    count--;
+    moveLeft -= 49;
+
+    $('.certificate-section > section > div:nth-child(2)>div').css({
+        transitionDuration:'1s',
+        position: 'relative',
+        left: -moveLeft+'vw'
+    });
+});
+
+$('#rightButton').on('click',function (){
+    count++;
+    if (count<=3){
+        moveLeft += 49;
+
+        $('.certificate-section > section > div:nth-child(2)>div').css({
+            transitionDuration:'1s',
+            position: 'relative',
+            left: -moveLeft+'vw'
+        });
+    }
+});

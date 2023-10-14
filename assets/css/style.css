@@ -1063,10 +1063,49 @@ main section:nth-child(3) {
 .certificate-section > section > div:nth-child(2) {
     width: 70%;
     height: 65vh;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+.certificate-section > section > div:nth-child(2)>div{
+    width: calc(100%*4);
+    height: 65vh;
+    /*border: 1px solid black;*/
+    display:flex;
+    transition-duration: 1s;
+}
+
+.certificate-section > section > div:nth-child(2)>div div{
+    width: calc(100%/4);
+    height: 65vh;
+}
+
+.certificate-section > section > div:nth-child(2)>div div:nth-child(1){
+     background: url("../images/certificate-img.png");
+     /*background: red;*/
+   background-size: cover;
+   background-position: center;
+}
+.certificate-section > section > div:nth-child(2)>div div:nth-child(2){
     background: url("../images/certificate-img.png");
+    /*background: green;*/
+    background-size: cover;
+    background-position: center;
+
+}
+.certificate-section > section > div:nth-child(2)>div div:nth-child(3){
+    background: url("../images/certificate-img.png");
+    /*background: black;*/
     background-size: cover;
     background-position: center;
 }
+.certificate-section > section > div:nth-child(2)>div div:nth-child(4){
+    background: url("../images/certificate-img.png");
+    /*background: orange;*/
+    background-size: cover;
+    background-position: center;
+}
+
 
 .certificate-section > section > button:first-child {
     position: absolute;
