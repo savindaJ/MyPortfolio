@@ -25,10 +25,10 @@ $('#Dark').on('click', function () {
         $('#header nav > div > menu > li > a').css('color', 'white');
 
         $('.curve').css({
-            backgroundColor:'rgba(199, 154, 98, 1)'
+            backgroundColor: 'rgba(199, 154, 98, 1)'
         });
 
-        $('.custom-shape-divider-bottom-1693915055 .shape-fill').css('fill','#101820');
+        $('.custom-shape-divider-bottom-1693915055 .shape-fill').css('fill', '#101820');
 
         $('.home-section > section:nth-child(3) > section:last-child > div:last-child > div:first-child ').css({
             background: '#EB9A94'
@@ -107,7 +107,7 @@ $('#Dark').on('click', function () {
         });
 
         $('.aboutme-section > div:nth-child(2) > h1 > span:first-child').css({
-            color:'#FD6E0A'
+            color: '#FD6E0A'
         });
 
         $('.aboutme-section > div:nth-child(2) > h1').css({
@@ -164,7 +164,7 @@ $('#Dark').on('click', function () {
 
         $('.recent-works > h1').css('color', 'white');
 
-        $('.fa-graduation-cap').css('color','white');
+        $('.fa-graduation-cap').css('color', 'white');
 
         $('.path').css({
             fill: '#FEB062'
@@ -185,7 +185,7 @@ $('#Dark').on('click', function () {
             backgroundSize: 'cover'
         });
 
-        $('.recent-works > section > div > div > p ').css('color','black');
+        $('.recent-works > section > div > div > p ').css('color', 'black');
 
         $('.certificate-section > h4 ').css({
             color: '#FD6E0A'
@@ -223,7 +223,7 @@ $('#Dark').on('click', function () {
             color: 'white'
         });
 
-        $('#footer').css('background','#906C3C');
+        $('#footer').css('background', '#906C3C');
 
         darkTrue = false;
     } else {
@@ -238,26 +238,26 @@ let moveRight = 0;
 
 let count = 0;
 
-$('#leftButton').on('click',function (){
+$('#leftButton').on('click', function () {
     count--;
     moveLeft -= 49;
 
     $('.certificate-section > section > div:nth-child(2)>div').css({
-        transitionDuration:'1s',
+        transitionDuration: '1s',
         position: 'relative',
-        left: -moveLeft+'vw'
+        left: -moveLeft + 'vw'
     });
 });
 
-$('#rightButton').on('click',function (){
+$('#rightButton').on('click', function () {
     count++;
-    if (count<=3){
+    if (count <= 3) {
         moveLeft += 49;
 
         $('.certificate-section > section > div:nth-child(2)>div').css({
-            transitionDuration:'1s',
+            transitionDuration: '1s',
             position: 'relative',
-            left: -moveLeft+'vw'
+            left: -moveLeft + 'vw'
         });
     }
 });

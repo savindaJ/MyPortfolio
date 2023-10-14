@@ -6,7 +6,7 @@
     background-color: #e88b0a;
 }
 
-main h1{
+main h1 {
     text-align: center;
     color: #162A5F;
     font-family: Inter;
@@ -16,7 +16,7 @@ main h1{
     line-height: normal;
 }
 
-h1 span{
+h1 span {
     color: #FFB233;
     font-family: Inter;
     font-style: normal;
@@ -24,17 +24,17 @@ h1 span{
     line-height: normal;
 }
 
-body header div img{
+body header div img {
     position: relative;
 }
 
-body header{
+body header {
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgb(243, 209, 161);
     display: flex;
 }
 
-.dark-button{
+.dark-button {
     position: absolute;
     right: 0;
 }
@@ -101,7 +101,7 @@ input:checked + .slider:before {
 }
 
 
-main section{
+main section {
     width: 80%;
     height: 50vh;
     flex-shrink: 0;
@@ -111,22 +111,22 @@ main section{
     margin: auto;
     position: relative;
     margin-top: 10vh;
-   margin-bottom: 10vh;
+    margin-bottom: 10vh;
 }
 
-main section:hover{
+main section:hover {
     box-shadow: 0 4px 30px 2px #f6b458;
     transition-duration: 1s;
     width: 82%;
 }
 
-main section div:nth-child(2){
+main section div:nth-child(2) {
     box-sizing: border-box;
     margin-left: 40vw;
     padding-top: 0px;
 }
 
-main section div:nth-child(2) h4{
+main section div:nth-child(2) h4 {
     color: #FD6E0A;
     font-family: Inter;
     font-size: 1.7vw;
@@ -136,7 +136,7 @@ main section div:nth-child(2) h4{
 
 }
 
-main section div:nth-child(2) p:nth-child(2){
+main section div:nth-child(2) p:nth-child(2) {
     color: #747272;
     font-family: Inter;
     font-size: 16px;
@@ -146,7 +146,7 @@ main section div:nth-child(2) p:nth-child(2){
     width: 85%;
 }
 
-main section div:nth-child(2) p:nth-child(5){
+main section div:nth-child(2) p:nth-child(5) {
     color: #162A5F;
     font-family: Inter;
     font-size: 16px;
@@ -155,7 +155,7 @@ main section div:nth-child(2) p:nth-child(5){
     line-height: normal;
 }
 
-main section div:nth-child(2) a{
+main section div:nth-child(2) a {
     color: #162A5F;
     font-family: Inter;
     font-size: 20px;
@@ -164,13 +164,13 @@ main section div:nth-child(2) a{
     line-height: normal;
 }
 
-main section div:nth-child(2) a:hover{
+main section div:nth-child(2) a:hover {
     color: #FD6E0A;
     transition-duration: 1s;
     font-size: 25px;
 }
 
-main section aside:nth-child(1)>h3{
+main section aside:nth-child(1) > h3 {
     margin-left: 100px;
     color: #073e7f;
     font-family: Inter;
@@ -181,11 +181,11 @@ main section aside:nth-child(1)>h3{
     padding-top: 20px;
 }
 
-main section>aside{
+main section > aside {
     position: relative;
 }
 
-main section>aside>img{
+main section > aside > img {
     position: absolute;
     width: 30vw;
     top: 13vh;
@@ -194,11 +194,12 @@ main section>aside>img{
     border-radius: 10px;
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 600px) {
     main h1 {
         font-size: 30px;
     }
-    main section>aside>img {
+
+    main section > aside > img {
         position: absolute;
         width: 70vw;
         top: 15vh;
@@ -217,7 +218,7 @@ main section>aside>img{
 
     main section div:nth-child(2) {
         margin-left: 0;
-       text-align: center;
+        text-align: center;
     }
 
     main section div:nth-child(2) p:nth-child(2) {
