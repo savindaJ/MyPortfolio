@@ -7,17 +7,30 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="body">
 
-<header>
+<header id="header">
 
     <div>
         <img src="../assets/images/page-logo.png" alt="page logo">
     </div>
 
+    <div class="dark-button">
+        <!--                    button-->
+        <div>
+            <label class="lable" for="DarkPage">Dark</label><br>
+            <label class="switch">
+                <input id="DarkPage" type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+
+        </div>
+
+    </div>
+
 </header>
 
-<main>
+<main id="main">
     <h1>Stand Alone <span>Desktop Applications</span></h1>
     <section>
 
@@ -115,6 +128,7 @@
 
     </section>
 </main>
-
+<script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>

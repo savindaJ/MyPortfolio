@@ -225,9 +225,6 @@ $('#Dark').on('click', function () {
 
         $('#footer').css('background','#906C3C');
 
-
-
-
         darkTrue = false;
     } else {
         window.location.reload(true);
