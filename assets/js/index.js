@@ -164,6 +164,68 @@ $('#Dark').on('click', function () {
 
         $('.recent-works > h1').css('color', 'white');
 
+        $('.fa-graduation-cap').css('color','white');
+
+        $('.path').css({
+            fill: '#FEB062'
+        });
+
+        $('.recent-works > section > div:nth-child(1) > div > div:first-child').css({
+            background: 'url("assets/dark-images/status1.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.recent-works > section > div:nth-child(2) > div > div:first-child').css({
+            background: 'url("assets/dark-images/status2.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.recent-works > section > div:nth-child(3) > div > div:first-child').css({
+            background: 'url("assets/dark-images/status3.png")',
+            backgroundSize: 'cover'
+        });
+
+        $('.recent-works > section > div > div > p ').css('color','black');
+
+        $('.certificate-section > h4 ').css({
+            color: '#FD6E0A'
+        });
+
+        $('.certificate-section > h1').css({
+            color: 'white'
+        });
+
+        $('.general-life-section > h4 ').css({
+            color: '#FD6E0A'
+        });
+
+        $('.general-life-section > h1 ').css({
+            color: 'white'
+        });
+
+        $('.contact-section > h4').css({
+            color: '#FD6E0A'
+        });
+
+        $('.contact-section > h1').css({
+            color: 'white'
+        });
+
+        $('.contact-section > section > address > div > div:last-child > h4 , .contact-section > section > address > h4').css({
+            color: 'white'
+        });
+
+        $('.contact-section > section > address a , .contact-section > section > address p').css({
+            color: '#FD6E0A'
+        });
+
+        $('.contact-section aside > form > fieldset > label').css({
+            color: 'white'
+        });
+
+        $('#footer').css('background','#906C3C');
+
+
 
 
         darkTrue = false;
