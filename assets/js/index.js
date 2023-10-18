@@ -261,3 +261,11 @@ $('#rightButton').on('click', function () {
         });
     }
 });
+
+let countVisitors = parseInt(localStorage.getItem('visitorCounter') || '0');
+
+countVisitors++;
+
+localStorage.setItem('visitorCounter', countVisitors);
+$('#count').css('marginLeft','10px')
+$('#count').text(countVisitors);

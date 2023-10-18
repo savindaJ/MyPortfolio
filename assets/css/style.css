@@ -53,6 +53,17 @@ header {
     z-index: 10;
 }
 
+#visitors>span:first-child{
+    margin-left: 5vw;
+    color: #211854;
+    font-family: 'PT Serif', serif;
+}
+
+#count{
+    color: #ff5d09;
+    font-family: 'PT Serif', serif;
+}
+
 header nav > div > menu {
     position: relative;
     left: 30vw;
