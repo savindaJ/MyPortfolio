@@ -166,6 +166,8 @@ $('#Dark').on('click', function () {
 
         $('.fa-graduation-cap').css('color', 'white');
 
+        $('#visitors > span').css('color', 'white');
+
         $('.path').css({
             fill: '#FEB062'
         });
