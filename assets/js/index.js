@@ -1,3 +1,25 @@
+let name = ["S","a","v","i","n","d","a"," ","j","a","y","a","s","e","k","r","a","",""];
+
+let char = 0;
+
+$('#typeName').css({
+    height: '50px',
+    marginBottom:'8vh'
+});
+
+function setName(){
+    $('#typeName').text($('#typeName').text()+name[char]);
+}
+setInterval(function (){
+    if (char<name.length){
+        setName();
+        char++;
+    }else {
+        char = 0;
+        $('#typeName').text('');
+    }
+},100);
+
 $(window).on('load', function () {
     setTimeout(removeLoader, 1000);
 });
