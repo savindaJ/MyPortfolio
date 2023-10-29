@@ -101,7 +101,7 @@ header > div {
 main > div:first-child {
     width: 100%;
     height: 100vh;
-    background: url("../images/background-image-fixed.jpg");
+    background: url("../images/bg-fix.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
