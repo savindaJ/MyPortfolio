@@ -29,7 +29,7 @@
 
 * {
     scroll-behavior: smooth;
-    font-family: 'PT Serif', serif;
+    font-family: 'popins', Roboto, cursive;
 }
 
 ::-webkit-scrollbar {
@@ -302,6 +302,8 @@ body main {
 .status-section > div {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .status-section > div h4 {
@@ -449,7 +451,7 @@ end headder style --------------------------------------------------------------
 .service-section > h4 {
     text-align: center;
     color: #162A5F;
-    font-family: 'PT Serif', serif;
+    font-family: 'popins', Roboto, cursive;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -460,7 +462,7 @@ end headder style --------------------------------------------------------------
 .service-section > h1 {
     text-align: center;
     color: #000;
-    font-family: 'PT Serif', serif;
+    font-family: 'popins', Roboto, cursive;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -914,7 +916,7 @@ main section:nth-child(3) {
 .recent-works > section > div > div {
     width: 25%;
     position: absolute;
-    top: 0;
+    top: 20px;
     bottom: 0;
     margin-left: 3.8vw;
 }
@@ -979,7 +981,7 @@ main section:nth-child(3) {
 
 .recent-works > section > div > div > a {
     position: relative;
-    top: 15vh;
+    top: 13vh;
     color: #15295F;
     font-family: 'Roboto', cursive;
     font-size: 20px;
